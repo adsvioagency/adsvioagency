@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Votre score de visibilit&eacute; &mdash; Adsvio Agency</title>
+<meta name="description" content="Quatre questions rapides, puis choisissez une heure. Environ 30 secondes.">
+
+<!-- A step inside a funnel has nothing to rank for and would leak into search
+     as a dead end. Out of the index and out of sitemap.xml. -->
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://adsvioagency.com/fr/start">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#FCFAF6">
+
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+</head>
+
+<body class="qbody" data-no-modal>
+
+<a class="skip-link" href="#qform">Aller aux questions</a>
+
+<!-- Header stripped to the mark and the language switch. Nothing here offers
+     an exit except the escape hatch under the card, which is deliberate. -->
+<header class="qhead">
+  <a class="wordmark" href="/fr/" aria-label="Adsvio Agency">
+    <img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="" decoding="async">
+  </a>
+  <div class="langswitch">
+    <a class="langswitch__item" href="/en/start" hreflang="en" lang="en">EN</a>
+    <a class="langswitch__item" href="/fr/start" aria-current="true" hreflang="fr" lang="fr">FR</a>
+  </div>
+</header>
+
+<main class="qmain">
+  <h1 class="visually-hidden">Obtenez votre score de visibilit&eacute;</h1>
+
+  <div class="qcard">
+
+    <div class="qprogress" data-progress role="progressbar"
+         aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-live="polite">
+      <span class="is-done"></span><span></span><span></span><span></span>
+    </div>
+    <p class="qtakes">Environ 30 secondes.</p>
+
+    <!-- Ships as ONE form with every fieldset visible. qualifier.js turns it
+         into a wizard; with JS off this stays a single plain form that posts
+         to Netlify and lands on the booking confirmation. Never a dead end. -->
+    <form id="qform" class="qform" name="qualifier" method="POST"
+          data-netlify="true" netlify-honeypot="company-website"
+          action="/fr/thank-you-booking" data-qualifier>
+      <input type="hidden" name="form-name" value="qualifier">
+      <p class="hp">
+        <label>Leave this empty if you are human
+          <input name="company-website" tabindex="-1" autocomplete="off">
+        </label>
+      </p>
+
+      <fieldset class="qstep" data-step="1">
+        <legend class="qstep__q">Quel genre d&rsquo;entreprise dirigez-vous&nbsp;?</legend>
+          <label class="qopt">
+            <input type="radio" name="biztype" value="coach">
+            <span class="qopt__label">Coach, consultant ou marque personnelle</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="biztype" value="local">
+            <span class="qopt__label">Commerce local &mdash; salon, restaurant, clinique, boutique, bureau</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="biztype" value="store">
+            <span class="qopt__label">Boutique en ligne</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="biztype" value="other">
+            <span class="qopt__label">Autre chose</span>
+          </label>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="2" data-advance="manual">
+        <legend class="qstep__q">Qu&rsquo;avez-vous en ce moment&nbsp;?</legend>
+        <p class="qstep__hint">Cochez tout ce qui s&rsquo;applique.</p>
+          <label class="qopt">
+            <input type="checkbox" name="has" value="website">
+            <span class="qopt__label">Un site web</span>
+          </label>
+          <label class="qopt">
+            <input type="checkbox" name="has" value="gbp">
+            <span class="qopt__label">Une fiche Google</span>
+          </label>
+          <label class="qopt">
+            <input type="checkbox" name="has" value="social">
+            <span class="qopt__label">Instagram ou Facebook</span>
+          </label>
+          <label class="qopt">
+            <input type="checkbox" name="has" value="brand">
+            <span class="qopt__label">Un logo ou une marque</span>
+          </label>
+          <label class="qopt">
+            <input type="checkbox" name="has" value="none" data-exclusive>
+            <span class="qopt__label">Rien de tout cela</span>
+          </label>
+        <button class="btn btn--primary qstep__continue" type="button" data-continue>Continuer</button>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="3">
+        <legend class="qstep__q">O&ugrave; est votre entreprise&nbsp;?</legend>
+          <label class="qopt">
+            <input type="radio" name="location" value="us">
+            <span class="qopt__label">&Eacute;tats-Unis</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="location" value="ca">
+            <span class="qopt__label">Canada</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="location" value="do">
+            <span class="qopt__label">R&eacute;publique dominicaine</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="location" value="ht">
+            <span class="qopt__label">Ha&iuml;ti</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="location" value="carib">
+            <span class="qopt__label">Ailleurs dans les Cara&iuml;bes</span>
+          </label>
+          <label class="qopt">
+            <input type="radio" name="location" value="other">
+            <span class="qopt__label">Ailleurs</span>
+          </label>
+      </fieldset>
+
+      <fieldset class="qstep" data-step="4" data-advance="manual">
+        <legend class="qstep__q">Derni&egrave;re &eacute;tape &mdash; o&ugrave; envoyons-nous votre Carte&nbsp;?</legend>
+        <div class="qfields">
+          <div class="field">
+            <label for="q-first">Pr&eacute;nom</label>
+            <input class="input" id="q-first" name="firstname" type="text"
+                   autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="q-email">Courriel</label>
+            <input class="input" id="q-email" name="email" type="email"
+                   autocomplete="email" required>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--lg qstep__submit" type="submit" data-submit>Voir les disponibilit&eacute;s &rarr;</button>
+        <p class="qfine">Nous envoyons votre Carte de visibilit&eacute; dans les 48 heures suivant l&rsquo;appel. Aucun pourriel, aucune revente de liste, d&eacute;sabonnement en tout temps.</p>
+      </fieldset>
+    </form>
+
+  </div>
+
+  <!-- The escape hatch. It protects the highest-intent visitors, which is
+       exactly who a form loses. It will get used, and that is fine. -->
+  <p class="qskip">
+    <a href="https://tidycal.com/adsvioagency/30-minute-meeting"
+       data-skip data-event="book_call_click" data-event-where="qualifier_skip">Je pr&eacute;f&egrave;re simplement choisir une heure &rarr;</a>
+  </p>
+</main>
+
+<script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/consent.js" defer></script>
+<script src="/assets/js/qualifier.js" defer></script>
+
+</body>
+</html>

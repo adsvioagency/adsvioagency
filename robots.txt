@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Nothing is disallowed yet. The sample builds under /en/work/ are meant to be
+# indexed — they are the topical-authority pages for "website design for
+# restaurants / consultants / salons".
+
+Sitemap: https://adsvioagency.com/sitemap.xml

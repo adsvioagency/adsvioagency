@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Verdure Kitchen — restaurant website sample build</title>
+<meta name="description" content="A complete concept build for a Caribbean restaurant in Miami: menu, hours, reservations, map and reviews. Website design for restaurants, by Adsvio Agency.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://adsvioagency.com/en/work/verdure-kitchen">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Adsvio Agency">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://adsvioagency.com/en/work/verdure-kitchen">
+<meta property="og:title" content="Verdure Kitchen — restaurant website sample build">
+<meta property="og:description" content="A complete concept build for a Caribbean restaurant in Miami: menu, hours, reservations, map and reviews.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="theme-color" content="#14180F">
+
+<link rel="preload" href="/assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adsvioagency.com/en/" },
+    { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://adsvioagency.com/en/work" },
+    { "@type": "ListItem", "position": 3, "name": "Verdure Kitchen", "item": "https://adsvioagency.com/en/work/verdure-kitchen" }
+  ]
+}
+</script>
+<!-- No Restaurant or Menu schema on this page. Verdure Kitchen is a fictional
+     business built to demonstrate the work — marking it up as a real
+     restaurant would put a business that does not exist into Google's index
+     with opening hours and a location. -->
+
+<style>
+/* ==========================================================================
+   VERDURE KITCHEN — a design that is deliberately nothing like Adsvio's.
+   Everything below is namespaced under .vk so it cannot leak into the Adsvio
+   panel at the top of the page.
+
+   Direction: warm, dark, appetite-driven. A restaurant is sold on hunger and
+   proximity, so the page leads with food and puts hours, address and the
+   reserve button within reach at every scroll position.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/assets/fonts/fraunces-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.vk {
+  --ground:  #14180F;
+  --ground-2:#1E241A;
+  --cream:   #F6F0E2;
+  --cream-d: #CFC7B4;
+  --paprika: #E46636;
+  --paprika-d:#C24A1F;
+  --lime:    #B9D45C;
+  --rule:    rgba(246, 240, 226, 0.14);
+
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  background: var(--ground);
+  color: var(--cream);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+.vk *, .vk *::before, .vk *::after { box-sizing: border-box; }
+.vk h1, .vk h2, .vk h3 {
+  font-family: var(--serif);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.05;
+  color: var(--cream);
+}
+/* Scoped deliberately. A blanket `.vk a` rule is (0,1,1) and beats
+   `.vk__cta` at (0,1,0), which silently repaints every button label in the
+   link colour — on a paprika button that is paprika on paprika. */
+.vk__addr a, .vk__lede a, .vk__note a { color: var(--paprika); }
+
+.vk__wrap { max-width: 1140px; margin-inline: auto; padding-inline: 24px; }
+@media (max-width: 640px) { .vk__wrap { padding-inline: 18px; } }
+
+/* ---- Bar ---------------------------------------------------------------- */
+.vk__bar {
+  position: sticky; top: 0; z-index: 20;
+  background: rgba(20, 24, 15, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--rule);
+}
+.vk__barin { display: flex; align-items: center; gap: 28px; min-height: 74px; }
+.vk__logo {
+  font-family: var(--serif);
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--cream);
+  text-decoration: none;
+}
+.vk__logo span { color: var(--lime); }
+.vk__nav { display: flex; gap: 24px; margin-left: auto; }
+.vk__nav a {
+  color: var(--cream-d);
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+.vk__nav a:hover { color: var(--lime); }
+@media (max-width: 820px) { .vk__nav { display: none; } }
+
+.vk__cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 46px; padding: 12px 22px;
+  border: 0; border-radius: 2px;
+  background: var(--paprika); color: #1A0E07;
+  font-family: var(--sans); font-size: 15px; font-weight: 600;
+  letter-spacing: 0.01em; text-decoration: none;
+  transition: background-color .15s ease;
+}
+.vk__cta:hover { background: var(--lime); color: #16190C; }
+.vk__cta--ghost {
+  background: transparent; color: var(--cream);
+  border: 1px solid var(--rule);
+}
+.vk__cta--ghost:hover { background: rgba(246,240,226,.08); color: var(--cream); border-color: var(--cream); }
+.vk__bar .vk__cta { margin-left: auto; }
+@media (max-width: 820px) { .vk__bar .vk__cta { margin-left: auto; } }
+
+/* ---- Hero --------------------------------------------------------------- */
+.vk__hero { position: relative; overflow: hidden; }
+/* TODO: replace with a real photograph of the dining room at dusk
+   (WebP + JPG, ~2000px wide). The gradient below is a stand-in, not an
+   attempt to look like a photo. */
+.vk__heroart {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(80% 60% at 78% 18%, rgba(228,102,54,.55), transparent 62%),
+    radial-gradient(60% 50% at 12% 82%, rgba(185,212,92,.28), transparent 60%),
+    linear-gradient(158deg, #2A1D10 0%, #14180F 58%, #0D1109 100%);
+}
+.vk__heroart::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(20,24,15,.25), rgba(20,24,15,.86));
+}
+.vk__heroin { position: relative; padding-block: clamp(72px, 13vw, 168px); }
+.vk__eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: .2em;
+  text-transform: uppercase; color: var(--lime); margin-bottom: 20px;
+}
+.vk h1 {
+  font-size: clamp(2.75rem, 8vw, 5.5rem);
+  max-width: 15ch;
+  margin-bottom: 24px;
+}
+.vk h1 em { font-style: italic; color: var(--paprika); }
+.vk__lede { font-size: clamp(1.0625rem, 1.7vw, 1.3125rem); color: var(--cream-d); max-width: 46ch; margin-bottom: 32px; }
+.vk__row { display: flex; flex-wrap: wrap; gap: 12px; }
+.vk__openline {
+  display: inline-flex; align-items: center; gap: 10px;
+  margin-top: 32px; font-size: 15px; color: var(--cream-d);
+}
+.vk__dot { width: 9px; height: 9px; border-radius: 50%; background: var(--lime); }
+
+/* ---- Menu --------------------------------------------------------------- */
+.vk__section { padding-block: clamp(56px, 9vw, 104px); }
+.vk__section--alt { background: var(--ground-2); }
+.vk__head { margin-bottom: 44px; }
+.vk__head h2 { font-size: clamp(2rem, 4.4vw, 3.25rem); margin-bottom: 12px; }
+.vk__head p { color: var(--cream-d); max-width: 52ch; }
+
+.vk__menu { display: grid; grid-template-columns: repeat(3, 1fr); gap: 44px; }
+@media (max-width: 900px) { .vk__menu { grid-template-columns: 1fr; gap: 36px; } }
+.vk__menu h3 {
+  font-size: 13px; font-family: var(--sans); font-weight: 700;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--lime);
+  padding-bottom: 12px; margin-bottom: 8px; border-bottom: 1px solid var(--rule);
+}
+.vk__dish { padding-block: 15px; border-bottom: 1px dotted var(--rule); }
+.vk__dishtop { display: flex; align-items: baseline; gap: 12px; }
+.vk__dishname { font-family: var(--serif); font-weight: 600; font-size: 1.125rem; }
+.vk__leader { flex: 1; border-bottom: 1px dotted var(--rule); transform: translateY(-4px); }
+.vk__price { font-variant-numeric: tabular-nums; color: var(--cream); font-weight: 600; }
+.vk__dishnote { font-size: 14px; color: var(--cream-d); margin-top: 4px; }
+.vk__tag {
+  display: inline-block; margin-left: 8px; padding: 2px 8px;
+  border: 1px solid var(--lime); border-radius: 999px;
+  font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--lime); vertical-align: 2px;
+}
+
+/* ---- Hours + place ------------------------------------------------------ */
+.vk__split { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; align-items: start; }
+@media (max-width: 900px) { .vk__split { grid-template-columns: 1fr; } }
+.vk__hours { width: 100%; border-collapse: collapse; }
+.vk__hours th, .vk__hours td { text-align: left; padding: 13px 0; border-bottom: 1px solid var(--rule); font-weight: 400; }
+.vk__hours th { color: var(--cream-d); font-weight: 500; }
+.vk__hours td { text-align: right; font-variant-numeric: tabular-nums; }
+.vk__hours tr:last-child th, .vk__hours tr:last-child td { border-bottom: 0; }
+.vk__today th, .vk__today td { color: var(--lime); font-weight: 600; }
+
+/* TODO: replace with an embedded Google Map (or a static map image) once the
+   business has a verified Google Business Profile. */
+.vk__map {
+  position: relative; aspect-ratio: 4 / 3; border-radius: 3px; overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(246,240,226,.07) 1px, transparent 1px) 0 0 / 46px 46px,
+    linear-gradient(0deg, rgba(246,240,226,.07) 1px, transparent 1px) 0 0 / 46px 46px,
+    linear-gradient(148deg, #1F2618, #161B12);
+  border: 1px solid var(--rule);
+}
+.vk__mapline { position: absolute; background: rgba(246,240,226,.13); }
+.vk__pin {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%,-100%);
+  display: grid; place-items: center; width: 38px; height: 38px;
+  border-radius: 50% 50% 50% 0; rotate: -45deg;
+  background: var(--paprika);
+}
+.vk__pin::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--ground); }
+.vk__addr { margin-top: 20px; font-size: 15px; color: var(--cream-d); line-height: 1.75; }
+.vk__addr strong { color: var(--cream); font-weight: 600; }
+
+/* ---- Reviews ------------------------------------------------------------ */
+.vk__reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 900px) { .vk__reviews { grid-template-columns: 1fr; } }
+.vk__review { padding: 26px; border: 1px solid var(--rule); border-radius: 3px; background: rgba(246,240,226,.03); }
+.vk__stars { color: var(--paprika); letter-spacing: 3px; font-size: 15px; margin-bottom: 12px; }
+.vk__review p { font-family: var(--serif); font-size: 1.0625rem; line-height: 1.5; margin-bottom: 16px; }
+.vk__who { font-size: 13px; color: var(--cream-d); letter-spacing: .04em; }
+
+/* ---- Foot --------------------------------------------------------------- */
+.vk__foot { border-top: 1px solid var(--rule); padding-block: 56px 40px; }
+.vk__footgrid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; }
+@media (max-width: 760px) { .vk__footgrid { grid-template-columns: 1fr; } }
+.vk__foot h3 { font-family: var(--sans); font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--lime); margin-bottom: 14px; }
+.vk__foot li { padding-block: 5px; font-size: 15px; color: var(--cream-d); }
+.vk__foot a { color: var(--cream-d); text-decoration: none; }
+.vk__foot a:hover { color: var(--lime); }
+.vk__fine { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 13px; color: #918B7C; }
+
+.vk :focus-visible { outline: 3px solid var(--lime); outline-offset: 2px; }
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#build">Skip to the build</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="11.2" x2="12" y2="16.5"/><circle cx="12" cy="7.8" r=".95" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+
+<!-- ==========================================================================
+     THE ADSVIO PANEL — the only part of this page that is Adsvio speaking.
+     Everything below it is the build.
+     ========================================================================== -->
+<div class="demo-note">
+  <div class="container demo-note__inner">
+    <span class="demo-note__tag">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
+      Concept build
+    </span>
+    <p class="demo-note__body">
+      <b>Verdure Kitchen</b> is a fictional Caribbean restaurant in Miami, built by Adsvio to show
+      what a Storefront Launch ships. It is not a real business and not a client project.
+    </p>
+    <a class="btn btn--primary btn--sm" href="/en/offer">See what this costs</a>
+
+    <div class="demo-note__why">
+      <div>
+        <h3>The decision</h3>
+        <p>People choose a restaurant while hungry, on a phone, within a few blocks. So the page
+          leads with food and keeps hours, address and the reserve button one thumb away at every
+          scroll position.</p>
+      </div>
+      <div>
+        <h3>Why it looks like this</h3>
+        <p>Dark ground so the food is the brightest thing on screen. A soft serif with real
+          warmth instead of a restaurant-template script. Prices set in plain figures, because
+          hiding them loses more covers than it protects.</p>
+      </div>
+      <div>
+        <h3>What it has to do</h3>
+        <p>Turn a search for &ldquo;Haitian food near me&rdquo; into a booked table. Everything
+          else on the page is in service of that one action.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==========================================================================
+     THE BUILD
+     ========================================================================== -->
+<div class="vk" id="build">
+
+  <header class="vk__bar">
+    <div class="vk__wrap vk__barin">
+      <a class="vk__logo" href="#build">Verdure<span>.</span></a>
+      <nav class="vk__nav" aria-label="Verdure Kitchen">
+        <a href="#menu">Menu</a>
+        <a href="#hours">Hours &amp; place</a>
+        <a href="#reviews">Reviews</a>
+      </nav>
+      <a class="vk__cta" href="#reserve">Reserve a table</a>
+    </div>
+  </header>
+
+  <section class="vk__hero">
+    <div class="vk__heroart" aria-hidden="true"></div>
+    <div class="vk__wrap vk__heroin">
+      <p class="vk__eyebrow">Little Haiti &middot; Miami</p>
+      <h1>Griyo, pikliz, and a table by the <em>window</em>.</h1>
+      <p class="vk__lede">
+        Cooking from Port-au-Prince and Jacmel, served the way it is at home — generously, and
+        without apology. Walk in, or hold a table for tonight.
+      </p>
+      <div class="vk__row">
+        <a class="vk__cta" href="#reserve">Reserve a table</a>
+        <a class="vk__cta vk__cta--ghost" href="#menu">See the menu</a>
+      </div>
+      <p class="vk__openline">
+        <span class="vk__dot" aria-hidden="true"></span>
+        Open now until 11pm &middot; 305&nbsp;555&nbsp;0148
+      </p>
+    </div>
+  </section>
+
+  <section class="vk__section" id="menu">
+    <div class="vk__wrap">
+      <div class="vk__head">
+        <h2>The menu</h2>
+        <p>Changed a little with the seasons and a lot with what the market has. Everything is
+          cooked to order, so give us a few extra minutes on a Friday.</p>
+      </div>
+
+      <div class="vk__menu">
+        <div>
+          <h3>To start</h3>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Accra</span><span class="vk__leader"></span><span class="vk__price">$9</span></div>
+            <p class="vk__dishnote">Malanga fritters, scotch bonnet, lime</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Pate kòde</span><span class="vk__leader"></span><span class="vk__price">$8</span></div>
+            <p class="vk__dishnote">Flaky pastry, spiced beef or salt cod</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Soup joumou</span><span class="vk__leader"></span><span class="vk__price">$12</span></div>
+            <p class="vk__dishnote">Squash, beef, root vegetables. Sundays only</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Mains</h3>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Griyo<span class="vk__tag">House</span></span><span class="vk__leader"></span><span class="vk__price">$24</span></div>
+            <p class="vk__dishnote">Twice-cooked pork shoulder, pikliz, diri kole</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Poul nan sòs</span><span class="vk__leader"></span><span class="vk__price">$22</span></div>
+            <p class="vk__dishnote">Braised chicken, epis, plantain</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Pwason gwo sèl</span><span class="vk__leader"></span><span class="vk__price">$28</span></div>
+            <p class="vk__dishnote">Whole snapper, sea salt, citrus, herbs</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Legim</span><span class="vk__leader"></span><span class="vk__price">$19</span></div>
+            <p class="vk__dishnote">Stewed vegetables, beef or vegetarian</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>Sides &amp; sweet</h3>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Diri kole ak pwa</span><span class="vk__leader"></span><span class="vk__price">$6</span></div>
+            <p class="vk__dishnote">Rice and red beans</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Bannann peze</span><span class="vk__leader"></span><span class="vk__price">$6</span></div>
+            <p class="vk__dishnote">Twice-fried plantain, pikliz</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Pen patat</span><span class="vk__leader"></span><span class="vk__price">$8</span></div>
+            <p class="vk__dishnote">Sweet potato pudding, coconut, warm spice</p>
+          </div>
+          <div class="vk__dish">
+            <div class="vk__dishtop"><span class="vk__dishname">Kremas</span><span class="vk__leader"></span><span class="vk__price">$7</span></div>
+            <p class="vk__dishnote">Coconut, condensed milk, rum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vk__section vk__section--alt" id="hours">
+    <div class="vk__wrap vk__split">
+      <div>
+        <div class="vk__head">
+          <h2>Hours &amp; place</h2>
+          <p>Two blocks from the Caribbean Marketplace. Street parking on 2nd Avenue after 6pm.</p>
+        </div>
+        <table class="vk__hours">
+          <caption class="visually-hidden">Opening hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tuesday &ndash; Thursday</th><td>5pm &ndash; 10pm</td></tr>
+            <tr class="vk__today"><th scope="row">Friday</th><td>5pm &ndash; 11pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>12pm &ndash; 11pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>12pm &ndash; 9pm</td></tr>
+          </tbody>
+        </table>
+        <p class="vk__addr">
+          <strong>Verdure Kitchen</strong><br>
+          5920 NE 2nd Avenue, Miami, FL 33137<br>
+          <a href="tel:+13055550148">305 555 0148</a>
+        </p>
+      </div>
+
+      <div>
+        <div class="vk__map" role="img" aria-label="Map showing Verdure Kitchen on NE 2nd Avenue, Miami">
+          <span class="vk__mapline" style="left:0;right:0;top:38%;height:2px"></span>
+          <span class="vk__mapline" style="left:0;right:0;top:71%;height:2px"></span>
+          <span class="vk__mapline" style="top:0;bottom:0;left:32%;width:2px"></span>
+          <span class="vk__mapline" style="top:0;bottom:0;left:66%;width:2px"></span>
+          <span class="vk__pin"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vk__section" id="reviews">
+    <div class="vk__wrap">
+      <div class="vk__head">
+        <h2>What people say</h2>
+        <p>Pulled from the Google Business Profile, which is where most people meet a restaurant
+          before they ever reach its website.</p>
+      </div>
+      <!-- These quotes are written for a fictional restaurant. On a real build
+           they come from the client's verified Google reviews, and only then
+           does Review schema belong on the page. -->
+      <div class="vk__reviews">
+        <article class="vk__review">
+          <p class="vk__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>&ldquo;The griyo is the closest thing to my grandmother&rsquo;s I have found in Florida. We came for one plate and stayed three hours.&rdquo;</p>
+          <p class="vk__who">Nadege L. &middot; via Google</p>
+        </article>
+        <article class="vk__review">
+          <p class="vk__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>&ldquo;Booked a table for six on a Saturday and they still had time to explain the whole menu to my friend who had never eaten Haitian food.&rdquo;</p>
+          <p class="vk__who">Marcus T. &middot; via Google</p>
+        </article>
+        <article class="vk__review">
+          <p class="vk__stars" aria-label="Five out of five">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p>&ldquo;Soup joumou on a Sunday, every Sunday. Get there before two or it is gone.&rdquo;</p>
+          <p class="vk__who">Yvette P. &middot; via Google</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="vk__section vk__section--alt" id="reserve">
+    <div class="vk__wrap" style="text-align:center">
+      <h2 style="font-size:clamp(2rem,5vw,3.5rem);max-width:18ch;margin-inline:auto">Hold a table for tonight.</h2>
+      <p class="vk__lede" style="margin-inline:auto;margin-top:16px">
+        Tables for one to eight online. For anything larger, call and ask for Manuela.
+      </p>
+      <div class="vk__row" style="justify-content:center;margin-top:28px">
+        <a class="vk__cta" href="#reserve">Reserve online</a>
+        <a class="vk__cta vk__cta--ghost" href="tel:+13055550148">305 555 0148</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="vk__foot">
+    <div class="vk__wrap">
+      <div class="vk__footgrid">
+        <div>
+          <a class="vk__logo" href="#build">Verdure<span>.</span></a>
+          <p style="margin-top:14px;color:var(--cream-d);font-size:15px;max-width:34ch">
+            Haitian cooking in Little Haiti. Open Tuesday to Sunday.
+          </p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <ul>
+            <li>5920 NE 2nd Avenue</li>
+            <li>Miami, FL 33137</li>
+            <li><a href="tel:+13055550148">305 555 0148</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>More</h3>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="#reserve">Reservations</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="vk__fine">
+        Verdure Kitchen is a fictional business. This page is a concept build by
+        <a href="/en/" style="color:var(--lime)">Adsvio Agency</a>.
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/consent.js" defer></script>
+
+</body>
+</html>

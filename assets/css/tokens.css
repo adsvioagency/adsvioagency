@@ -1,0 +1,133 @@
+/* ==========================================================================
+   ADSVIO — DESIGN TOKENS  "Mango & Ink"
+   Single source of truth. Nothing in base.css or components.css hard-codes a
+   colour, size or duration. Change a value here and it changes everywhere.
+   ========================================================================== */
+
+:root {
+
+  /* ---- Base -------------------------------------------------------------- */
+  --paper:        #FCFAF6;   /* page background — warm but near-white */
+  --paper-deep:   #F3EEE6;   /* alternating section bands */
+  --ink:          #16130F;   /* primary text, warm near-black */
+  --ink-soft:     #5C554C;   /* secondary text */
+  --rule:         #E2DAD0;   /* hairlines, borders */
+
+  /* ---- Primary accent — hot, saturated mango. Action only. ---------------
+     CONTRAST NOTE. #E8590C carries only 3.43:1 against --paper. That clears
+     WCAG AA for LARGE text (3:1) but fails it for normal text and for button
+     labels (4.5:1) — and no lighter label colour can rescue it, because paper
+     is already near-white. The brief sets WCAG 2.1 AA as a hard floor, so the
+     ramp is shifted one step rather than the floor being lowered:
+
+       --mango        display type, borders, rules, icon strokes, active-state
+                      marks. Every use is >=24px or non-text. 3.43:1 — passes.
+       --mango-deep   solid button fills and any mango text under 24px,
+                      including inline links. 4.74:1 on paper — passes AA.
+       --mango-press  the darker hover, so buttons still visibly darken.
+                      6.24:1 on paper.
+
+     Same hue family, same heat. Nothing here is terracotta or clay.
+     --------------------------------------------------------------------- */
+  --mango:        #E8590C;   /* display type + non-text only  — 3.43:1 */
+  --mango-deep:   #C4470A;   /* solid button fills            — 4.74:1 on paper */
+  --mango-press:  #A63A08;   /* ALL mango text under 24px, and button hover.
+                                6.24:1 on --paper, 5.63:1 on --paper-deep,
+                                5.69:1 on --mango-wash — clears AA on every
+                                background this palette actually uses.
+                                --mango-deep only clears it on --paper, which
+                                is why small text does not use it. */
+  --mango-ink:    #7F2C06;   /* hover for mango text          — 8.03:1 */
+  --mango-wash:   #FDEDE2;   /* tinted backgrounds */
+
+  /* ---- Secondary — structural, does real work --------------------------- */
+  --teal:         #0E7C6B;
+  --teal-deep:    #0A5A4D;   /* dark section background */
+  --teal-wash:    #E4F2EF;
+
+  /* ---- Pop — highlights and marks only ---------------------------------- */
+  --sun:          #FFC53D;
+
+  /* Scorecard amber. --sun is a highlighter, not a data colour: on the bar
+     track it is 1.14:1 and the bar looks empty, and as label text on --paper
+     it is 1.51:1. These two carry the 45-74% band instead, the same way the
+     mango ramp above carries mango.
+       --sun-bar  2.61:1 on the --rule track — matches mango's 2.59:1
+       --sun-ink  5.31:1 on --paper — clears AA for the score label */
+  --sun-bar:      #B87A00;
+  --sun-ink:      #8A6100;
+
+  /* ---- Channel ----------------------------------------------------------- */
+  --whatsapp:      #25D366;
+  --whatsapp-deep: #1EBE5A;
+  /* WhatsApp green takes INK, not paper: paper on #25D366 is 1.90:1, ink is
+     10.22:1. Dark-on-green is also how WhatsApp sets its own brand. */
+
+  /* ---- Text on dark ------------------------------------------------------
+     Mango scores only 2.27:1 on --teal-deep, so it is never text there.
+     On the dark bands --sun (5.15:1) carries the accent instead, and mango
+     appears only as a filled button or a solid rule. --------------------- */
+  --on-dark:      #FCFAF6;   /* 7.80:1 on --teal-deep */
+  --on-dark-soft: #B8CFC9;   /* 4.96:1 on --teal-deep */
+  --accent-dark:  #FFC53D;   /* == --sun, 5.15:1 on --teal-deep */
+  --rule-dark:    rgba(252,250,246,0.18);
+
+  /* ---- Typefaces --------------------------------------------------------- */
+  --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  Helvetica, Arial, sans-serif;
+
+  /* ---- Type scale (fluid) ------------------------------------------------ */
+  --fs-display: clamp(2.75rem, 7vw, 5rem);       /* hero h1 */
+  --fs-h2:      clamp(2rem, 4vw, 3rem);
+  --fs-h3:      clamp(1.375rem, 2vw, 1.75rem);
+  --fs-lead:    clamp(1.125rem, 1.6vw, 1.375rem);
+  --fs-body:    1.0625rem;                        /* 17px */
+  --fs-small:   0.875rem;
+  --fs-util:    0.8125rem;                        /* 13px — eyebrows, labels */
+
+  --lh-display: 1.05;
+  --lh-heading: 1.15;
+  --lh-body:    1.65;
+  --tracking-display: -0.03em;
+  --tracking-util:     0.12em;
+
+  /* ---- Spacing — 8px base ------------------------------------------------ */
+  --s-1:   8px;
+  --s-2:  16px;
+  --s-3:  24px;
+  --s-4:  32px;
+  --s-5:  48px;
+  --s-6:  64px;
+  --s-7:  96px;
+  --s-8: 128px;
+
+  --section-y: clamp(64px, 10vw, 128px);
+  --container: 1180px;
+  --gutter:    24px;
+
+  /* ---- Radius — consistent, no mixing ------------------------------------ */
+  --r-card:  10px;
+  --r-btn:    8px;
+  --r-pill: 999px;
+
+  /* ---- Elevation — one soft shadow only ---------------------------------- */
+  --shadow: 0 2px 20px rgba(22, 19, 15, 0.07);
+
+  /* ---- Motion ------------------------------------------------------------ */
+  --ease:        cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-hover:   150ms;
+  --dur-reveal:  500ms;
+  --dur-lang:    460ms;   /* Language Proof wipe */
+  --stagger:      60ms;
+
+  /* ---- Layering ---------------------------------------------------------- */
+  --z-header:  100;
+  --z-sticky:  200;
+  --z-menu:    300;
+  --z-modal:   400;
+}
+
+@media (max-width: 640px) {
+  :root { --gutter: 20px; }
+}

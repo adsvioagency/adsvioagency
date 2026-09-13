@@ -12,12 +12,70 @@
   publish = "."
   command = ""
 
+# =============================================================================
+# SERVERLESS FUNCTIONS
+#
+# The site itself still has no build step. This exists only so Netlify installs
+# the dependencies that netlify/functions needs — nothing here reaches the
+# browser, and no public page gained a byte.
+#
+# GEMINI_API_KEY is NOT here and must never be. It is set in the Netlify UI
+# under Site configuration → Environment variables, and read at runtime via
+# process.env. Anything written into this file is committed to GitHub.
+# =============================================================================
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
 # Netlify serves /en/about from en/about.html automatically. Stated here so
 # nobody switches it off by accident while tidying.
 [build.processing]
   skip_processing = false
 [build.processing.html]
   pretty_urls = true
+
+
+# =============================================================================
+# 0. DO NOT SERVE SERVER-SIDE SOURCE AS STATIC FILES
+#
+# publish = "." means the whole repository is the publish directory, so the
+# function source and the installed dependencies sit inside it. Netlify's own
+# guidance is to keep the functions directory outside the publish directory,
+# which is not possible here without restructuring the entire site — so these
+# rules deny the paths instead.
+#
+# This is not where the key is protected: the key is never written to any file,
+# it is read from the environment at runtime. This is defence in depth, and it
+# stops anyone reading the function's logic or walking node_modules.
+#
+# These are FIRST because the first matching rule wins. /.netlify/functions/*
+# is a different path (leading dot) and is handled by Netlify before redirects
+# run, so the generator is unaffected.
+# =============================================================================
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/node_modules/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package.json"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/package-lock.json"
+  to = "/404.html"
+  status = 404
+  force = true
 
 
 # =============================================================================

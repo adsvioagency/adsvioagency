@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Image generator — Adsvio internal</title>
+<meta name="description" content="Internal tool. Generates images through the Gemini API via a Netlify function.">
+
+<!-- ==========================================================================
+     INTERNAL TOOL — NOT PART OF THE PUBLIC SITE
+
+     noindex, nofollow and deliberately absent from sitemap.xml. Nothing links
+     to it from the site's navigation. It is reachable by URL only.
+
+     It calls a serverless function that spends real money per generation, so
+     keep it out of search results. If this ever becomes a public feature it
+     needs auth and proper rate limiting in front of it first — the throttle in
+     the function is per-instance and will not hold.
+     ========================================================================== -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<meta name="theme-color" content="#FCFAF6">
+
+<link rel="preload" href="/assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/image-lab.css">
+</head>
+
+<body data-no-modal>
+
+<a class="skip-link" href="#lab-prompt">Skip to the prompt</a>
+
+<header class="qhead">
+  <a class="wordmark" href="/en/" aria-label="Adsvio Agency">
+    <img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="" decoding="async">
+  </a>
+  <span class="small soft">Internal tool</span>
+</header>
+
+<main class="section section--paper">
+  <div class="container lab">
+
+    <div class="lab__head">
+      <p class="eyebrow eyebrow--mango">Image generator</p>
+      <h1 class="measure-tight">Describe it, and Gemini draws it.</h1>
+      <p>
+        Type what you want to see. The prompt goes to a Netlify function, the function
+        calls Gemini, and the picture comes back here. Generation usually takes between
+        five and twenty seconds.
+      </p>
+    </div>
+
+    <!-- No `action` and no `method`: this form is never submitted the classic
+         way. image-lab.js calls preventDefault and posts to the function.
+         Without JS there is no generator, which is fine — this is an internal
+         tool, not a page that has to work for a search engine. -->
+    <form id="lab-form" novalidate>
+      <div class="lab__field">
+        <label class="lab__label" for="lab-prompt">Your prompt</label>
+        <textarea class="lab__textarea" id="lab-prompt" name="prompt"
+                  placeholder="A flat-lay of a barber's tools on warm off-white paper, soft daylight, muted orange accents"
+                  maxlength="1000" autocomplete="off" spellcheck="true"></textarea>
+
+        <div class="lab__meta-row">
+          <span class="lab__count" id="lab-count" aria-live="polite">0 / 1000</span>
+          <button class="btn btn--primary lab__submit" id="lab-submit" type="submit" disabled>
+            Generate image
+          </button>
+        </div>
+
+        <p class="lab__hint">Cmd/Ctrl + Enter also submits.</p>
+      </div>
+
+      <!-- role=status so a screen reader announces the wait without stealing
+           focus. Shipped hidden; image-lab.js is the only thing that shows it. -->
+      <div class="lab__status" id="lab-status" role="status" hidden>
+        <span class="lab__spinner" aria-hidden="true"></span>
+        <span>Generating… <span class="lab__elapsed" data-elapsed>0s</span></span>
+      </div>
+
+      <!-- role=alert so failures are announced immediately. -->
+      <div class="lab__error" id="lab-error" role="alert" hidden></div>
+    </form>
+
+    <figure class="lab__result" id="lab-result" hidden>
+      <div class="lab__frame">
+        <img id="lab-image" alt="">
+      </div>
+      <figcaption class="lab__result-row">
+        <span class="lab__figmeta" id="lab-meta"></span>
+        <!-- No href until there is something to download. An <a> without one
+             is not focusable or clickable, which is exactly right here, and it
+             keeps the site's zero-href="#" rule intact. image-lab.js sets it
+             to the data URI when an image arrives. -->
+        <a class="btn btn--secondary btn--sm" id="lab-download" download>Download PNG</a>
+      </figcaption>
+    </figure>
+
+    <p class="lab__note">
+      <strong>How the key is kept safe.</strong> Nothing on this page, and nothing in
+      <code>/assets/js/image-lab.js</code>, ever sees <code>GEMINI_API_KEY</code>. The browser posts
+      only your prompt to <code>/.netlify/functions/generate-image</code>. That function runs on
+      Netlify's servers, reads the key from the environment, calls Gemini, and returns just the
+      image. Open devtools and read the network tab if you want to confirm it —
+      the key is not in the request, the response, or the page source.
+    </p>
+
+  </div>
+</main>
+
+<script src="/assets/js/image-lab.js" defer></script>
+
+</body>
+</html>

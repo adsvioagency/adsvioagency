@@ -1,0 +1,19 @@
+# Dependencies — installed by Netlify at build time, never committed.
+# Committing these would bloat the repo and defeat the point of the lockfile.
+node_modules/
+
+# Secrets. GEMINI_API_KEY lives in the Netlify UI (Site configuration →
+# Environment variables) and in a local .env that must NEVER be committed.
+# If you ever see .env in `git status`, stop and fix this file.
+.env
+.env.*
+!.env.example
+
+# Netlify CLI local state and local function build output
+.netlify/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp

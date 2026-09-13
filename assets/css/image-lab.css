@@ -1,0 +1,169 @@
+/* ==========================================================================
+   ADSVIO — image-lab.css
+   Styles for the internal image generator only.
+
+   Deliberately a separate file rather than an addition to components.css:
+   this is one internal page, and components.css is fetched by all 40 public
+   pages. Putting these rules there would make every visitor download CSS for
+   a tool they will never see.
+
+   Uses the existing tokens throughout — no new colours, no new type. The
+   brand palette is defined in tokens.css and nothing here overrides it.
+   ========================================================================== */
+
+.lab {
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.lab__head { margin-bottom: var(--s-5); }
+.lab__head p { color: var(--ink-soft); max-width: 60ch; margin-top: var(--s-2); }
+
+/* ---- Form ---------------------------------------------------------------- */
+
+.lab__field { position: relative; }
+
+.lab__label {
+  display: block;
+  margin-bottom: var(--s-2);
+  font-weight: 600;
+}
+
+.lab__textarea {
+  width: 100%;
+  min-height: 128px;
+  padding: 14px 16px;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-btn);
+  resize: vertical;
+  transition: border-color var(--dur-hover) var(--ease);
+}
+.lab__textarea:focus-visible {
+  outline: 2px solid var(--mango);
+  outline-offset: 2px;
+  border-color: var(--mango);
+}
+.lab__textarea[readonly] { background: var(--paper-deep); color: var(--ink-soft); }
+
+.lab__meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+
+.lab__count {
+  font-size: var(--fs-small);
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+/* --mango-press rather than --mango: 5.69:1 on paper, so the warning is
+   readable rather than merely visible. */
+.lab__count.is-over { color: var(--mango-press); font-weight: 600; }
+
+.lab__submit[aria-busy="true"] { cursor: progress; }
+.lab__submit:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.lab__hint {
+  margin-top: var(--s-2);
+  font-size: var(--fs-small);
+  color: var(--ink-soft);
+}
+
+/* ---- Status, error, result ----------------------------------------------- */
+
+.lab__status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: var(--s-4);
+  padding: 14px 16px;
+  background: var(--teal-wash);
+  border-radius: var(--r-btn);
+  color: var(--teal-deep);
+  font-size: var(--fs-body);
+}
+
+.lab__spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(14, 124, 107, 0.25);
+  border-top-color: var(--teal-deep);
+  border-radius: 50%;
+  animation: lab-spin 0.7s linear infinite;
+  flex: none;
+}
+@keyframes lab-spin { to { transform: rotate(360deg); } }
+
+/* The site's motion contract: anything that moves must stop here. A spinner
+   that cannot spin still has to read as "working", so it pulses opacity
+   instead of freezing into a static ring. */
+@media (prefers-reduced-motion: reduce) {
+  .lab__spinner { animation: lab-pulse 1.4s ease-in-out infinite; }
+  @keyframes lab-pulse { 50% { opacity: 0.35; } }
+}
+
+.lab__elapsed { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.lab__error {
+  margin-top: var(--s-4);
+  padding: 14px 16px;
+  background: var(--mango-wash);
+  border-left: 3px solid var(--mango);
+  border-radius: var(--r-btn);
+  color: #7A2E06;              /* 7.1:1 on --mango-wash */
+  font-size: var(--fs-body);
+  line-height: 1.55;
+}
+
+.lab__result { margin-top: var(--s-5); }
+
+.lab__frame {
+  padding: var(--s-3);
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-card);
+}
+.lab__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--r-btn);
+}
+
+.lab__result-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+  margin-top: var(--s-3);
+}
+.lab__figmeta {
+  font-size: var(--fs-small);
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.lab__note {
+  margin-top: var(--s-6);
+  padding: var(--s-4);
+  background: var(--paper-deep);
+  border-radius: var(--r-card);
+  font-size: var(--fs-small);
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.lab__note strong { color: var(--ink); }
+
+@media (max-width: 560px) {
+  .lab__meta-row, .lab__result-row { flex-direction: column; align-items: stretch; }
+  .lab__submit { width: 100%; white-space: normal; }
+}

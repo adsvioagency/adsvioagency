@@ -37,7 +37,11 @@ EXCLUDE = {"index.html", "404.html", "en/start.html", "fr/start.html",
            "en/thank-you-booking.html", "fr/thank-you-booking.html",
            "en/checklist.html", "en/blog/_post-template.html",
            "en/work/atelier-nord.html", "en/work/clarite-consulting.html",
-           "en/work/verdure-kitchen.html"}
+           "en/work/verdure-kitchen.html",
+           # Internal noindex tool. Carries the stripped qhead like the
+           # qualifier does, and no footer — there is nothing to navigate to
+           # from a tool that is not part of the public site.
+           "en/image-lab.html"}
 
 # The confirmation pages drop the header and carry a one-line legal bar rather
 # than the full footer. Someone who has just converted does not need twenty
@@ -74,10 +78,15 @@ def normalise(block):
 
 
 def main():
+    # node_modules arrived with the Netlify function's dependencies and is full
+    # of vendored library docs. They are not our pages and must not be audited
+    # as though a missing footer were drift.
+    NOT_THE_SITE = {"node_modules", "netlify", ".netlify", ".git", "tools"}
+
     pages = []
     for f in sorted(BASE.rglob("*.html")):
         rel = f.relative_to(BASE).as_posix()
-        if rel in EXCLUDE:
+        if rel in EXCLUDE or NOT_THE_SITE & set(f.relative_to(BASE).parts):
             continue
         pages.append((rel, f.read_text(encoding="utf-8")))
 

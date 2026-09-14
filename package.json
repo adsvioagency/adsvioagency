@@ -2,7 +2,7 @@
   "name": "adsvio-web",
   "version": "1.0.0",
   "private": true,
-  "description": "Adsvio Agency website. The site itself is static HTML/CSS/vanilla JS with no build step — this file exists ONLY so Netlify can install dependencies for the serverless functions in netlify/functions. Nothing here is shipped to the browser.",
+  "description": "Adsvio Agency website. The site itself is static HTML/CSS/vanilla JS with no build step. This file exists only so Netlify can install dependencies for the serverless functions in netlify/functions. Nothing here is shipped to the browser.",
   "type": "module",
   "engines": {
     "node": ">=20"

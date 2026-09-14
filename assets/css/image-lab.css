@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — image-lab.css
+   ADSVIO - image-lab.css
    Styles for the internal image generator only.
 
    Deliberately a separate file rather than an addition to components.css:
@@ -7,7 +7,7 @@
    pages. Putting these rules there would make every visitor download CSS for
    a tool they will never see.
 
-   Uses the existing tokens throughout — no new colours, no new type. The
+   Uses the existing tokens throughout - no new colours, no new type. The
    brand palette is defined in tokens.css and nothing here overrides it.
    ========================================================================== */
 

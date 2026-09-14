@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — BASE
+   ADSVIO - BASE
    Fonts, reset, typography, layout primitives, motion baseline.
    ========================================================================== */
 
@@ -113,11 +113,11 @@ h3 { font-size: var(--fs-h3); font-weight: 600; letter-spacing: -0.02em; }
 
 p { text-wrap: pretty; }
 
-/* Measure — capped at ~68 characters */
+/* Measure - capped at ~68 characters */
 .measure     { max-width: 68ch; }
 .measure-tight { max-width: 54ch; }
 
-/* Utility type — eyebrows, labels, data captions */
+/* Utility type - eyebrows, labels, data captions */
 .eyebrow {
   font-family: var(--font-body);
   font-size: var(--fs-util);
@@ -128,7 +128,7 @@ p { text-wrap: pretty; }
   line-height: 1.4;
   margin: 0 0 var(--s-3);
 }
-.eyebrow--mango { color: var(--mango-press); }  /* 13px — needs the darkest step */
+.eyebrow--mango { color: var(--mango-press); }  /* 13px - needs the darkest step */
 .eyebrow--dark  { color: var(--on-dark-soft); }
 
 .small { font-size: var(--fs-small); }
@@ -147,7 +147,7 @@ a:hover { color: var(--mango-ink); }
 }
 .mark--mango { background-image: linear-gradient(var(--mango), var(--mango)); }
 
-/* ---- Focus — visible on every interactive element ----------------------- */
+/* ---- Focus - visible on every interactive element ----------------------- */
 
 :focus { outline: none; }
 :focus-visible {
@@ -220,8 +220,8 @@ a:hover { color: var(--mango-ink); }
 
 /* ---- [hidden] must actually hide -----------------------------------------
    The UA rule [hidden]{display:none} loses to any author rule that sets a
-   display, so a component styled `display:flex` stays visible — and stays in
-   the tab order — with the attribute on. The whole offer flow toggles
+   display, so a component styled `display:flex` stays visible - and stays in
+   the tab order - with the attribute on. The whole offer flow toggles
    `hidden`, so this is stated once, globally, rather than per component. */
 [hidden] { display: none !important; }
 
@@ -240,7 +240,7 @@ a:hover { color: var(--mango-ink); }
 /* No-JS: never leave content invisible */
 .no-js .reveal { opacity: 1; transform: none; }
 
-/* ---- Reduced motion — everything off ------------------------------------ */
+/* ---- Reduced motion - everything off ------------------------------------ */
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

@@ -4,7 +4,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://adsvioagency.com/en/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/offer</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/offer"/>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/fr/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/"/>
@@ -31,7 +31,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/for/coaches-consultants</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/for/coaches-consultants"/>
@@ -39,7 +39,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/for/local-businesses</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/for/local-businesses"/>
@@ -87,15 +87,23 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/haitian-business-marketing</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/haitian-business-marketing"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/haitian-business-marketing"/>
   </url>
   <url>
+    <loc>https://adsvioagency.com/en/services/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/services/"/>
+  </url>
+  <url>
     <loc>https://adsvioagency.com/en/services/branding-logo-design</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/branding-logo-design"/>
@@ -103,7 +111,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/services/google-business-profile</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/google-business-profile"/>
@@ -111,7 +119,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/services/local-seo</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/local-seo"/>
@@ -119,7 +127,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/services/social-media-management</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/social-media-management"/>
@@ -127,7 +135,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/services/website-design</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/services/website-design"/>
@@ -135,7 +143,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/fr/offer</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/offer"/>
@@ -144,7 +152,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/about</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/about"/>
@@ -152,7 +160,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/contact</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/contact"/>
@@ -161,7 +169,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/work</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/work"/>
@@ -169,25 +177,25 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/work/atelier-nord</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://adsvioagency.com/en/work/clarite-consulting</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://adsvioagency.com/en/work/verdure-kitchen</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://adsvioagency.com/en/blog/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/blog/"/>
@@ -219,7 +227,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/fr/contact</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/contact"/>
@@ -228,7 +236,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/privacy</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/privacy"/>
@@ -236,7 +244,7 @@
   </url>
   <url>
     <loc>https://adsvioagency.com/en/terms</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/terms"/>

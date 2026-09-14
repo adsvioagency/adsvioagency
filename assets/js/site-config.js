@@ -1,12 +1,12 @@
 /* ==========================================================================
-   ADSVIO — site-config.js
+   ADSVIO - site-config.js
    One place for the numbers that keep drifting.
 
    WHY THIS FILE EXISTS
    The timeline moved from 30 days to 45 and it took three separate passes to
    catch every copy, because the number was hand-typed into ~36 HTML files,
    two OG images and a dozen JSON-LD blocks. The same happened to the price
-   floor. This is not a framework and it does not template the site — it is
+   floor. This is not a framework and it does not template the site - it is
    the reference every future edit checks against, plus the few values JS can
    genuinely own at runtime.
 
@@ -17,7 +17,7 @@
 
      1. One authoritative list, so you know what the value is meant to be.
      2. window.ADSVIO for scripts (qualifier.js, main.js, analytics).
-     3. A dev-only consistency check — load any page with ?configcheck=1 and
+     3. A dev-only consistency check - load any page with ?configcheck=1 and
         it reports rendered text that disagrees with these values.
 
    The full manual list, including what lives in images and JSON-LD, is in
@@ -31,7 +31,7 @@
     /* Delivery timeline, in days. Appears in titles, meta, OG images, body
        copy, JSON-LD and the guarantee. Not the same as the 30-day post-launch
        tweak window, the 30 days of starter content, or the 30-day notice
-       period in the terms — those three are unrelated and must stay 30. */
+       period in the terms - those three are unrelated and must stay 30. */
     timelineDays: 45,
 
     /* Published price anchor. The real number is agreed after the audit; these
@@ -42,7 +42,7 @@
     currency: "USD",
 
     /* Capacity. A statement of fact, defensible on a call. Deliberately a
-       range and deliberately not a countdown — "3 spots left" would require
+       range and deliberately not a countdown - "3 spots left" would require
        tracking that does not exist. Do not publish a remaining count. */
     capacityPerMonth: "2–3",
 

@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — consent.js
+   ADSVIO - consent.js
    Cookie consent, and the analytics loader that depends on it.
 
    THE RULE THIS FILE ENFORCES
@@ -9,12 +9,12 @@
    pixel, no cookies beyond the one recording the choice itself.
 
    That is what GDPR requires for EU visitors and what Quebec's Law 25
-   requires in Canada, and both matter here — the audience is US, Canadian,
+   requires in Canada, and both matter here - the audience is US, Canadian,
    Dominican and European diaspora.
 
    WHAT PIERRE HAS TO DO
    Put the two IDs in CONFIG below. Until then this file runs, records
-   consent correctly, and loads nothing — which is the safe failure mode.
+   consent correctly, and loads nothing - which is the safe failure mode.
    ========================================================================== */
 
 (function () {
@@ -22,7 +22,7 @@
 
   var CONFIG = {
     /* Fill these in and analytics starts working for visitors who accept.
-       Leave them empty and the banner still behaves correctly — it simply has
+       Leave them empty and the banner still behaves correctly - it simply has
        nothing to load. See PLACEHOLDERS.md. */
     GA4_ID: "",        // e.g. "G-XXXXXXXXXX"
     META_PIXEL_ID: ""  // e.g. "123456789012345"
@@ -56,7 +56,7 @@
     if (!ls) return;
     try {
       ls.setItem(KEY, JSON.stringify({ v: VERSION, a: !!accepted, t: Date.now() }));
-    } catch (e) { /* private mode — the choice holds for this page only */ }
+    } catch (e) { /* private mode - the choice holds for this page only */ }
   }
 
 
@@ -74,7 +74,7 @@
       window.dataLayer = window.dataLayer || [];
       window.gtag = function () { window.dataLayer.push(arguments); };
       window.gtag("js", new Date());
-      /* No automatic page_view here — main.js sends the conversion events, and
+      /* No automatic page_view here - main.js sends the conversion events, and
          GA4's own enhanced measurement covers the rest. */
       window.gtag("config", CONFIG.GA4_ID, { anonymize_ip: true });
 
@@ -124,7 +124,7 @@
     en: {
       label:   "Cookie choices",
       title:   "We would like to measure what is working.",
-      body:    "Analytics only — which pages get read and which buttons get used. " +
+      body:    "Analytics only. Which pages get read and which buttons get used. " +
                "No advertising cookies unless you accept, nothing sold to anyone, ever. " +
                "Read the ",
       privacy: "privacy policy",
@@ -135,7 +135,7 @@
     fr: {
       label:   "Choix de témoins",
       title:   "Nous aimerions mesurer ce qui fonctionne.",
-      body:    "Mesure d’audience seulement — quelles pages sont lues et quels boutons " +
+      body:    "Mesure d’audience seulement : quelles pages sont lues et quels boutons " +
                "sont utilisés. Aucun témoin publicitaire sans votre accord, et rien n’est " +
                "jamais vendu à qui que ce soit. Consultez la ",
       privacy: "politique de confidentialité",
@@ -209,7 +209,7 @@
 
   /* ------------------------------------------------------------------------
      Reopening the choice. The footer link calls this, which is the thing
-     regulators actually check for — consent has to be as easy to withdraw
+     regulators actually check for - consent has to be as easy to withdraw
      as it was to give.
      ---------------------------------------------------------------------- */
 

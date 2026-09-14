@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — main.js
+   ADSVIO - main.js
    Vanilla. No dependencies. Every behaviour degrades to a working page
    without it, and every animation checks prefers-reduced-motion first.
    ========================================================================== */
@@ -51,7 +51,7 @@
      survives the handoff. Rewrites booking links in place, once, on load.
 
      Booking now goes through /start rather than straight to TidyCal, so this
-     has to stamp the qualifier links too — otherwise the parameters die at
+     has to stamp the qualifier links too - otherwise the parameters die at
      the extra hop and every paid booking reports as direct. qualifier.js
      reads them back off its own URL and forwards them to TidyCal.
      ---------------------------------------------------------------------- */
@@ -74,7 +74,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Header — the hairline appears only after 40px of scroll
+     Header - the hairline appears only after 40px of scroll
      ---------------------------------------------------------------------- */
 
   var header = $(".header");
@@ -92,7 +92,7 @@
       var doc = document.documentElement;
       var scrollable = doc.scrollHeight - window.innerHeight;
       var depth = scrollable > 0 ? y / scrollable : 0;
-      // After 25% depth — but never on top of the footer CTA.
+      // After 25% depth - but never on top of the footer CTA.
       stickybar.classList.toggle("is-visible", depth > 0.25 && !ctaInView);
     }
     ticking = false;
@@ -112,7 +112,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Focus trap — shared by the mobile menu and the exit-intent modal
+     Focus trap - shared by the mobile menu and the exit-intent modal
      ---------------------------------------------------------------------- */
 
   var FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]), ' +
@@ -136,7 +136,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Mobile menu — full-screen overlay, actions pinned to the bottom
+     Mobile menu - full-screen overlay, actions pinned to the bottom
      ---------------------------------------------------------------------- */
 
   (function mobileMenu() {
@@ -156,7 +156,7 @@
       /* Two forced reflows rather than requestAnimationFrame. The first
          commits the closed state so the fade actually has somewhere to
          animate from; the second commits visibility:visible so .focus() can
-         land — a visibility:hidden element cannot take focus. rAF would do
+         land - a visibility:hidden element cannot take focus. rAF would do
          the same job but never fires in a backgrounded tab, which would
          leave focus stranded on <body>. */
       void menu.offsetHeight;
@@ -192,12 +192,12 @@
 
 
   /* ------------------------------------------------------------------------
-     THE LANGUAGE PROOF — the signature element.
+     THE LANGUAGE PROOF - the signature element.
 
      The English string is already in the DOM and inside the <h1>, so crawlers
      and no-JS visitors read a complete headline. This only takes over the
      cycling. Clicking a pill holds that language and stops the rotation for
-     good — a deliberate choice made by the visitor outranks the loop.
+     good - a deliberate choice made by the visitor outranks the loop.
      ---------------------------------------------------------------------- */
 
   (function languageProof() {
@@ -291,7 +291,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Visibility Scorecard — grow the five bars on first scroll into view.
+     Visibility Scorecard - grow the five bars on first scroll into view.
 
      The target widths live in the markup as inline styles, so a visitor with
      JavaScript off, or with reduced motion on, sees the finished chart rather
@@ -330,8 +330,8 @@
     io.observe(card);
 
     /* Zeroing the bars up front means a browser that supports
-       IntersectionObserver but never reports an intersection — an offscreen or
-       backgrounded render, some embedded webviews, printing — would be left
+       IntersectionObserver but never reports an intersection - an offscreen or
+       backgrounded render, some embedded webviews, printing - would be left
        looking at five empty tracks forever. The chart must never end up less
        complete than the markup already was, so it grows regardless after a
        few seconds. */
@@ -340,7 +340,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Ticker — clone the list once so the loop closes seamlessly at -50%
+     Ticker - clone the list once so the loop closes seamlessly at -50%
      ---------------------------------------------------------------------- */
 
   (function ticker() {
@@ -355,7 +355,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Scroll reveal — 16px rise + fade, 60ms stagger within a group, once.
+     Scroll reveal - 16px rise + fade, 60ms stagger within a group, once.
      Never applied to the hero.
      ---------------------------------------------------------------------- */
 
@@ -388,7 +388,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Stat counters — count up once on entry. The rendered figure is already
+     Stat counters - count up once on entry. The rendered figure is already
      correct in the HTML, so this only replaces a value that is already there.
      ---------------------------------------------------------------------- */
 
@@ -435,7 +435,7 @@
 
 
   /* ------------------------------------------------------------------------
-     Copyright year — generated so it never goes stale
+     Copyright year - generated so it never goes stale
      ---------------------------------------------------------------------- */
 
   $$("[data-year]").forEach(function (el) {

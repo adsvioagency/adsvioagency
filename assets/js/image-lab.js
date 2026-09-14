@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — image-lab.js
+   ADSVIO - image-lab.js
    Front end for the Gemini image generator.
 
    THERE IS NO API KEY IN THIS FILE, AND THERE MUST NEVER BE ONE.
@@ -7,7 +7,7 @@
    lives in Netlify's environment and is read server-side in
    netlify/functions/generate-image.mjs. If you ever find yourself wanting a
    key here to "just test something quickly", that is the moment the key gets
-   published — do the test in the function instead.
+   published - do the test in the function instead.
 
    Written in the same plain-ES5-in-an-IIFE style as the rest of assets/js so
    it needs no build step and no transpiler, matching the site.
@@ -165,7 +165,7 @@
         if (err && err.name === "AbortError") {
           fail("That took too long and was cancelled. Try a simpler prompt.");
         } else if (err instanceof TypeError) {
-          /* fetch() rejects with TypeError when the request never completed —
+          /* fetch() rejects with TypeError when the request never completed:
              offline, DNS failure, or the dev server not running. */
           fail("Could not reach the server. Check your connection and try again.");
         } else {

@@ -1,9 +1,9 @@
 /* ==========================================================================
-   ADSVIO — modal.js
+   ADSVIO - modal.js
    The exit-intent offer for The Client-Ready Checklist.
 
    Shows at most once per visitor per 14 days. Never on the thank-you page or
-   either legal page — those carry data-no-modal on <body>.
+   either legal page - those carry data-no-modal on <body>.
 
    Triggers, any one of:
      1. desktop pointer leaving through the top of the viewport
@@ -16,7 +16,7 @@
 
   /* OFF until The Client-Ready Checklist actually exists. The modal collects
      emails for a download we cannot deliver, which is the fastest way to lose
-     a list before you have one. Flip to true the day the PDF ships — the rest
+     a list before you have one. Flip to true the day the PDF ships - the rest
      of this file is untouched and still works. */
   var EXIT_MODAL_ENABLED = false;
   if (!EXIT_MODAL_ENABLED) return;
@@ -26,14 +26,14 @@
      The dialog now lives here rather than in 25 copies of the HTML.
 
      It used to ship inline on every page. Only this file was gated, so the
-     markup still rendered — "No spam. Unsubscribe anytime." and "No thanks,
+     markup still rendered - "No spam. Unsubscribe anytime." and "No thanks,
      I'm good" showed up at the bottom of the homepage and the offer page any
      time the stylesheet was not applied. Markup for a disabled feature should
      not exist in the document at all.
 
      The one thing the inline copy was genuinely buying us was Netlify form
      detection, which scans deployed HTML and would never see a string in a
-     script. en/index.html keeps a hidden, field-only stub for that — no
+     script. en/index.html keeps a hidden, field-only stub for that - no
      visible copy, so there is nothing left to leak.
      ---------------------------------------------------------------------- */
 
@@ -48,7 +48,7 @@
     '    <p class="eyebrow eyebrow--mango">Free download</p>' +
     '    <h2 id="checklist-title">The Client-Ready Checklist</h2>' +
     '    <p class="modal__sub">27 things that decide whether a stranger trusts' +
-    '       your business — or clicks away.</p>' +
+    '       your business or clicks away.</p>' +
     '    <p class="modal__provenance">The same checklist we run on every client' +
     '       before we build anything.</p>' +
     '    <form name="checklist" method="POST" data-netlify="true"' +
@@ -83,7 +83,7 @@
   var DEPTH = 0.6;
 
   /* Private browsing and blocked storage must not break the page, and must
-     not turn into a modal on every single scroll either — if we cannot
+     not turn into a modal on every single scroll either - if we cannot
      remember having shown it, we do not show it. */
   function storage() {
     try {
@@ -150,7 +150,7 @@
     }, 240);
     // Focus returns to whatever the visitor was on before the interruption.
     // The modal opens on exit intent rather than on a click, so there is often
-    // nothing meaningful to go back to — land on the body in that case, not on
+    // nothing meaningful to go back to - land on the body in that case, not on
     // a stale node.
     if (lastFocus && document.contains(lastFocus) &&
         typeof lastFocus.focus === "function") {

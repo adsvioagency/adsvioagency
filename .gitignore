@@ -1,4 +1,4 @@
-# Dependencies — installed by Netlify at build time, never committed.
+# Dependencies - installed by Netlify at build time, never committed.
 # Committing these would bloat the repo and defeat the point of the lockfile.
 node_modules/
 

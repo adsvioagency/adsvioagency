@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — generate-image
+   ADSVIO - generate-image
    Serverless image generation via the Gemini API.
 
    WHY THIS FILE EXISTS
@@ -8,23 +8,23 @@
    it is effectively published. So the browser posts a prompt here, this
    function holds the key, and only the finished image goes back.
 
-   THE KEY IS READ IN EXACTLY ONE PLACE — process.env.GEMINI_API_KEY, below.
+   THE KEY IS READ IN EXACTLY ONE PLACE - process.env.GEMINI_API_KEY, below.
    It is never logged, never echoed in an error, and never included in a
    response body. If you add logging here, log the prompt, not the client.
 
-   SDK SHAPE — read this before changing the call
+   SDK SHAPE - read this before changing the call
    Current @google/genai generates images through ai.interactions.create(),
    NOT the older ai.models.generateContent() with responseModalities. The
    result carries the image on `output_image` (snake_case, genuinely) as
    base64 in `.data`, with `.mime_type` alongside. Any text the model returns
-   instead — typically a refusal — lands on `output_text`. Verified against
+   instead - typically a refusal - lands on `output_text`. Verified against
    the type definitions in @google/genai@2.22.0.
 
    TIMEOUT
    Netlify synchronous functions get 60s. Image generation normally lands in
    5-20s, so this runs synchronously and returns the image directly. If a
    future model pushes past 60s this has to become a background function,
-   which is a different shape entirely — it returns 202 and the client polls.
+   which is a different shape entirely - it returns 202 and the client polls.
    ========================================================================== */
 
 import { GoogleGenAI } from "@google/genai";
@@ -44,7 +44,7 @@ const MAX_BODY_BYTES = 8 * 1024;
 
 /* Browsers enforce this via CORS; curl does not. It filters casual abuse and
    stops the endpoint being embedded in someone else's page. It is NOT rate
-   limiting — see the note on THROTTLE below. */
+   limiting - see the note on THROTTLE below. */
 const ALLOWED_ORIGINS = [
   "https://adsvioagency.com",
   "https://www.adsvioagency.com",
@@ -95,7 +95,7 @@ function scrub(message) {
   return out.replace(/AIza[0-9A-Za-z_\-]{10,}/g, "[redacted]").slice(0, 300);
 }
 
-/* The SDK's err.message is useless for diagnosis — an invalid key produces
+/* The SDK's err.message is useless for diagnosis - an invalid key produces
    literally `400 API error occurred: {"httpMeta":{"response":{},"request":{}}}`.
    The real payload is on err.body as a JSON string (sometimes wrapped in an
    array), carrying error.message and a machine-readable details[].reason.
@@ -108,13 +108,13 @@ function describe(err) {
     const node = (Array.isArray(parsed) ? parsed[0] : parsed)?.error;
     if (node?.message) message = scrub(node.message);
     reason = node?.details?.find((d) => d?.reason)?.reason || node?.status || "";
-  } catch { /* no body, or not JSON — fall back to the message */ }
+  } catch { /* no body, or not JSON - fall back to the message */ }
   return { message, reason };
 }
 
 /* An invalid or unauthorised key comes back as 400 INVALID_ARGUMENT, not 401.
    Matching on status alone would report "Gemini rejected that prompt" to a
-   visitor when the truth is that the server is misconfigured — sending someone
+   visitor when the truth is that the server is misconfigured - sending someone
    off to rewrite a perfectly good prompt forever. */
 function isCredentialProblem(status, { message, reason }) {
   if (status === 401 || status === 403) return true;
@@ -188,7 +188,7 @@ export default async (req) => {
 
   /* Deliberately the LAST gate, immediately before the only expensive thing
      this function does. An earlier version checked here first, which meant a
-     rejected empty prompt — costing nothing — consumed the same budget as a
+     rejected empty prompt - costing nothing - consumed the same budget as a
      real generation, and someone fat-fingering the button eight times locked
      themselves out without a single image being made. Count spending, not
      requests. */
@@ -218,7 +218,7 @@ export default async (req) => {
       }
 
       /* No image came back. Usually a safety refusal, and the model explains
-         itself in text — pass that through, because "something went wrong" is
+         itself in text - pass that through, because "something went wrong" is
          useless when the real answer is "it will not draw that". */
       const said = (interaction?.output_text || "").trim();
       return json(422, {
@@ -233,7 +233,7 @@ export default async (req) => {
       const info = describe(err);
       const msg = info.message;
 
-      /* Credentials first — it masquerades as a 400, so checking status order
+      /* Credentials first - it masquerades as a 400, so checking status order
          alone would misreport it as a prompt problem. Never echo the upstream
          text here: it is a server-side misconfiguration, and the visitor can
          do nothing about it. The detail goes to the function log instead. */

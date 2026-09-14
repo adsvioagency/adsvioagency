@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Adsvio — header/footer drift check.
+"""Adsvio - header/footer drift check.
 
 WHY THIS EXISTS INSTEAD OF A REAL INCLUDE
 The site is static by explicit design: no framework, no build step, no server
@@ -9,7 +9,7 @@ rules out) or injecting the chrome from JavaScript (which would break the
 no-JS contract and hand search engines a page with no navigation).
 
 So the header and footer are, and will stay, duplicated markup. What was
-actually missing was not an include — it was any way to NOTICE when the copies
+actually missing was not an include - it was any way to NOTICE when the copies
 drift, which is how the offer page kept its own booking link through two
 updates while every other page was rewired.
 
@@ -29,7 +29,7 @@ BASE = pathlib.Path(__file__).resolve().parent.parent
 VERBOSE = "--verbose" in sys.argv
 
 # Pages with deliberately different chrome. The qualifier has no nav by design
-# (§6.6 — nothing offering an exit but the intended one), the redirect stub has
+# (§6.6 - nothing offering an exit but the intended one), the redirect stub has
 # no chrome at all, and the three sample builds are standalone presentations of
 # a fictional client's site, so they carry that client's bar and footer rather
 # than ours. Excluding them is the point, not an oversight.
@@ -39,7 +39,7 @@ EXCLUDE = {"index.html", "404.html", "en/start.html", "fr/start.html",
            "en/work/atelier-nord.html", "en/work/clarite-consulting.html",
            "en/work/verdure-kitchen.html",
            # Internal noindex tool. Carries the stripped qhead like the
-           # qualifier does, and no footer — there is nothing to navigate to
+           # qualifier does, and no footer - there is nothing to navigate to
            # from a tool that is not part of the public site.
            "en/image-lab.html"}
 
@@ -120,7 +120,7 @@ def main():
                             print("        " + line)
 
     # The two minimal-chrome pages are exempt from the sitewide footer, but not
-    # from each other — that mismatch is exactly how the languages drift apart.
+    # from each other - that mismatch is exactly how the languages drift apart.
     mins = [(r, s) for r, s in pages if r in MINIMAL_CHROME]
     if len(mins) == 2:
         a, b = [normalise(region(s, "footer") or "") for _, s in mins]
@@ -133,7 +133,7 @@ def main():
 
     print()
     if problems:
-        print("%d drift(s). The header and footer are duplicated markup by design —" % problems)
+        print("%d drift(s). The header and footer are duplicated markup by design - " % problems)
         print("fix the odd page out, or update every page if the reference changed.")
         return 1
     print("Header and footer are identical across every page, in both languages.")

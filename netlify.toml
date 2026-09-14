@@ -1,5 +1,5 @@
 # =============================================================================
-# ADSVIO AGENCY — Netlify configuration
+# ADSVIO AGENCY - Netlify configuration
 #
 # Static site, no build step. Everything below is redirects and headers.
 #
@@ -16,7 +16,7 @@
 # SERVERLESS FUNCTIONS
 #
 # The site itself still has no build step. This exists only so Netlify installs
-# the dependencies that netlify/functions needs — nothing here reaches the
+# the dependencies that netlify/functions needs - nothing here reaches the
 # browser, and no public page gained a byte.
 #
 # GEMINI_API_KEY is NOT here and must never be. It is set in the Netlify UI
@@ -41,7 +41,7 @@
 # publish = "." means the whole repository is the publish directory, so the
 # function source and the installed dependencies sit inside it. Netlify's own
 # guidance is to keep the functions directory outside the publish directory,
-# which is not possible here without restructuring the entire site — so these
+# which is not possible here without restructuring the entire site - so these
 # rules deny the paths instead.
 #
 # This is not where the key is protected: the key is never written to any file,
@@ -202,8 +202,8 @@
 
 # NOTE ON ?lang=fr
 # /fr/ covers the conversion path: home, offer and contact. Those three
-# parameters now land on their French equivalents. The remaining two —
-# /about?lang=fr and /services?lang=fr — still go to English, because no
+# parameters now land on their French equivalents. The remaining two,
+# /about?lang=fr and /services?lang=fr, still go to English, because no
 # French about or services page exists. Point them at /fr/ equivalents as
 # those pages are built.
 

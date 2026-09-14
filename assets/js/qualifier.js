@@ -1,5 +1,5 @@
 /* ==========================================================================
-   ADSVIO — qualifier.js
+   ADSVIO - qualifier.js
    The four-screen step between a CTA and the calendar.
 
    WHY IT EXISTS
@@ -33,7 +33,7 @@
 
   /* Read the ad parameters NOW. The init block below calls replaceState with
      location.pathname to keep the back button on this page, and that drops the
-     query string — so by submit time there is nothing left to read. */
+     query string - so by submit time there is nothing left to read. */
   var CARRIED = (function () {
     var out = "";
     try {
@@ -75,7 +75,7 @@
         }
       });
       window.sessionStorage.setItem(STORE_KEY, JSON.stringify(data));
-    } catch (e) { /* private mode — the flow still works, it just forgets */ }
+    } catch (e) { /* private mode - the flow still works, it just forgets */ }
   }
 
   /* ---- Screens ----------------------------------------------------------- */
@@ -147,7 +147,7 @@
   });
 
   /* Number keys pick an option, Enter advances. Escape deliberately does
-     nothing — there is no modal to close and no accidental exit. */
+     nothing - there is no modal to close and no accidental exit. */
   document.addEventListener("keydown", function (e) {
     if (e.metaKey || e.ctrlKey || e.altKey) return;
     var tag = (e.target.tagName || "").toLowerCase();
@@ -193,7 +193,7 @@
 
     function go() { window.location.href = dest; }
 
-    /* The POST happens first so an abandoned booking still leaves a lead —
+    /* The POST happens first so an abandoned booking still leaves a lead,
        but a form endpoint hiccup must never cost a booking, so any failure
        redirects anyway. */
     var body = new URLSearchParams();

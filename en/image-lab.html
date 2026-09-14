@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Image generator — Adsvio internal</title>
+<title>Image generator | Adsvio internal</title>
 <meta name="description" content="Internal tool. Generates images through the Gemini API via a Netlify function.">
 
 <!-- ==========================================================================
-     INTERNAL TOOL — NOT PART OF THE PUBLIC SITE
+     INTERNAL TOOL - NOT PART OF THE PUBLIC SITE
 
      noindex, nofollow and deliberately absent from sitemap.xml. Nothing links
      to it from the site's navigation. It is reachable by URL only.
 
      It calls a serverless function that spends real money per generation, so
      keep it out of search results. If this ever becomes a public feature it
-     needs auth and proper rate limiting in front of it first — the throttle in
+     needs auth and proper rate limiting in front of it first - the throttle in
      the function is per-instance and will not hold.
      ========================================================================== -->
 <meta name="robots" content="noindex, nofollow">
@@ -58,7 +58,7 @@
 
     <!-- No `action` and no `method`: this form is never submitted the classic
          way. image-lab.js calls preventDefault and posts to the function.
-         Without JS there is no generator, which is fine — this is an internal
+         Without JS there is no generator, which is fine - this is an internal
          tool, not a page that has to work for a search engine. -->
     <form id="lab-form" novalidate>
       <div class="lab__field">
@@ -107,8 +107,7 @@
       <code>/assets/js/image-lab.js</code>, ever sees <code>GEMINI_API_KEY</code>. The browser posts
       only your prompt to <code>/.netlify/functions/generate-image</code>. That function runs on
       Netlify's servers, reads the key from the environment, calls Gemini, and returns just the
-      image. Open devtools and read the network tab if you want to confirm it —
-      the key is not in the request, the response, or the page source.
+      image. Open devtools and read the network tab if you want to confirm it: the key is not in the request, the response, or the page source.
     </p>
 
   </div>

@@ -1,10 +1,10 @@
 /* ==========================================================================
-   ADSVIO — offer.js
+   ADSVIO - offer.js
    The offer flow. Vanilla, no dependencies.
 
    HOW THIS PAGE IS BUILT, AND WHY
    Both packages and every deliverable ship in the HTML, fully expanded.
-   Nothing here injects offer content — this script only *collapses* what is
+   Nothing here injects offer content - this script only *collapses* what is
    already on the page once a visitor tells it what they are. So:
 
      - Google indexes both packages, always.
@@ -16,7 +16,7 @@
    NO REGION, NO PRICES
    This script used to switch every figure on the page between a US and a
    Caribbean price, then between two public floors. Both are gone. The page
-   carries no package price at all now — one anchor sentence under the H1
+   carries no package price at all now - one anchor sentence under the H1
    states the range, and the real number is agreed after the audit using the
    internal pricing calculator. Do not reintroduce a region selector or a
    per-package price: a visitor who discovers the site quotes them double is a
@@ -27,7 +27,7 @@
 (function () {
   "use strict";
 
-  /* Package names are NOT translated — they are product names, and a caller
+  /* Package names are NOT translated - they are product names, and a caller
      who saw "Authority Launch" on the page has to be able to say it out loud
      to Pierre and be understood. */
   var LANG = (document.documentElement.lang || "en")
@@ -97,7 +97,7 @@
     var ready = !!state.type;
 
     /* The bar ships with the `hidden` attribute so it cannot flash before this
-       script runs. Dropping the attribute is what actually lets it render —
+       script runs. Dropping the attribute is what actually lets it render,
        the `is-visible` class only drives the slide-up. Toggling the class
        alone leaves it display:none under the global [hidden] rule. */
     if (ready) bar.removeAttribute("hidden");

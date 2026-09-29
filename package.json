@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "netlify dev",
     "qa": "py -3 ../qa-check.py",
+    "seo": "py -3 tools/check-seo.py",
     "partials": "py -3 tools/check-partials.py"
   },
   "dependencies": {

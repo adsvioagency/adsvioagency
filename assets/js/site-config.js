@@ -52,7 +52,9 @@
     startUrl: { en: "/en/start", fr: "/fr/start" },
     bookingUrl: "https://tidycal.com/adsvioagency/30-minute-meeting",
     whatsappUrl: "https://wa.me/18295927303",
-    phone: "+1 829 592 7303",
+    // US calls/texts and Dominican WhatsApp are separate owner-confirmed channels.
+    phone: "+1 786 758 9680",
+    whatsappPhone: "+1 829 592 7303",
     city: "Santo Domingo, Dominican Republic"
   };
 

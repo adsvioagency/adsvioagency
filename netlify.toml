@@ -53,6 +53,68 @@
 # run, so the generator is unaffected.
 # =============================================================================
 
+# Internal working material must not be served from the repository publish root.
+# Forced 404s override existing files; robots.txt is not access protection.
+[[redirects]]
+  from = "/PLACEHOLDERS.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SHOT-LIST.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/SEO-AI-DISCOVERABILITY.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/AGENTS.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/tools/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/sources/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/docs/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/en/blog/_post-template"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/en/blog/_post-template.html"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/netlify/*"
   to = "/404.html"
@@ -147,28 +209,28 @@
 [[redirects]]
   from = "/services"
   query = { lang = "en" }
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services"
   query = { lang = "fr" }
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services.html"
   query = { lang = "en" }
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services.html"
   query = { lang = "fr" }
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
@@ -204,8 +266,8 @@
 # /fr/ covers the conversion path: home, offer and contact. Those three
 # parameters now land on their French equivalents. The remaining two,
 # /about?lang=fr and /services?lang=fr, still go to English, because no
-# French about or services page exists. Point them at /fr/ equivalents as
-# those pages are built.
+# French about or services page exists; services lands on the English overview.
+# Point them at /fr/ equivalents as those pages are built.
 
 
 # =============================================================================
@@ -245,13 +307,13 @@
 
 [[redirects]]
   from = "/services"
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/services.html"
-  to = "/en/services/website-design"
+  to = "/en/services/"
   status = 301
   force = true
 
@@ -381,3 +443,9 @@
   [headers.values]
     Cache-Control = "public, max-age=3600"
     Content-Type  = "application/xml; charset=utf-8"
+
+# Defense in depth for other root-level Markdown files, not access control.
+[[headers]]
+  for = "/*.md"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

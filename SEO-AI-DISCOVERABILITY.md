@@ -1,7 +1,68 @@
 # Adsvio organic and AI search implementation
 
-Date: 2026-09-29. Baseline commit: `8f08459`.
-Status: local implementation only. No push or deployment authorized.
+## Current owner-review report: search and copy implementation
+
+Date: 2026-09-29. Current pass baseline: `037e66e`. Status: local changes ready for owner review; nothing pushed or deployed. The earlier technical pass was already present at this baseline. Its historical report follows below and is superseded where this section records a later change.
+
+### What changed and why
+
+The business already had a functional static site, but several acquisition pages repeated older package assumptions, overstated Google ranking control, or offered little detail for professional firms and home service businesses. The current pass improves those explanations and their connections to the free Visibility Score. It does not add a redesign, CMS or new service claims.
+
+- Prepared [the search architecture and research record](docs/SEARCH-ARCHITECTURE.md) before editing copy. It includes evidence, source links, target audiences, intent/keyword mapping, metadata strategy, conversion opportunities, cannibalization controls and new-page decisions. Public result sampling is qualitative, not volume or rank data.
+- Updated 19 existing English pages: home, services overview, five service pages, two audience pages, the Haitian-business page, five guides, three articles and the blog index. Some guides are shorter because unsupported claims and repetition were removed; their useful sections, existing anchor IDs and article structure remain, with clearer answers and practical examples.
+- Added three substantive pages: `/en/for/professional-services`, `/en/for/home-services`, `/en/south-florida`. They use the existing page components and cover distinct customer decisions. No duplicate city or single-industry landing-page set was added.
+- Strengthened social media as a core commercial service: channel selection, client-supplied materials, approvals, production responsibilities, scope, relevant industry examples and meaningful inquiry measurement. The existing $250/month starting price remains. No on-site filming, guaranteed leads or included ad spend was invented.
+- Improved website repair-versus-redesign guidance, profile eligibility and owner-verification responsibilities, realistic local search expectations, review requests, website cost comparisons, monthly content planning and website/social channel choices.
+- Corrected the Haitian page's company-origin wording to distinguish Pierre's origin from Adsvio's Santo Domingo base. The new South Florida page explicitly says delivery is remote and there is no Florida office. Existing US calls/texts and Dominican WhatsApp remain separate.
+- Updated titles, descriptions and social preview text to match each page's intent. Visible FAQs and JSON-LD answers agree. Service descriptions match the page; generic quote-based offers replace the old machine-readable two-package price ranges. New pages use WebPage, BreadcrumbList and visible FAQ data, referencing the established organization and website identities.
+- Expanded contextual internal links between services, audiences and resources. The blog now links to all five guides. All 34 indexable URLs have an incoming link from another indexable page.
+- Expanded the sitemap from 31 to 34 canonical URLs. Only the 19 changed existing pages and three new pages receive the September 29 lastmod. Article dateModified and visible updated dates reflect actual edits; datePublished stays unchanged. The XML no longer instructs maintainers to invoke an external legacy generator blindly.
+- Strengthened the repository validators: visible FAQ/schema equivalence, same-site fragment destinations, incoming links, breadcrumbs inside JSON-LD graphs and protected documentation paths. The header/footer check now preserves ordinary link targets, catching a copied footer link that the previous normalization would have hidden.
+
+### What stayed intact
+
+The Mango & Ink styles, type, header/footer layout, navigation structure, homepage animated H1, 45-day offer page, guarantee text, testimonials and their attribution, concept projects and labels, About biography, French pages, forms, booking destinations, WhatsApp behavior, analytics/consent code and serverless functions are unchanged. No dependency, client script, font or image was added. Business facts in the existing organization identity were preserved. No awards, ratings, locations, clients or results were fabricated.
+
+The authority/storefront buying contexts remain; revised pages explain that the scope follows diagnosis. New industry examples describe possible work, not Adsvio client history. Legal, medical and accounting content approval remains with the responsible professional; no compliance certification is claimed.
+
+### Search and AI readiness
+
+Public content is rendered in HTML, with canonical metadata, reciprocal alternates where translations actually exist, descriptive headings, working links and accurate structured data. Existing robots access remains open; no new crawler restriction was needed. Google and AI visibility are not guaranteed. FAQ schema is retained for consistency with visible content, not as a promised rich-result benefit.
+
+No special AI text file, paid SEO tool, AI generation API, IndexNow integration or automatic submission was added. OAI-SearchBot/GPTBot policy remains as previously configured. Actual crawler-network access, WAF rules and indexing decisions require production evidence after release.
+
+### Validation completed
+
+- Existing parent-directory QA: **33/33 checks pass**. The metadata lengths meet the repository's conventions; those lengths are not presented as ranking factors.
+- Enhanced SEO validator: **42 HTML pages, 34 sitemap URLs, zero errors**, including JSON-LD, FAQ alignment, canonical/alternate consistency, internal paths/fragments, incoming links and routing configuration. Two pre-existing hidden checklist PDF destinations remain explicit exclusions because the actual assets were not supplied.
+- Enhanced header/footer checker: passes across English and French pages, including ordinary navigation destinations.
+- Headless Chrome: **44 page/viewport checks** covering all 22 changed/new pages at 390px and 1440px. No detected horizontal overflow, broken loaded images or console/page errors. Main Score links and WhatsApp destinations were checked, FAQ panels opened, and mobile menus opened/closed. Screenshots for home, social service and the three new pages were saved outside the deployable repository in `../organic-review-2026-09-29/`.
+- English/French qualifier: **four front-end flow checks** across mobile/desktop, including required-email validation, completed fields, intercepted form POST and booking redirect. The POST and destination were mocked locally. No actual lead, email or booking was created; production delivery is not certified by these tests.
+- Shared design assets, forms, offer pages, French pages, testimonials and concept disclosures checked against the baseline. Git whitespace checks passed. No site build step exists for this static site; no dependency install or production deploy was performed.
+
+The first browser attempt stopped because the test needed to dismiss the French consent banner. After using its normal Decline control, the completed run passed. This was a test interaction issue, not a site change. Field Core Web Vitals, Lighthouse scores, full assistive-technology testing and live structured-result eligibility remain unmeasured. Source and viewport checks do not establish those results.
+
+### Owner actions after review
+
+1. Review the new audience/regional copy and revised commercial pages, then approve any GitHub push/deployment separately. No permission for publishing is assumed.
+2. After release, verify the 34 canonical URLs, three new URLs, real redirects and protected-file 404s. Check HTTPS/non-www handling and sitemap/robots. Existing `.html` aliases and language-query canonicalization remain; broad redirect changes were deferred to avoid loops or attribution loss.
+3. In Google Search Console, inspect the new pages and priority service pages, compare the selected canonical, and obtain example URLs for the reported indexing exclusions. The supplied aggregate coverage export cannot identify each affected page. The sitemap is already submitted; confirm its next successful read.
+4. Create/verify Bing Webmaster Tools and submit the sitemap. Bing Webmaster Tools is Microsoft's search visibility and indexing console; it does not require changing the website design.
+5. Create a GA4 property if measurement is wanted, then supply the real measurement ID. Before activation, resolve consent withdrawal/event definitions and attribution across intermediate pages. Treat button clicks and qualifier completion as steps, not confirmed bookings. Keep Meta inactive unless intentionally configured.
+6. Confirm the checklist PDFs and email fulfillment before exposing their download links. Test real Netlify form delivery and booking completion only as a deliberate release check.
+7. For Google Business Profile/Bing Places, confirm actual in-person eligibility and current operating details. A remote service market does not justify a new office listing. Review actual crawler access/logs and obtain real performance measurements after deployment.
+
+### Monitoring and next content decisions
+
+Use [the prioritized keyword tracking list](docs/KEYWORD-TRACKING.md), grouped by all 16 requested service, industry, geography and AI-search categories. Monitor relevant nonbranded impressions/clicks, destination-page intent, qualified Score requests, conversations and clients. AI referral data is incomplete and manual answer checks are observations, not durable ranking measurements.
+
+Next priorities: permissioned real Scorecard examples; actual customer questions and case studies with evidence; improve pages receiving relevant impressions but weak inquiries. Consider a dedicated industry page only after unique expertise, inquiries or proof justify it. A future multilingual planning guide can support language capabilities without adding invented translations. Continue to keep founder, technical implementation and tools in proportion to the customer's buying decision.
+
+---
+
+## Historical technical-pass report (before the current copy work)
+
+Date: 2026-09-29. Earlier baseline commit: `8f08459`. The following records the earlier technical pass only. Its 31-URL counts and statements about unchanged visible copy do not describe the current pass above.
 
 ## Baseline before changes
 

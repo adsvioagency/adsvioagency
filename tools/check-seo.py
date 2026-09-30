@@ -6,6 +6,7 @@ import sys
 import tomllib
 import xml.etree.ElementTree as ET
 from collections import Counter
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -44,6 +45,23 @@ def local_file(path):
                  if q.is_file()), None)
 
 
+def plain(value):
+    """Compare rendered wording, allowing markup and insignificant whitespace."""
+    rendered = unescape(re.sub(r"<[^>]+>", " ", value))
+    rendered = rendered.translate(str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"'}))
+    return re.sub(r"\s+", "", rendered)
+
+
+def schema_nodes(value):
+    if isinstance(value, dict):
+        yield value
+        for child in value.values():
+            yield from schema_nodes(child)
+    elif isinstance(value, list):
+        for child in value:
+            yield from schema_nodes(child)
+
+
 pages = [Page(p) for lang in ("en", "fr") for p in sorted((ROOT / lang).rglob("*.html"))
          if not p.name.startswith("_")]
 indexable = {p.canon[0]: p for p in pages if p.indexable and p.canon}
@@ -54,6 +72,7 @@ check(len(locations) == len(set(locations)), "Duplicate sitemap URLs")
 check(set(locations) == set(indexable), "Sitemap membership differs from indexable pages")
 descriptions = Counter(p.meta.get("description") for p in indexable.values())
 check(all(n == 1 for n in descriptions.values()), "Duplicate indexable descriptions")
+incoming = Counter()
 
 for page in pages:
     rel = page.path.relative_to(ROOT).as_posix()
@@ -80,6 +99,14 @@ for page in pages:
                         "/assets/downloads/adsvio-liste-verification.pdf"):
                 continue
             check(local_file(path) is not None, f"{rel}: missing internal target {path}")
+            if tag == "a" and page.indexable and ORIGIN + path in indexable and ORIGIN + path != expected:
+                incoming[ORIGIN + path] += 1
+        if tag == "a" and (url.startswith("#") or (url.startswith("/") and not url.startswith("//"))):
+            parts = urlsplit(url)
+            target = local_file(parts.path) if parts.path else page.path
+            if parts.fragment and target and target.suffix == ".html":
+                ids = {a.get("id") for t, a in Page(target).tags if "id" in a}
+                check(parts.fragment in ids, f"{rel}: missing fragment target {url}")
     for block in re.findall(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', source, re.S):
         try:
             data = json.loads(block)
@@ -87,16 +114,31 @@ for page in pages:
             errors.append(f"{rel}: invalid JSON-LD")
             continue
         check(not re.search(r'"@type"\s*:\s*"(?:Review|AggregateRating)"', block), f"{rel}: unapproved review schema")
-        if data.get("@type") == "BreadcrumbList":
-            for item in data["itemListElement"]:
-                check(item["item"] in indexable, f"{rel}: breadcrumb target not indexable")
-                if item.get("name") == "Services":
-                    check(item["item"] == ORIGIN + "/en/services/", f"{rel}: stale services breadcrumb")
+        for node in schema_nodes(data):
+            if node.get("@type") == "BreadcrumbList":
+                for item in node["itemListElement"]:
+                    check(item["item"] in indexable, f"{rel}: breadcrumb target not indexable")
+                    if item.get("name") == "Services":
+                        check(item["item"] == ORIGIN + "/en/services/", f"{rel}: stale services breadcrumb")
+            if node.get("@type") == "FAQPage":
+                visible = []
+                for detail in re.findall(r'<details class="faq__item[^>]*>(.*?)</details>', source, re.S):
+                    question = re.search(r"<summary[^>]*>(.*?)</summary>", detail, re.S)
+                    answer = re.search(r'<div class="faq__a">(.*?)</div>', detail, re.S)
+                    if question and answer:
+                        visible.append((plain(question[1]), plain(answer[1])))
+                marked = [(plain(q["name"]), plain(q["acceptedAnswer"]["text"]))
+                          for q in node.get("mainEntity", [])]
+                check(marked == visible, f"{rel}: FAQ schema differs from visible answers")
+
+for url in indexable:
+    check(incoming[url] > 0, f"{url}: no incoming link from another indexable page")
 
 config = tomllib.loads((ROOT / "netlify.toml").read_text(encoding="utf-8"))
 rules = config["redirects"]
 for path in ("/PLACEHOLDERS.md", "/SHOT-LIST.md", "/SEO-AI-DISCOVERABILITY.md",
-             "/tools/check-seo.py", "/en/blog/_post-template", "/en/blog/_post-template.html"):
+             "/tools/check-seo.py", "/docs/SEARCH-ARCHITECTURE.md", "/docs/KEYWORD-TRACKING.md",
+             "/en/blog/_post-template", "/en/blog/_post-template.html"):
     rule = next((r for r in rules if r["from"] == path or
                  (r["from"].endswith("*") and path.startswith(r["from"][:-1]))), {})
     check(rule.get("status") == 404 and rule.get("force") is True,

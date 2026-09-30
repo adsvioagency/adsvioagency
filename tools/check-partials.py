@@ -72,7 +72,10 @@ def normalise(block):
     b = re.sub(r"<!--.*?-->", "", b, flags=re.S)            # comments do not render
     b = re.sub(r'\s*aria-current="[^"]*"', "", b)           # active nav item
     b = re.sub(r'\s*(hreflang|lang)="[^"]*"', "", b)        # cross-language links
-    b = re.sub(r'href="/(en|fr)/[^"]*"', 'href="~"', b)     # own-language paths
+    # Only the language switch points to a different current page. Preserve
+    # ordinary navigation URLs so a copied footer with a wrong link is caught.
+    b = re.sub(r'(<a\b[^>]*class="langswitch__item"[^>]*href=")[^"]*',
+               r'\1~', b)
     b = re.sub(r'\s+', " ", b).strip()
     return b
 
@@ -125,7 +128,7 @@ def main():
     if len(mins) == 2:
         a, b = [normalise(region(s, "footer") or "") for _, s in mins]
         # Compare structure, not words: the copy is translated, the shape is not.
-        shape = lambda t: re.sub(r">[^<]+<", "><", t)
+        shape = lambda t: re.sub(r"/(en|fr)/", "/LANG/", re.sub(r">[^<]+<", "><", t))
         if shape(a) != shape(b):
             print("  ! %s and %s have differently shaped minimal footers"
                   % (mins[0][0], mins[1][0]))

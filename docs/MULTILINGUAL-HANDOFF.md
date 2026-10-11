@@ -4,7 +4,10 @@ Implementation date: 11 October 2026. Branch: `feature/adsvio-multilingual-geo`.
 Owner authorized production publication on 11 October 2026 after final checks.
 PR: https://github.com/adsvioagency/adsvioagency/pull/1
 Verified preview: https://deploy-preview-1--adsvioagency.netlify.app/es/
-Production deployment verification is recorded in MULTILINGUAL-PROGRESS.md.
+Production is published and verified: https://adsvioagency.com
+Commit: 080203951ef048c0528d68d923f3f32dd10c42df
+Netlify deploy: 6acba9f142301d00088136e9, ready, 11 October 2026 11:23 a.m. Eastern.
+Publication evidence is recorded in MULTILINGUAL-PROGRESS.md and docs/qa/.
 
 ## What changed
 
@@ -149,8 +152,9 @@ Contact forms retain Netlify detection, POST, form-name and honeypot settings.
 Names are `contact`, `contact-es` and the existing `contact-fr`. The baseline
 contact form omitted a reply address; a labelled required email field now
 allows the promised response in each language. The booking
-qualifier and checklist retain their existing form names and include a language
-field on translated pages. Confirmation actions stay in the form's language.
+qualifier retains its existing form name. Checklists use `checklist`, the
+existing `checklist-fr`, and new `checklist-es`, with a language field on
+translated pages. Confirmation actions stay in the form's language.
 Booking still goes to the existing TidyCal meeting; WhatsApp and US calls use
 their separate existing numbers. Their external interfaces are not controlled
 by this localization.
@@ -226,14 +230,15 @@ disabled was not run; the HTML and CSS fallback contracts were inspected.
 
 Connected project: `adsvioagency`, ID `bd4822e7-baea-461e-82d2-8389f8ebaab8`.
 Team: Adsvio Agency, slug `runaldpierre`, Free. Forms were already enabled.
-Existing production branch and deploy are `main` / `29c6fd4`; the primary site is
+The audited baseline was `main` / `29c6fd4`. The multilingual production release
+is `main` / `0802039`; the primary site is
 `https://adsvioagency.com`. Project configuration remains `publish = "."`, an
 empty site build command, existing functions directory and Pretty URLs on.
 
 No new environment variable, DNS edit, domain setting, paid feature or manual
 language-function toggle is required. Netlify discovers the edge function and
 its inline root config from the branch deploy. Review the actual preview build
-to confirm this function is listed before approving production.
+which has confirmed the edge function in both the preview and production.
 
 1. Review the feature branch and draft pull request. Open its Netlify Deploy
    Preview at `/es/` and `/fr/` and review major copy and policies.
@@ -312,3 +317,15 @@ remain explicit verification limits.
 
 Additional official form-testing reference:
 https://docs.netlify.com/manage/forms/troubleshooting-tips/
+
+## Final publication evidence
+
+The owner-authorized PR is merged. Netlify reports production ready for commit
+0802039 with the language function deployed. All 108 public pages/PDF paths
+returned HTTP 200 on the live domain. Six saved-language/domain combinations,
+root preference/campaign handling, HTML aliases, private-source denials and the
+96-URL sitemap were verified. Production mobile screenshot is under docs/qa/.
+No further Netlify setup or production merge is required for this release.
+
+The final documentation-only publication record does not change deployed
+website files and uses [skip netlify] to avoid an unnecessary extra deployment.

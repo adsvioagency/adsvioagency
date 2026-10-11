@@ -7,15 +7,13 @@
 <title>The Client-Ready Checklist | Adsvio Agency</title>
 <meta name="description" content="27 things that decide whether a stranger trusts your business online or clicks away. The same checklist we run on every client before we build anything.">
 
-<!-- Out of the index until the PDF exists. The page offers The Client-Ready
-     Checklist; /assets/downloads/ does not exist, so the delivery link 404s.
-     A live page promising a download it cannot make is worse than no page.
-     Re-index and re-add to sitemap.xml the day the file ships. -->
-<meta name="robots" content="noindex, follow">
+<!-- The localized PDF is available after form submission. -->
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://adsvioagency.com/en/checklist">
 <link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/checklist">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/checklist">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/checklist">
 <link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/checklist">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:url" content="https://adsvioagency.com/en/checklist">
@@ -41,11 +39,22 @@
 <!-- Analytics load from assets/js/consent.js, and only after the visitor
      accepts. Put the GA4 and Meta Pixel IDs in the CONFIG block at the top
      of that file - one place, not one per page. See PLACEHOLDERS.md. -->
+<meta name="twitter:title" content="The Client-Ready Checklist | Adsvio Agency">
+<meta name="twitter:description" content="27 things that decide whether a stranger trusts your business online or clicks away. The same checklist we run on every client before we build anything.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 </head>
 
 <!-- This is a conversion page. No site navigation, nothing in the footer but
      the legal links, and no exit-intent popup - the page already is the offer. -->
 <body data-no-modal>
+<div class="locale-bar"><div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/checklist" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/checklist" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/checklist" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div></div>
+
 
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -127,13 +136,13 @@
     <div class="capture__panel">
       <h2 style="font-size:var(--fs-h3);margin-bottom:var(--s-2)">Where should we send it?</h2>
       <p style="color:var(--ink-soft);font-size:var(--fs-small);margin-bottom:var(--s-4)">
-        One email with the PDF attached. That&rsquo;s the whole transaction.
+        Download the PDF after your request. Keep it and choose your next improvements.
       </p>
 
       <form class="form" name="checklist" method="POST" data-netlify="true"
             netlify-honeypot="company-website" action="/en/thank-you?from=checklist">
         <input type="hidden" name="form-name" value="checklist">
-        <p class="hp">
+        <p class="hp" hidden aria-hidden="true">
           <label>Leave this empty if you are human
             <input name="company-website" tabindex="-1" autocomplete="off">
           </label>
@@ -150,7 +159,7 @@
                  placeholder="you@yourbusiness.com" autocomplete="email" required>
         </div>
 
-        <button class="btn btn--primary btn--lg" type="submit">Send me the checklist</button>
+        <button class="btn btn--primary btn--lg" type="submit">Get the checklist</button>
 
         <p class="form__note" style="text-align:center">
           No spam. Unsubscribe anytime. See our <a href="/en/privacy">privacy policy</a>.
@@ -184,6 +193,7 @@
 </footer>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 

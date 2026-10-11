@@ -9,11 +9,14 @@
 
 <link rel="canonical" href="https://adsvioagency.com/en/about">
 <link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/about">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/about">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/about">
 <link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/about">
-
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:url" content="https://adsvioagency.com/en/about">
 <meta property="og:title" content="About Adsvio | Strategy, design and content">
 <meta property="og:description" content="Adsvio brings strategy, design, content and customer-journey thinking together so serious small businesses look as strong online as they are in real life.">
@@ -50,11 +53,27 @@
   "jobTitle": "Founder",
   "description": "Founder of Adsvio Agency. Originally from Pétion-Ville, Haiti; based in Santo Domingo, Dominican Republic. Five years running projects, content and systems for clients across the US and Canada before founding Adsvio.",
   "image": "https://adsvioagency.com/assets/img/pierre-portrait-1120.jpg",
-  "worksFor": { "@type": "ProfessionalService", "@id": "https://adsvioagency.com/#organization", "name": "Adsvio Agency" },
-  "knowsLanguage": ["en", "fr", "es", "ht"],
-  "homeLocation": { "@type": "Place", "name": "Santo Domingo, Dominican Republic" },
-  "birthPlace": { "@type": "Place", "name": "Pétion-Ville, Haiti" },
-  "sameAs": ["https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"]
+  "worksFor": {
+    "@type": "ProfessionalService",
+    "@id": "https://adsvioagency.com/#organization",
+    "name": "Adsvio Agency"
+  },
+  "knowsLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Santo Domingo, Dominican Republic"
+  },
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Pétion-Ville, Haiti"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"
+  ]
 }
 </script>
 
@@ -63,8 +82,18 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adsvioagency.com/en/" },
-    { "@type": "ListItem", "position": 2, "name": "About", "item": "https://adsvioagency.com/en/about" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://adsvioagency.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://adsvioagency.com/en/about"
+    }
   ]
 }
 </script>
@@ -106,9 +135,10 @@
       <a class="nav__link" href="/en/guides/caribbean-business-online">Guides</a>
     </nav>
     <div class="header__actions">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/about" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/about" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/about" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/about" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
       <a class="btn btn--primary btn--sm" href="/en/start"
          data-event="book_call_click" data-event-where="header">Get my free Visibility Score</a>
@@ -149,9 +179,10 @@
       <svg class="icon icon--sm icon--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp us
     </a>
     <div class="menu__langs">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/about" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/about" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/about" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/about" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
     </div>
   </div>
@@ -471,6 +502,7 @@
   </a>
 </div>
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/modal.js" defer></script>

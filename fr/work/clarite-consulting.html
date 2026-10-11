@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Clarité Consulting : site de consultant en démonstration</title>
+<meta name="description" content="Concept de consultante RH bilingue à Montréal : qualifications, services, ressource et réservation. Démonstration de conception web pour consultants.">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://adsvioagency.com/fr/work/clarite-consulting">
+<link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/work/clarite-consulting">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/work/clarite-consulting">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/work/clarite-consulting">
+<link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/work/clarite-consulting">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Adsvio Agency">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:url" content="https://adsvioagency.com/fr/work/clarite-consulting">
+<meta property="og:title" content="Clarité Consulting : site de consultant en démonstration">
+<meta property="og:description" content="Concept complet de consultante RH bilingue à Montréal : qualifications, services, ressource et réservation.">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<meta name="theme-color" content="#FBFAF8">
+
+<link rel="preload" href="/assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://adsvioagency.com/fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Réalisations",
+      "item": "https://adsvioagency.com/fr/work"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Clarité Consulting",
+      "item": "https://adsvioagency.com/fr/work/clarite-consulting"
+    }
+  ]
+}
+</script>
+<!-- No Person or ProfessionalService schema: Clarité is a fictional practice
+     built to demonstrate the work, and marking it up as real would put a
+     consultant who does not exist into Google's index. -->
+
+<style>
+/* ==========================================================================
+   CLARITÉ CONSULTING - editorial and restrained. Namespaced under .cc.
+
+   Direction: a consultant sells judgement, and judgement is sold by
+   restraint. Where Verdure Kitchen is dark and hungry, this is light, quiet
+   and slow - long measures, a lot of air, one accent used about four times on
+   the whole page.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Newsreader";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/assets/fonts/newsreader-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.cc {
+  --paper:  #FBFAF8;
+  --paper-2:#F2EFE9;
+  --ink:    #16323F;
+  --ink-2:  #5B6875;
+  --rule:   #DFDCD5;
+  --ochre:  #9A6B2F;   /* large type and rules only */
+  --ochre-ink:#855C25; /* accent text under 24px - 5.7:1 on --paper */
+  --ochre-w:#F4EADC;
+
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.68;
+}
+.cc *, .cc *::before, .cc *::after { box-sizing: border-box; }
+.cc h1, .cc h2, .cc h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.012em; line-height: 1.14; color: var(--ink); }
+/* Scoped: a blanket `.cc a` beats `.cc__btn` on specificity and would
+   repaint every button label in the accent colour. */
+.cc p a, .cc__fine2 a { color: var(--ochre-ink); }
+
+.cc__wrap { max-width: 1060px; margin-inline: auto; padding-inline: 28px; }
+@media (max-width: 640px) { .cc__wrap { padding-inline: 20px; } }
+
+.cc__label {
+  font-family: var(--sans); font-size: 11px; font-weight: 600;
+  letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2);
+}
+
+/* ---- Bar ---------------------------------------------------------------- */
+.cc__bar { border-bottom: 1px solid var(--rule); }
+.cc__barin { display: flex; align-items: center; gap: 24px; min-height: 86px; }
+.cc__logo {
+  font-family: var(--serif); font-size: 25px; font-weight: 500;
+  letter-spacing: .01em; color: var(--ink); text-decoration: none;
+}
+.cc__logo i { font-style: italic; color: var(--ochre-ink); }
+.cc__lang { display: flex; gap: 4px; margin-left: auto; font-family: var(--sans); font-size: 12px; }
+.cc__lang a {
+  padding: 5px 10px; border-radius: 2px; text-decoration: none;
+  color: var(--ink-2); letter-spacing: .08em; font-weight: 600;
+}
+.cc__lang a[aria-current] { background: var(--ink); color: var(--paper); }
+.cc__btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 46px; padding: 12px 24px;
+  background: var(--ink); color: var(--paper);
+  font-family: var(--sans); font-size: 14px; font-weight: 500; letter-spacing: .02em;
+  text-decoration: none; border: 1px solid var(--ink); border-radius: 2px;
+  transition: background-color .15s ease, color .15s ease;
+}
+.cc__btn:hover { background: transparent; color: var(--ink); }
+.cc__btn--quiet { background: transparent; color: var(--ink); border-color: var(--rule); }
+.cc__btn--quiet:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+/* ---- Hero --------------------------------------------------------------- */
+.cc__hero { padding-block: clamp(64px, 11vw, 132px) clamp(52px, 8vw, 96px); }
+.cc h1 { font-size: clamp(2.5rem, 6.2vw, 4.5rem); max-width: 17ch; margin-block: 22px 28px; }
+.cc h1 em { font-style: italic; }
+.cc__lede { font-size: clamp(1.125rem, 1.7vw, 1.375rem); color: var(--ink-2); max-width: 52ch; }
+.cc__meta {
+  display: flex; flex-wrap: wrap; gap: 10px 28px;
+  margin-top: 40px; padding-top: 26px; border-top: 1px solid var(--rule);
+  font-family: var(--sans); font-size: 13px; color: var(--ink-2);
+}
+.cc__meta b { color: var(--ink); font-weight: 600; }
+
+/* ---- Sections ----------------------------------------------------------- */
+.cc__section { padding-block: clamp(56px, 9vw, 104px); border-top: 1px solid var(--rule); }
+.cc__section--tint { background: var(--paper-2); border-top: 0; }
+.cc__head { max-width: 44ch; margin-bottom: 52px; }
+.cc__head h2 { font-size: clamp(1.875rem, 3.6vw, 2.75rem); margin-block: 14px 14px; }
+.cc__head p { color: var(--ink-2); }
+
+/* Services as a numbered editorial list - the order is the engagement order */
+.cc__svc { border-top: 1px solid var(--rule); }
+.cc__svc li {
+  display: grid; grid-template-columns: 68px minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: 24px; padding-block: 30px; border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+@media (max-width: 800px) { .cc__svc li { grid-template-columns: 48px minmax(0,1fr); } .cc__svcbody { grid-column: 2; } }
+.cc__num { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .14em; color: var(--ochre-ink); }
+.cc__svcname { font-size: 1.4375rem; }
+.cc__svcbody { color: var(--ink-2); font-size: 1rem; }
+
+/* ---- Credentials -------------------------------------------------------- */
+.cc__split { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: clamp(32px, 6vw, 72px); align-items: start; }
+@media (max-width: 860px) { .cc__split { grid-template-columns: 1fr; } }
+/* TODO: replace with a real portrait, shot against a plain wall in window
+   light. The block below is a stand-in and is not pretending to be a photo. */
+.cc__portrait {
+  aspect-ratio: 4 / 5; border-radius: 2px;
+  background:
+    radial-gradient(70% 55% at 50% 30%, rgba(154,107,47,.24), transparent 66%),
+    linear-gradient(168deg, #E7E2D8 0%, #D3D6D2 52%, #B9C2C2 100%);
+  border: 1px solid var(--rule);
+}
+.cc__creds { list-style: none; padding: 0; margin: 26px 0 0; }
+.cc__creds li { display: grid; grid-template-columns: 14px 1fr; gap: 14px; padding-block: 11px; border-bottom: 1px solid var(--rule); font-size: 1rem; }
+.cc__creds span { color: var(--ochre-ink); }
+
+/* ---- Lead magnet -------------------------------------------------------- */
+.cc__offer {
+  display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(28px, 5vw, 60px); align-items: center;
+  padding: clamp(28px, 5vw, 52px);
+  background: var(--ochre-w); border-radius: 3px;
+}
+@media (max-width: 820px) { .cc__offer { grid-template-columns: 1fr; } }
+.cc__field { display: flex; gap: 10px; }
+@media (max-width: 480px) { .cc__field { flex-direction: column; } }
+.cc__input {
+  flex: 1; min-width: 0; min-height: 50px; padding: 13px 15px;
+  border: 1px solid #D9C6A8; border-radius: 2px; background: var(--paper);
+  font-family: var(--sans); font-size: 16px; color: var(--ink);
+}
+.cc__input::placeholder { color: #9A8E7C; }
+.cc__fine { font-family: var(--sans); font-size: 13px; color: var(--ink-2); margin-top: 12px; }
+
+/* ---- Foot --------------------------------------------------------------- */
+.cc__foot { border-top: 1px solid var(--rule); padding-block: 52px 36px; }
+.cc__footgrid { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 36px; }
+@media (max-width: 760px) { .cc__footgrid { grid-template-columns: 1fr; } }
+.cc__foot h3 { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2); margin-bottom: 14px; }
+.cc__foot li { padding-block: 5px; font-size: 16px; }
+.cc__foot a { color: var(--ink); text-decoration: none; }
+.cc__foot a:hover { color: var(--ochre-ink); }
+.cc__fine2 { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 13px; color: var(--ink-2); }
+
+.cc :focus-visible { outline: 3px solid var(--ochre); outline-offset: 2px; }
+/* localized-mobile-fit */
+@media (max-width: 600px) {
+  .an .an__barin, .cc .cc__barin { gap: 8px; padding-inline: 16px; }
+  .an .an__bar .an__logo { font-size: 17px; letter-spacing: .1em; }
+  .cc .cc__bar .cc__logo { font-size: 20px; }
+  .cc .cc__lang { display: none; }
+  .an .an__bar .an__btn, .cc .cc__bar .cc__btn { padding-inline: 12px; flex-shrink: 0; }
+  .an h2 { font-size: 28px; overflow-wrap: anywhere; }
+  .an .an__section--tint[style] { padding: 20px !important; }
+  .an .an__svc { gap: 8px; }
+  .an .an__svcname { min-width: 0; overflow-wrap: anywhere; }
+  .an .an__svcfill { display: none; }
+  .an .an__svcprice { margin-left: auto; }
+  .cc .cc__offer { padding: 20px; }
+}
+/* end-localized-mobile-fit */
+</style>
+<meta name="twitter:title" content="Clarité Consulting : site de consultant en démonstration">
+<meta name="twitter:description" content="Concept de consultante RH bilingue à Montréal : qualifications, services, ressource et réservation. Démonstration de conception web pour consultants.">
+</head>
+
+<body>
+<div class="locale-bar"><div class="langswitch" role="group" aria-label="Langue du site">
+        <a class="langswitch__item" href="/en/work/clarite-consulting" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/work/clarite-consulting" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/work/clarite-consulting" aria-current="true" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div></div>
+
+
+<a class="skip-link" href="#build">Aller à la démonstration</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="11.2" x2="12" y2="16.5"/><circle cx="12" cy="7.8" r=".95" fill="currentColor" stroke="none"/></symbol>
+  </defs>
+</svg>
+
+
+<div class="demo-note">
+  <div class="container demo-note__inner">
+    <span class="demo-note__tag">
+      <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
+      Projet conceptuel
+    </span>
+    <p class="demo-note__body">
+      <b>Clarité Consulting</b> est une pratique RH bilingue fictive de Montréal, créée par Adsvio pour montrer The Authority Launch. Ce n’est ni une entreprise réelle ni un client.
+    </p>
+    <a class="btn btn--primary btn--sm" href="/fr/offer">Voir les tarifs</a>
+
+    <div class="demo-note__why">
+      <div>
+        <h3>La décision</h3>
+        <p>Le visiteur décide s’il souhaite <em>réserver un appel</em>. La page doit répondre à ses questions et faciliter cette étape.</p>
+      </div>
+      <div>
+        <h3>Le choix visuel</h3>
+        <p>La sobriété communique le jugement : caractères à empattements, espaces généreux et peu d’accents colorés.</p>
+      </div>
+      <div>
+        <h3>Son objectif</h3>
+        <p>Le guide offre une étape utile aux personnes pas encore prêtes pour un appel.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<main class="cc" id="build">
+
+  <header class="cc__bar">
+    <div class="cc__wrap cc__barin">
+      <a class="cc__logo" href="#build">Clarit<i>é</i> Consulting</a>
+      <div class="cc__lang"><a href="/en/work/clarite-consulting" lang="en" data-language="en">EN</a><a href="/es/work/clarite-consulting" lang="es" data-language="es">ES</a><a href="/fr/work/clarite-consulting" lang="fr" data-language="fr" aria-current="true">FR</a></div>
+      <a class="cc__btn" href="#book">Réserver un appel</a>
+    </div>
+  </header>
+
+  <section class="cc__wrap cc__hero">
+    <p class="cc__label">Conseil RH · Montréal · anglais et français</p>
+    <h1>Les conversations difficiles, avec <em>discernement</em>.</h1>
+    <p class="cc__lede">
+      Restructurations, licenciements, plaintes de harcèlement et politiques préventives. Vingt-deux ans dans les milieux de travail québécois, des deux côtés de la table.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
+      <a class="cc__btn" href="#book">Réserver un appel de 30 minutes</a>
+      <a class="cc__btn cc__btn--quiet" href="#services">Mon travail</a>
+    </div>
+    <p class="cc__meta">
+      <span><b>22 ans</b> en RH au Québec</span>
+      <span><b>CRHA</b> agréée</span>
+      <span><b>Bilingue</b>: EN / FR</span>
+      <span><b>Honoraires fixes</b>, convenus avant le départ</span>
+    </p>
+  </section>
+
+  <section class="cc__section" id="services">
+    <div class="cc__wrap">
+      <div class="cc__head">
+        <p class="cc__label">Mon travail</p>
+        <h2>Quatre mandats selon vos besoins.</h2>
+        <p>Beaucoup arrivent pour une enquête urgente; la prévention aurait parfois aidé plus tôt.</p>
+      </div>
+
+      <ol class="cc__svc">
+        <li>
+          <span class="cc__num">01</span>
+          <span class="cc__svcname">Révision des politiques et manuels</span>
+          <span class="cc__svcbody">Vos documents, les exigences québécoises et les écarts, dans un document annoté.</span>
+        </li>
+        <li>
+          <span class="cc__num">02</span>
+          <span class="cc__svcname">Enquêtes</span>
+          <span class="cc__svcbody">Plaintes de harcèlement et d’inconduite examinées par une personne externe, avec documentation rigoureuse.</span>
+        </li>
+        <li>
+          <span class="cc__num">03</span>
+          <span class="cc__svcname">Restructurations et licenciements</span>
+          <span class="cc__svcbody">Séquence, scripts et accompagnement dans la conversation, avec attention à la dignité et au processus.</span>
+        </li>
+        <li>
+          <span class="cc__num">04</span>
+          <span class="cc__svcname">Formation des gestionnaires</span>
+          <span class="cc__svcbody">Séances d’une demi-journée en français, anglais ou les deux pour les gestionnaires concernés.</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="cc__section">
+    <div class="cc__wrap cc__split">
+      <div class="cc__portrait" role="img" aria-label="Portrait illustratif de la consultante fictive"></div>
+      <div>
+        <p class="cc__label">Avec qui vous travailleriez</p>
+        <h2 style="font-size:clamp(1.75rem,3.4vw,2.5rem);margin-block:14px 20px">Vingt-deux ans à accompagner des conversations complexes.</h2>
+        <p style="color:var(--ink-2);max-width:52ch">
+          Quatorze ans à l’interne en fabrication et dans deux réseaux hospitaliers, puis huit en consultation. Une expérience de rédaction des politiques et de leur application difficile.
+        </p>
+        <ul class="cc__creds">
+          <li><span>&middot;</span> CRHA, Ordre des conseillers en ressources humaines agréés</li>
+          <li><span>&middot;</span> M. Sc. en relations industrielles, Université de Montréal</li>
+          <li><span>&middot;</span> Enquêtrice en milieu de travail certifiée (AWI)</li>
+          <li><span>&middot;</span> Travail en français et anglais depuis 2003</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cc__section cc__section--tint">
+    <div class="cc__wrap">
+      <div class="cc__offer">
+        <div>
+          <p class="cc__label">Guide gratuit</p>
+          <h2 style="font-size:clamp(1.625rem,3vw,2.25rem);margin-block:12px 14px">La conversation de licenciement, préparée.</h2>
+          <p style="color:var(--ink-2);max-width:46ch">
+            Neuf pages : quoi dire, quoi éviter, qui doit participer et quatre documents à préparer. Pour le Québec.
+          </p>
+        </div>
+        <div>
+          <!-- A demo form. It goes nowhere: no action, and submission is
+               blocked below so nothing is ever collected from this page. -->
+          <form class="cc__field" onsubmit="return false" aria-label="Obtenir le guide (formulaire de démonstration)">
+            <label class="visually-hidden" for="cc-email">Votre courriel professionnel</label>
+            <input class="cc__input" id="cc-email" type="email" placeholder="vous@entreprise.ca" autocomplete="email">
+            <button class="cc__btn" type="submit">Envoyer</button>
+          </form>
+          <p class="cc__fine">Aucune liste ni séquence. Un courriel avec le PDF.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cc__section" id="book">
+    <div class="cc__wrap" style="max-width:640px;text-align:center">
+      <p class="cc__label">Prochaine étape</p>
+      <h2 style="font-size:clamp(2rem,4.4vw,3rem);margin-block:16px 18px">Trente minutes, sans frais.</h2>
+      <p style="color:var(--ink-2)">
+        Décrivez la situation. Si je peux aider, j’explique comment et à quel prix. Si vous avez besoin d’un avocat, je le dirai aussi.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:28px">
+        <a class="cc__btn" href="#book">Réserver un appel</a>
+        <a class="cc__btn cc__btn--quiet" href="tel:+15145550172">514 555 0172</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="cc__foot">
+    <div class="cc__wrap">
+      <div class="cc__footgrid">
+        <div>
+          <a class="cc__logo" href="#build">Clarit<i>é</i> Consulting</a>
+          <p style="margin-top:12px;color:var(--ink-2);font-size:16px;max-width:32ch">
+            Conseil RH pour employeurs du Québec, en français et anglais.
+          </p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Révision des politiques</a></li>
+            <li><a href="#services">Enquêtes</a></li>
+            <li><a href="#services">Restructuration</a></li>
+            <li><a href="#services">Formation des gestionnaires</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="tel:+15145550172">514 555 0172</a></li>
+            <li>Montréal, Québec</li>
+            <li><a href="#book">Réserver un appel</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="cc__fine2">
+        Clarité Consulting est une pratique fictive. Cette page est un concept d’
+        <a href="/fr/">Adsvio Agency</a>.
+      </p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
+<script src="/assets/js/main.js" defer></script>
+<script src="/assets/js/consent.js" defer></script>
+
+</body>
+</html>

@@ -11,7 +11,10 @@
      into search results as a dead end. Kept out, links still followed. -->
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://adsvioagency.com/en/thank-you">
-
+<link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/thank-you">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/thank-you">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/thank-you">
+<link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/thank-you">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
@@ -29,10 +32,23 @@
 <!-- Analytics load from assets/js/consent.js, and only after the visitor
      accepts. Put the GA4 and Meta Pixel IDs in the CONFIG block at the top
      of that file - one place, not one per page. See PLACEHOLDERS.md. -->
+<meta name="twitter:title" content="Thank you | Adsvio Agency">
+<meta name="twitter:description" content="Your message reached us. We reply within one working day.">
+<meta property="og:title" content="Thank you | Adsvio Agency">
+<meta property="og:description" content="Your message reached us. We reply within one working day.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 </head>
 
 <!-- Never show the exit-intent popup here - they already converted. -->
 <body data-no-modal>
+<div class="locale-bar"><div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/thank-you" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/thank-you" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/thank-you" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div></div>
+
 
 <a class="skip-link" href="#main">Skip to content</a>
 
@@ -68,15 +84,8 @@
       Your message reached us. We read everything ourselves and reply within one working day, usually the same day.
     </p>
 
-    <!-- ======================================================================
-         DOWNLOAD BLOCK - checklist submissions only.
-         TODO: the PDF does not exist yet. Until it does, this block stays
-         hidden and the confirmation email is the only delivery. Put the file
-         at /assets/downloads/adsvio-client-ready-checklist.pdf, then delete
-         the `hidden` attribute below.
-         Tracked in PLACEHOLDERS.md.
-         ====================================================================== -->
-    <p data-download hidden>
+    <!-- Checklist download is available in all three languages. -->
+    <p data-download>
       <a class="btn btn--primary btn--lg"
          href="/assets/downloads/adsvio-client-ready-checklist.pdf"
          download
@@ -134,35 +143,10 @@
 </footer>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
-<script>
-/* Both forms land here. ?from= says which one, so the page can say the right
-   thing and the right conversion event fires. Without the parameter it falls
-   back to the neutral wording already in the HTML. */
-(function () {
-  "use strict";
-  var from = new URLSearchParams(window.location.search).get("from");
-
-  if (from === "checklist") {
-    var title = document.querySelector("[data-title]");
-    var msg = document.querySelector("[data-message]");
-    if (title) title.textContent = "Check your inbox.";
-    if (msg) {
-      msg.textContent = "The Client-Ready Checklist is on its way. If it hasn't arrived in a " +
-        "couple of minutes, look in promotions or spam, and add us to your contacts so the " +
-        "next one lands properly.";
-    }
-  }
-
-  // main.js defines adsvioTrack and loads first (both are deferred, so order
-  // is preserved). Guard anyway.
-  if (window.adsvioTrack) {
-    window.adsvioTrack("form_submit", { form: from || "unknown" });
-    if (from === "checklist") window.adsvioTrack("checklist_download", { step: "requested" });
-  }
-})();
-</script>
+<script src="/assets/js/confirmation.js" defer></script>
 
 </body>
 </html>

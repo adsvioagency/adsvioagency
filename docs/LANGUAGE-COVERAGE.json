@@ -1,0 +1,702 @@
+[
+  {
+    "page": "about.html",
+    "languages": {
+      "en": {
+        "route": "/en/about",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/about",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/about",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "blog/business-not-showing-on-google-maps.html",
+    "languages": {
+      "en": {
+        "route": "/en/blog/business-not-showing-on-google-maps",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/blog/business-not-showing-on-google-maps",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/blog/business-not-showing-on-google-maps",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "blog/how-to-get-more-google-reviews.html",
+    "languages": {
+      "en": {
+        "route": "/en/blog/how-to-get-more-google-reviews",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/blog/how-to-get-more-google-reviews",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/blog/how-to-get-more-google-reviews",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "blog/index.html",
+    "languages": {
+      "en": {
+        "route": "/en/blog/",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/blog/",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/blog/",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "blog/what-to-post-on-instagram-small-business.html",
+    "languages": {
+      "en": {
+        "route": "/en/blog/what-to-post-on-instagram-small-business",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/blog/what-to-post-on-instagram-small-business",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/blog/what-to-post-on-instagram-small-business",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "checklist.html",
+    "languages": {
+      "en": {
+        "route": "/en/checklist",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/checklist",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/checklist",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "contact.html",
+    "languages": {
+      "en": {
+        "route": "/en/contact",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/contact",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/contact",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "for/coaches-consultants.html",
+    "languages": {
+      "en": {
+        "route": "/en/for/coaches-consultants",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/for/coaches-consultants",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/for/coaches-consultants",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "for/home-services.html",
+    "languages": {
+      "en": {
+        "route": "/en/for/home-services",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/for/home-services",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/for/home-services",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "for/local-businesses.html",
+    "languages": {
+      "en": {
+        "route": "/en/for/local-businesses",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/for/local-businesses",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/for/local-businesses",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "for/professional-services.html",
+    "languages": {
+      "en": {
+        "route": "/en/for/professional-services",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/for/professional-services",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/for/professional-services",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "guides/caribbean-business-online.html",
+    "languages": {
+      "en": {
+        "route": "/en/guides/caribbean-business-online",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/guides/caribbean-business-online",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/guides/caribbean-business-online",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "guides/google-business-profile-guide.html",
+    "languages": {
+      "en": {
+        "route": "/en/guides/google-business-profile-guide",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/guides/google-business-profile-guide",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/guides/google-business-profile-guide",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "guides/small-business-website-cost.html",
+    "languages": {
+      "en": {
+        "route": "/en/guides/small-business-website-cost",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/guides/small-business-website-cost",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/guides/small-business-website-cost",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "guides/social-media-system.html",
+    "languages": {
+      "en": {
+        "route": "/en/guides/social-media-system",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/guides/social-media-system",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/guides/social-media-system",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "guides/website-or-instagram.html",
+    "languages": {
+      "en": {
+        "route": "/en/guides/website-or-instagram",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/guides/website-or-instagram",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/guides/website-or-instagram",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "haitian-business-marketing.html",
+    "languages": {
+      "en": {
+        "route": "/en/haitian-business-marketing",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/haitian-business-marketing",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/haitian-business-marketing",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "index.html",
+    "languages": {
+      "en": {
+        "route": "/en/",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "offer.html",
+    "languages": {
+      "en": {
+        "route": "/en/offer",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/offer",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/offer",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "privacy.html",
+    "languages": {
+      "en": {
+        "route": "/en/privacy",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/privacy",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/privacy",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/branding-logo-design.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/branding-logo-design",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/branding-logo-design",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/branding-logo-design",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/google-business-profile.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/google-business-profile",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/google-business-profile",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/google-business-profile",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/index.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/local-seo.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/local-seo",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/local-seo",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/local-seo",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/social-media-management.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/social-media-management",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/social-media-management",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/social-media-management",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "services/website-design.html",
+    "languages": {
+      "en": {
+        "route": "/en/services/website-design",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/services/website-design",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/services/website-design",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "south-florida.html",
+    "languages": {
+      "en": {
+        "route": "/en/south-florida",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/south-florida",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/south-florida",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "start.html",
+    "languages": {
+      "en": {
+        "route": "/en/start",
+        "status": "complete",
+        "indexable": false
+      },
+      "es": {
+        "route": "/es/start",
+        "status": "complete",
+        "indexable": false
+      },
+      "fr": {
+        "route": "/fr/start",
+        "status": "complete",
+        "indexable": false
+      }
+    }
+  },
+  {
+    "page": "terms.html",
+    "languages": {
+      "en": {
+        "route": "/en/terms",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/terms",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/terms",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "thank-you-booking.html",
+    "languages": {
+      "en": {
+        "route": "/en/thank-you-booking",
+        "status": "complete",
+        "indexable": false
+      },
+      "es": {
+        "route": "/es/thank-you-booking",
+        "status": "complete",
+        "indexable": false
+      },
+      "fr": {
+        "route": "/fr/thank-you-booking",
+        "status": "complete",
+        "indexable": false
+      }
+    }
+  },
+  {
+    "page": "thank-you.html",
+    "languages": {
+      "en": {
+        "route": "/en/thank-you",
+        "status": "complete",
+        "indexable": false
+      },
+      "es": {
+        "route": "/es/thank-you",
+        "status": "complete",
+        "indexable": false
+      },
+      "fr": {
+        "route": "/fr/thank-you",
+        "status": "complete",
+        "indexable": false
+      }
+    }
+  },
+  {
+    "page": "work/atelier-nord.html",
+    "languages": {
+      "en": {
+        "route": "/en/work/atelier-nord",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/work/atelier-nord",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/work/atelier-nord",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "work/clarite-consulting.html",
+    "languages": {
+      "en": {
+        "route": "/en/work/clarite-consulting",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/work/clarite-consulting",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/work/clarite-consulting",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "work/verdure-kitchen.html",
+    "languages": {
+      "en": {
+        "route": "/en/work/verdure-kitchen",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/work/verdure-kitchen",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/work/verdure-kitchen",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  },
+  {
+    "page": "work.html",
+    "languages": {
+      "en": {
+        "route": "/en/work",
+        "status": "complete",
+        "indexable": true
+      },
+      "es": {
+        "route": "/es/work",
+        "status": "complete",
+        "indexable": true
+      },
+      "fr": {
+        "route": "/fr/work",
+        "status": "complete",
+        "indexable": true
+      }
+    }
+  }
+]

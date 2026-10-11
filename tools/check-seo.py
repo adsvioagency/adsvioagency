@@ -62,7 +62,7 @@ def schema_nodes(value):
             yield from schema_nodes(child)
 
 
-pages = [Page(p) for lang in ("en", "fr") for p in sorted((ROOT / lang).rglob("*.html"))
+pages = [Page(p) for lang in ("en", "es", "fr") for p in sorted((ROOT / lang).rglob("*.html"))
          if not p.name.startswith("_")]
 indexable = {p.canon[0]: p for p in pages if p.indexable and p.canon}
 sitemap = ET.parse(ROOT / "sitemap.xml")
@@ -94,10 +94,6 @@ for page in pages:
         url = attrs.get("src", "") if tag in ("img", "script") else attrs.get("href", "") if tag in ("a", "link") else ""
         if url.startswith("/") and not url.startswith("//"):
             path = urlsplit(url).path
-            # Known pre-existing hidden download links, pending owner-supplied files.
-            if path in ("/assets/downloads/adsvio-client-ready-checklist.pdf",
-                        "/assets/downloads/adsvio-liste-verification.pdf"):
-                continue
             check(local_file(path) is not None, f"{rel}: missing internal target {path}")
             if tag == "a" and page.indexable and ORIGIN + path in indexable and ORIGIN + path != expected:
                 incoming[ORIGIN + path] += 1
@@ -119,7 +115,7 @@ for page in pages:
                 for item in node["itemListElement"]:
                     check(item["item"] in indexable, f"{rel}: breadcrumb target not indexable")
                     if item.get("name") == "Services":
-                        check(item["item"] == ORIGIN + "/en/services/", f"{rel}: stale services breadcrumb")
+                        check(item["item"] == ORIGIN + "/" + rel.split('/')[0] + "/services/", f"{rel}: stale services breadcrumb")
             if node.get("@type") == "FAQPage":
                 visible = []
                 for detail in re.findall(r'<details class="faq__item[^>]*>(.*?)</details>', source, re.S):
@@ -145,7 +141,8 @@ for path in ("/PLACEHOLDERS.md", "/SHOT-LIST.md", "/SEO-AI-DISCOVERABILITY.md",
           f"Internal file not protected by first matching rule: {path}")
 for rule in rules:
     if rule["from"] in ("/services", "/services.html"):
-        check(rule["to"] == "/en/services/" and rule.get("status") == 301,
+        lang = rule.get('query',{}).get('lang','en')
+        check(rule["to"] == "/" + lang + "/services/" and rule.get("status") == 301,
               "Legacy services redirect does not target overview")
 for node in sitemap.findall("s:url", ns):
     url = node.find("s:loc", ns).text
@@ -156,7 +153,6 @@ robots = (ROOT / "robots.txt").read_text()
 check("Sitemap: " + ORIGIN + "/sitemap.xml" in robots, "Sitemap missing from robots")
 check("Disallow: /" not in robots, "Review crawler access restriction")
 print(f"Checked {len(pages)} pages, {len(locations)} sitemap URLs, JSON-LD, links, alternates and routing configuration.")
-print("Known exclusions: two hidden PDF links awaiting actual checklist assets.")
 for error in errors:
     print("FAIL:", error)
 print(f"Result: {len(errors)} errors")

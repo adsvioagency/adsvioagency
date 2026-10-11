@@ -196,6 +196,7 @@
   height: 30px;
   width: auto;
 }
+.header .wordmark img, .qhead .wordmark img { height: 26px; }
 
 .nav {
   display: flex;
@@ -243,8 +244,12 @@
   border-radius: var(--r-pill);
 }
 .langswitch__item {
-  display: block;
-  padding: 5px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 5px 8px;
   border-radius: var(--r-pill);
   font-size: 12px;
   font-weight: 600;
@@ -311,11 +316,45 @@ body.is-locked { overflow: hidden; }
 
 @media (max-width: 1040px) {
   .nav { display: none; }
-  .header__actions .btn--primary,
-  .header__actions .langswitch { display: none; }
+  .header__actions .btn--primary { display: none; }
   .menu-toggle { display: inline-flex; }
   .header__inner { justify-content: space-between; }
   .header__actions { margin-left: auto; }
+}
+/* Long localized navigation uses the existing mobile menu sooner. */
+@media (max-width: 1200px) {
+  html:not([lang="en"]) .nav { display: none; }
+  html:not([lang="en"]) .header__actions .btn--primary { display: none; }
+  html:not([lang="en"]) .menu-toggle { display: inline-flex; }
+  html:not([lang="en"]) .header__actions { margin-left: auto; }
+}
+@media (max-width: 420px) {
+  .header__inner { gap: 4px; }
+  .header__actions { gap: 4px; }
+  .header .wordmark img, .qhead .wordmark img { height: 24px; }
+  .header__inner.container { padding-inline: 12px; }
+}
+@media (max-width: 360px) {
+  .header .wordmark img, .qhead .wordmark img { height: 20px; }
+  .header__inner.container { padding-inline: 8px; gap: 2px; }
+  .header__actions { gap: 2px; }
+  .qhead { padding-inline: 12px; }
+}
+.locale-bar { display: flex; justify-content: flex-end; padding: 12px var(--gutter); background: var(--paper); }
+.locale-bar .langswitch { width: max-content; }
+html[lang="es"] .langproof, html[lang="fr"] .langproof { white-space: normal; }
+html[lang="es"] .langproof__viewport, html[lang="fr"] .langproof__viewport { height: auto; }
+html:not([lang="en"]) .btn { white-space: normal; text-align: center; }
+.no-js .header__inner { flex-wrap: wrap; padding-block: 12px; }
+.no-js .nav { display: flex; flex-wrap: wrap; order: 3; width: 100%; }
+.no-js .menu-toggle { display: none; }
+@media (max-width: 600px) {
+  html:not([lang="en"]) h1 { font-size: clamp(2rem, 8vw, 2.65rem); overflow-wrap: anywhere; }
+  html:not([lang="en"]) .hero { padding-top: 32px; }
+  html:not([lang="en"]) .hero h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
+  html:not([lang="en"]) .hero .langproof { font-size: clamp(1.75rem, 7vw, 2.3rem); }
+  html:not([lang="en"]) .hero__eyebrow .langs { display: none; }
+  html:not([lang="en"]) .hero__lead { font-size: 17px; }
 }
 
 
@@ -1577,6 +1616,9 @@ a.card:hover, .card--link:hover {
 .stickybar .btn { flex: 0 0 auto; }
 .stickybar .btn--primary  { flex: 6; }
 .stickybar .btn--whatsapp { flex: 4; }
+html:not([lang="en"]) .stickybar { padding-inline: 12px; }
+html:not([lang="en"]) .stickybar .btn { min-width: 0; padding-inline: 10px; gap: 8px; }
+html:not([lang="en"]) .stickybar .icon { flex: none; }
 
 @media (max-width: 767px) {
   .stickybar { display: flex; }

@@ -4,14 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Votre score de visibilit&eacute; | Adsvio Agency</title>
-<meta name="description" content="Quatre questions rapides, puis choisissez une heure. Environ 30 secondes.">
+<title> Adsvio Agency|Obtenez votre score de visibilité gratuit | Adsvio Agency</title>
+<meta name="description" content="Quatre questions courtes, puis une heure à choisir. Environ 30 secondes.">
 
 <!-- A step inside a funnel has nothing to rank for and would leak into search
      as a dead end. Out of the index and out of sitemap.xml. -->
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://adsvioagency.com/fr/start">
-
+<link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/start">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/start">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/start">
+<link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/start">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
@@ -23,6 +26,13 @@
 <link rel="stylesheet" href="/assets/css/tokens.css">
 <link rel="stylesheet" href="/assets/css/base.css">
 <link rel="stylesheet" href="/assets/css/components.css">
+<meta name="twitter:title" content=" Adsvio Agency|Obtenez votre score de visibilité gratuit | Adsvio Agency">
+<meta name="twitter:description" content="Quatre questions courtes, puis une heure à choisir. Environ 30 secondes.">
+<meta property="og:title" content=" Adsvio Agency|Obtenez votre score de visibilité gratuit | Adsvio Agency">
+<meta property="og:description" content="Quatre questions courtes, puis une heure à choisir. Environ 30 secondes.">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
 </head>
 
 <body class="qbody" data-no-modal>
@@ -35,14 +45,15 @@
   <a class="wordmark" href="/fr/" aria-label="Adsvio Agency">
     <img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="" decoding="async">
   </a>
-  <div class="langswitch">
-    <a class="langswitch__item" href="/en/start" hreflang="en" lang="en">EN</a>
-    <a class="langswitch__item" href="/fr/start" aria-current="true" hreflang="fr" lang="fr">FR</a>
-  </div>
+  <div class="langswitch" role="group" aria-label="Langue du site">
+        <a class="langswitch__item" href="/en/start" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/start" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/start" aria-current="true" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div>
 </header>
 
 <main class="qmain">
-  <h1 class="visually-hidden">Obtenez votre score de visibilit&eacute;</h1>
+  <h1 class="visually-hidden">Obtenez votre score de visibilité gratuit</h1>
 
   <div class="qcard">
 
@@ -58,22 +69,23 @@
     <form id="qform" class="qform" name="qualifier" method="POST"
           data-netlify="true" netlify-honeypot="company-website"
           action="/fr/thank-you-booking" data-qualifier>
+<input type="hidden" name="language" value="fr">
       <input type="hidden" name="form-name" value="qualifier">
-      <p class="hp">
-        <label>Leave this empty if you are human
+      <p class="hp" hidden aria-hidden="true">
+        <label>Laissez ce champ vide si vous êtes une personne
           <input name="company-website" tabindex="-1" autocomplete="off">
         </label>
       </p>
 
       <fieldset class="qstep" data-step="1">
-        <legend class="qstep__q">Quel genre d&rsquo;entreprise dirigez-vous&nbsp;?</legend>
+        <legend class="qstep__q">Quel type d’entreprise dirigez-vous?</legend>
           <label class="qopt">
             <input type="radio" name="biztype" value="coach">
             <span class="qopt__label">Coach, consultant ou marque personnelle</span>
           </label>
           <label class="qopt">
             <input type="radio" name="biztype" value="local">
-            <span class="qopt__label">Commerce local : salon, restaurant, clinique, boutique, bureau</span>
+            <span class="qopt__label">Entreprise locale : salon, restaurant, clinique, commerce ou bureau</span>
           </label>
           <label class="qopt">
             <input type="radio" name="biztype" value="store">
@@ -81,20 +93,20 @@
           </label>
           <label class="qopt">
             <input type="radio" name="biztype" value="other">
-            <span class="qopt__label">Autre chose</span>
+            <span class="qopt__label">Autre activité</span>
           </label>
       </fieldset>
 
       <fieldset class="qstep" data-step="2" data-advance="manual">
-        <legend class="qstep__q">Qu&rsquo;avez-vous en ce moment&nbsp;?</legend>
-        <p class="qstep__hint">Cochez tout ce qui s&rsquo;applique.</p>
+        <legend class="qstep__q">Qu’avez-vous actuellement?</legend>
+        <p class="qstep__hint">Cochez toutes les réponses pertinentes.</p>
           <label class="qopt">
             <input type="checkbox" name="has" value="website">
             <span class="qopt__label">Un site web</span>
           </label>
           <label class="qopt">
             <input type="checkbox" name="has" value="gbp">
-            <span class="qopt__label">Une fiche Google</span>
+            <span class="qopt__label">Un profil Google</span>
           </label>
           <label class="qopt">
             <input type="checkbox" name="has" value="social">
@@ -102,20 +114,20 @@
           </label>
           <label class="qopt">
             <input type="checkbox" name="has" value="brand">
-            <span class="qopt__label">Un logo ou une marque</span>
+            <span class="qopt__label">Un logo ou une identité</span>
           </label>
           <label class="qopt">
             <input type="checkbox" name="has" value="none" data-exclusive>
-            <span class="qopt__label">Rien de tout cela</span>
+            <span class="qopt__label">Rien de tout cela pour le moment</span>
           </label>
         <button class="btn btn--primary qstep__continue" type="button" data-continue>Continuer</button>
       </fieldset>
 
       <fieldset class="qstep" data-step="3">
-        <legend class="qstep__q">O&ugrave; est votre entreprise&nbsp;?</legend>
+        <legend class="qstep__q">Où est votre entreprise?</legend>
           <label class="qopt">
             <input type="radio" name="location" value="us">
-            <span class="qopt__label">&Eacute;tats-Unis</span>
+            <span class="qopt__label">États-Unis</span>
           </label>
           <label class="qopt">
             <input type="radio" name="location" value="ca">
@@ -123,15 +135,15 @@
           </label>
           <label class="qopt">
             <input type="radio" name="location" value="do">
-            <span class="qopt__label">R&eacute;publique dominicaine</span>
+            <span class="qopt__label">République dominicaine</span>
           </label>
           <label class="qopt">
             <input type="radio" name="location" value="ht">
-            <span class="qopt__label">Ha&iuml;ti</span>
+            <span class="qopt__label">Haïti</span>
           </label>
           <label class="qopt">
             <input type="radio" name="location" value="carib">
-            <span class="qopt__label">Ailleurs dans les Cara&iuml;bes</span>
+            <span class="qopt__label">Ailleurs dans les Caraïbes</span>
           </label>
           <label class="qopt">
             <input type="radio" name="location" value="other">
@@ -140,10 +152,10 @@
       </fieldset>
 
       <fieldset class="qstep" data-step="4" data-advance="manual">
-        <legend class="qstep__q">Derni&egrave;re &eacute;tape : o&ugrave; envoyons-nous votre Carte&nbsp;?</legend>
+        <legend class="qstep__q">Dernière étape : où envoyer votre fiche?</legend>
         <div class="qfields">
           <div class="field">
-            <label for="q-first">Pr&eacute;nom</label>
+            <label for="q-first">Prénom</label>
             <input class="input" id="q-first" name="firstname" type="text"
                    autocomplete="given-name" required>
           </div>
@@ -153,8 +165,8 @@
                    autocomplete="email" required>
           </div>
         </div>
-        <button class="btn btn--primary btn--lg qstep__submit" type="submit" data-submit>Voir les disponibilit&eacute;s &rarr;</button>
-        <p class="qfine">Nous envoyons votre Carte de visibilit&eacute; dans les 48 heures suivant l&rsquo;appel. Aucun pourriel, aucune revente de liste, d&eacute;sabonnement en tout temps.</p>
+        <button class="btn btn--primary btn--lg qstep__submit" type="submit" data-submit>Voir les disponibilités →</button>
+        <p class="qfine">Votre fiche arrive sous 48 heures après l’appel. Sans pourriel ni vente de liste; désabonnement possible.</p>
       </fieldset>
     </form>
 
@@ -164,11 +176,12 @@
        exactly who a form loses. It will get used, and that is fine. -->
   <p class="qskip">
     <a href="https://tidycal.com/adsvioagency/30-minute-meeting"
-       data-skip data-event="book_call_click" data-event-where="qualifier_skip">Je pr&eacute;f&egrave;re simplement choisir une heure &rarr;</a>
+       data-skip data-event="book_call_click" data-event-where="qualifier_skip">Je préfère choisir une heure directement →</a>
   </p>
 </main>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/qualifier.js" defer></script>

@@ -48,6 +48,9 @@ EXCLUDE = {"index.html", "404.html", "en/start.html", "fr/start.html",
 # links back into the site. Both languages must match each other, which is
 # checked below rather than skipped.
 MINIMAL_CHROME = {"en/thank-you.html", "fr/thank-you.html"}
+for language in ('es', 'fr'):
+    EXCLUDE.update(language + '/' + r[3:] for r in list(EXCLUDE) if r.startswith('en/'))
+MINIMAL_CHROME.add('es/thank-you.html')
 
 REGIONS = {
     "header": (r"<header class=\"header\"[^>]*>", r"</header>"),
@@ -96,7 +99,7 @@ def main():
     problems = 0
     for name in ("header", "footer"):
         # Compare each language family against its own reference page.
-        for lang, ref_rel in (("en/", "en/index.html"), ("fr/", "fr/index.html")):
+        for lang, ref_rel in (("en/", "en/index.html"), ("es/", "es/index.html"), ("fr/", "fr/index.html")):
             ref_src = dict(pages).get(ref_rel)
             if ref_src is None:
                 continue
@@ -125,11 +128,10 @@ def main():
     # The two minimal-chrome pages are exempt from the sitewide footer, but not
     # from each other - that mismatch is exactly how the languages drift apart.
     mins = [(r, s) for r, s in pages if r in MINIMAL_CHROME]
-    if len(mins) == 2:
-        a, b = [normalise(region(s, "footer") or "") for _, s in mins]
+    if len(mins) == 3:
         # Compare structure, not words: the copy is translated, the shape is not.
-        shape = lambda t: re.sub(r"/(en|fr)/", "/LANG/", re.sub(r">[^<]+<", "><", t))
-        if shape(a) != shape(b):
+        shape = lambda t: re.sub(r"/(en|es|fr)/", "/LANG/", re.sub(r">[^<]+<", "><", t))
+        if len({shape(normalise(region(s,'footer') or '')) for _,s in mins}) != 1:
             print("  ! %s and %s have differently shaped minimal footers"
                   % (mins[0][0], mins[1][0]))
             problems += 1
@@ -139,7 +141,7 @@ def main():
         print("%d drift(s). The header and footer are duplicated markup by design - " % problems)
         print("fix the odd page out, or update every page if the reference changed.")
         return 1
-    print("Header and footer are identical across every page, in both languages.")
+    print("Header and footer are consistent across all three languages.")
     return 0
 
 

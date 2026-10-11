@@ -11,7 +11,10 @@
      as a dead end. Out of the index and out of sitemap.xml. -->
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://adsvioagency.com/en/start">
-
+<link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/start">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/start">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/start">
+<link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/start">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
@@ -23,6 +26,13 @@
 <link rel="stylesheet" href="/assets/css/tokens.css">
 <link rel="stylesheet" href="/assets/css/base.css">
 <link rel="stylesheet" href="/assets/css/components.css">
+<meta name="twitter:title" content="Get your free Visibility Score | Adsvio Agency">
+<meta name="twitter:description" content="Four quick questions, then pick a time. Takes about 30 seconds.">
+<meta property="og:title" content="Get your free Visibility Score | Adsvio Agency">
+<meta property="og:description" content="Four quick questions, then pick a time. Takes about 30 seconds.">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 </head>
 
 <body class="qbody" data-no-modal>
@@ -35,10 +45,11 @@
   <a class="wordmark" href="/en/" aria-label="Adsvio Agency">
     <img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="" decoding="async">
   </a>
-  <div class="langswitch">
-    <a class="langswitch__item" href="/fr/start" hreflang="fr" lang="fr">FR</a>
-    <a class="langswitch__item" href="/en/start" aria-current="true" hreflang="en" lang="en">EN</a>
-  </div>
+  <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/start" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/start" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/start" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div>
 </header>
 
 <main class="qmain">
@@ -59,7 +70,7 @@
           data-netlify="true" netlify-honeypot="company-website"
           action="/en/thank-you-booking" data-qualifier>
       <input type="hidden" name="form-name" value="qualifier">
-      <p class="hp">
+      <p class="hp" hidden aria-hidden="true">
         <label>Leave this empty if you are human
           <input name="company-website" tabindex="-1" autocomplete="off">
         </label>
@@ -169,6 +180,7 @@
 </main>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/qualifier.js" defer></script>

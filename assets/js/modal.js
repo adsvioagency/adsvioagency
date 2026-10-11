@@ -14,10 +14,8 @@
 (function () {
   "use strict";
 
-  /* OFF until The Client-Ready Checklist actually exists. The modal collects
-     emails for a download we cannot deliver, which is the fastest way to lose
-     a list before you have one. Flip to true the day the PDF ships - the rest
-     of this file is untouched and still works. */
+  /* Remains disabled. The checklist is available through the existing page;
+     this project does not introduce an exit-intent interruption. */
   var EXIT_MODAL_ENABLED = false;
   if (!EXIT_MODAL_ENABLED) return;
   if (document.body.hasAttribute("data-no-modal")) return;
@@ -37,34 +35,39 @@
      visible copy, so there is nothing left to leak.
      ---------------------------------------------------------------------- */
 
+  var LANG = (document.documentElement.lang || 'en').split('-')[0];
+  var COPY = {
+    en: ['Close','Free download','The Client-Ready Checklist','27 practical checks for a clearer online presence.','A guide to review your website, search, social profiles and contact path.','Leave this empty if you are human','Your email address','you@yourbusiness.com','Get the checklist','No spam. Unsubscribe anytime.','No thanks'],
+    es: ['Cerrar','Descarga gratuita','Lista para preparar tu negocio en internet','27 puntos para una presencia más clara en internet.','Revisa tu web, Google, redes y camino de contacto.','Deja este campo vacío si eres una persona','Tu correo electrónico','tu@tunegocio.com','Obtener la lista','Sin spam. Puedes darte de baja.','No, gracias'],
+    fr: ['Fermer','Téléchargement gratuit','Votre liste de vérification en ligne','27 points pour une présence en ligne plus claire.','Examinez site, recherche, profils sociaux et contact.','Laissez ce champ vide si vous êtes une personne','Votre adresse courriel','vous@entreprise.com','Obtenir la liste','Sans pourriel. Désabonnement possible.','Non, merci']
+  }[LANG];
   var MARKUP =
     '<div class="modal" id="checklist-modal" role="dialog" aria-modal="true"' +
     '     aria-labelledby="checklist-title" hidden>' +
     '  <div class="modal__panel">' +
     '    <button class="modal__close" type="button">' +
-    '      <span class="visually-hidden">Close</span>' +
+    '      <span class="visually-hidden">' + COPY[0] + '</span>' +
     '      <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>' +
     '    </button>' +
-    '    <p class="eyebrow eyebrow--mango">Free download</p>' +
-    '    <h2 id="checklist-title">The Client-Ready Checklist</h2>' +
-    '    <p class="modal__sub">27 things that decide whether a stranger trusts' +
-    '       your business or clicks away.</p>' +
-    '    <p class="modal__provenance">The same checklist we run on every client' +
-    '       before we build anything.</p>' +
+    '    <p class="eyebrow eyebrow--mango">' + COPY[1] + '</p>' +
+    '    <h2 id="checklist-title">' + COPY[2] + '</h2>' +
+    '    <p class="modal__sub">' + COPY[3] + '</p>' +
+    '    <p class="modal__provenance">' + COPY[4] + '</p>' +
     '    <form name="checklist" method="POST" data-netlify="true"' +
-    '          netlify-honeypot="company-website" action="/en/thank-you?from=checklist">' +
+    '          netlify-honeypot="company-website" action="/' + LANG + '/thank-you?from=checklist">' +
     '      <input type="hidden" name="form-name" value="checklist">' +
-    '      <p class="hp"><label>Leave this empty if you are human' +
+    '      <input type="hidden" name="language" value="' + LANG + '">' +
+    '      <p class="hp"><label>' + COPY[5] +
     '        <input name="company-website" tabindex="-1" autocomplete="off"></label></p>' +
     '      <div class="modal__form">' +
-    '        <label class="visually-hidden" for="checklist-email">Your email address</label>' +
+    '        <label class="visually-hidden" for="checklist-email">' + COPY[6] + '</label>' +
     '        <input class="input" id="checklist-email" type="email" name="email"' +
-    '               placeholder="you@yourbusiness.com" autocomplete="email" required>' +
-    '        <button class="btn btn--primary" type="submit">Send it to me</button>' +
+    '               placeholder="' + COPY[7] + '" autocomplete="email" required>' +
+    '        <button class="btn btn--primary" type="submit">' + COPY[8] + '</button>' +
     '      </div>' +
-    '      <p class="modal__fine">No spam. Unsubscribe anytime.</p>' +
+    '      <p class="modal__fine">' + COPY[9] + '</p>' +
     '    </form>' +
-    '    <button class="modal__decline" type="button">No thanks, I’m good</button>' +
+    '    <button class="modal__decline" type="button">' + COPY[10] + '</button>' +
     '  </div>' +
     '</div>';
 

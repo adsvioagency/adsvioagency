@@ -150,33 +150,9 @@
 # force = true so the rule wins even when a real file exists at that path.
 # =============================================================================
 
-[[redirects]]
-  from = "/"
-  query = { lang = "en" }
-  to = "/en/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/"
-  query = { lang = "fr" }
-  to = "/fr/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/index.html"
-  query = { lang = "en" }
-  to = "/en/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/index.html"
-  query = { lang = "fr" }
-  to = "/fr/"
-  status = 301
-  force = true
+# Neutral root and historical root ?lang= URLs are handled by the root-only
+# language edge function using temporary, uncached redirects. Form POSTs pass
+# through. No static permanent redirect may override that visitor decision.
 
 [[redirects]]
   from = "/about"
@@ -188,7 +164,7 @@
 [[redirects]]
   from = "/about"
   query = { lang = "fr" }
-  to = "/en/about"
+  to = "/fr/about"
   status = 301
   force = true
 
@@ -202,7 +178,7 @@
 [[redirects]]
   from = "/about.html"
   query = { lang = "fr" }
-  to = "/en/about"
+  to = "/fr/about"
   status = 301
   force = true
 
@@ -216,7 +192,7 @@
 [[redirects]]
   from = "/services"
   query = { lang = "fr" }
-  to = "/en/services/"
+  to = "/fr/services/"
   status = 301
   force = true
 
@@ -230,7 +206,7 @@
 [[redirects]]
   from = "/services.html"
   query = { lang = "fr" }
-  to = "/en/services/"
+  to = "/fr/services/"
   status = 301
   force = true
 
@@ -262,29 +238,15 @@
   status = 301
   force = true
 
-# NOTE ON ?lang=fr
-# /fr/ covers the conversion path: home, offer and contact. Those three
-# parameters now land on their French equivalents. The remaining two,
-# /about?lang=fr and /services?lang=fr, still go to English, because no
-# French about or services page exists; services lands on the English overview.
-# Point them at /fr/ equivalents as those pages are built.
+# All public language routes now have equivalent pages.
 
 
 # =============================================================================
 # 2. LANGUAGE ROOT
 # =============================================================================
 
-[[redirects]]
-  from = "/"
-  to = "/en/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/index.html"
-  to = "/en/"
-  status = 301
-  force = true
+# Inline config in netlify/edge-functions/language.js scopes the function
+# to / and /index.html. On error, the static language chooser is served.
 
 
 # =============================================================================

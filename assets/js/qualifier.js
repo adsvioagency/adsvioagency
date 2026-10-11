@@ -52,6 +52,12 @@
   var bar = document.querySelector("[data-progress]");
   var segs = bar ? Array.prototype.slice.call(bar.querySelectorAll("span")) : [];
   var current = 0;
+  var language = document.documentElement.lang.split("-")[0];
+  var progressCopy = {
+    en: function (n, total) { return "Step " + n + " of " + total; },
+    es: function (n, total) { return "Paso " + n + " de " + total; },
+    fr: function (n, total) { return "Étape " + n + " sur " + total; }
+  };
 
   function $(s, c) { return (c || document).querySelector(s); }
   function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
@@ -89,7 +95,7 @@
     segs.forEach(function (s, i) { s.classList.toggle("is-done", i <= current); });
     if (bar) {
       bar.setAttribute("aria-valuenow", String(current + 1));
-      bar.setAttribute("aria-valuetext", "Step " + (current + 1) + " of " + steps.length);
+      bar.setAttribute("aria-valuetext", progressCopy[language](current + 1, steps.length));
     }
 
     // Move focus to the new question so the screen change is announced.

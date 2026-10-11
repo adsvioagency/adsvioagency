@@ -211,11 +211,8 @@
     var PHRASES = [
       { code: "en", lang: "en",    text: "Let the world see it." },
       { code: "fr", lang: "fr",    text: "Que le monde le voie." },
-      { code: "es", lang: "es",    text: "Que el mundo lo vea." },
-      { code: "kr", lang: "ht",    text: "Kite mond lan we l." }
+      { code: "es", lang: "es",    text: "Que el mundo lo vea." }
     ];
-    // Kreyol carries a grave accent that must survive minification untouched.
-    PHRASES[3].text = "Kite mond lan wè l.";
 
     var HOLD = 2600;   // brief: auto-cycle every 2.6s
     var WIPE = 460;    // matches --dur-lang

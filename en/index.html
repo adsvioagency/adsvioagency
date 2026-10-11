@@ -9,12 +9,13 @@
 
 <link rel="canonical" href="https://adsvioagency.com/en/">
 <link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/">
 <link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/">
 <link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
 <meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:url" content="https://adsvioagency.com/en/">
 <meta property="og:title" content="Websites, Search &amp; Social Media | Adsvio Agency">
@@ -56,8 +57,17 @@
   "telephone": "+1-786-758-9680",
   "logo": "https://adsvioagency.com/assets/img/logo-adsvio.png",
   "contactPoint": [
-    { "@type": "ContactPoint", "contactType": "Calls and text messages", "telephone": "+1-786-758-9680" },
-    { "@type": "ContactPoint", "contactType": "WhatsApp", "telephone": "+1-829-592-7303", "url": "https://wa.me/18295927303" }
+    {
+      "@type": "ContactPoint",
+      "contactType": "Calls and text messages",
+      "telephone": "+1-786-758-9680"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "WhatsApp",
+      "telephone": "+1-829-592-7303",
+      "url": "https://wa.me/18295927303"
+    }
   ],
   "founder": {
     "@type": "Person",
@@ -65,7 +75,9 @@
     "name": "Pierre Runald Février",
     "jobTitle": "Founder",
     "image": "https://adsvioagency.com/assets/img/pierre-founder.jpg",
-    "worksFor": { "@id": "https://adsvioagency.com/#organization" },
+    "worksFor": {
+      "@id": "https://adsvioagency.com/#organization"
+    },
     "sameAs": "https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"
   },
   "address": {
@@ -76,19 +88,46 @@
     "addressCountry": "DO"
   },
   "areaServed": [
-    { "@type": "Country", "name": "United States" },
-    { "@type": "Country", "name": "Canada" },
-    { "@type": "Country", "name": "Dominican Republic" },
-    { "@type": "Country", "name": "Haiti" },
-    { "@type": "Place",   "name": "Caribbean" }
+    {
+      "@type": "Country",
+      "name": "United States"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    {
+      "@type": "Country",
+      "name": "Dominican Republic"
+    },
+    {
+      "@type": "Country",
+      "name": "Haiti"
+    },
+    {
+      "@type": "Place",
+      "name": "Caribbean"
+    }
   ],
-  "knowsLanguage": ["en", "fr", "es", "ht"],
-  "openingHoursSpecification": [{
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "18:00"
-  }],
+  "knowsLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
   "sameAs": [
     "https://www.instagram.com/adsvio.agency/",
     "https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"
@@ -215,9 +254,8 @@
   ],
   "availableLanguage": [
     "en",
-    "fr",
     "es",
-    "ht"
+    "fr"
   ],
   "offers": {
     "@type": "Offer",
@@ -237,6 +275,7 @@
   "name": "Adsvio Agency",
   "inLanguage": [
     "en",
+    "es",
     "fr"
   ],
   "publisher": {
@@ -300,9 +339,10 @@
     </nav>
 
     <div class="header__actions">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
       <a class="btn btn--primary btn--sm" href="/en/start"
          data-event="book_call_click" data-event-where="header">Get my free Visibility Score</a>
@@ -347,9 +387,10 @@
       WhatsApp us
     </a>
     <div class="menu__langs">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
     </div>
   </div>
@@ -368,7 +409,7 @@
       <p class="hero__eyebrow">
         <span>Online presence for small business</span>
         <span class="dot" aria-hidden="true"></span>
-        <span class="langs">EN &middot; FR &middot; ES &middot; Kreyòl</span>
+        <span class="langs">EN &middot; ES &middot; FR</span>
       </p>
 
       <h1>
@@ -384,8 +425,7 @@
         <button class="langproof-pill" type="button" data-lp-lang="en" aria-pressed="true">EN</button>
         <button class="langproof-pill" type="button" data-lp-lang="fr" aria-pressed="false">FR</button>
         <button class="langproof-pill" type="button" data-lp-lang="es" aria-pressed="false">ES</button>
-        <button class="langproof-pill" type="button" data-lp-lang="kr" aria-pressed="false">KR</button>
-      </div>
+        </div>
 
       <p class="lead hero__lead">Your online presence should reflect the business you have built. We connect website design, local search and social media so customers can find you, trust your work and take the next step. Built around your priorities in 45 days.</p>
 
@@ -1355,13 +1395,7 @@
         +1&nbsp;829-592-7303</a>
     </p>
 
-    <p class="finalcta__langs reveal">
-      <a href="/fr/" hreflang="fr" lang="fr">Obtenez votre score de visibilité</a>
-      <span aria-hidden="true">&middot;</span>
-      <span lang="es">Reserve su auditoría gratuita</span>
-      <span aria-hidden="true">&middot;</span>
-      <span lang="ht">Rezève odit gratis ou</span>
-    </p>
+    <p class="finalcta__langs reveal"><a href="/en/start" lang="en" data-language="en">English</a> · <a href="/es/start" lang="es" data-language="es">Español</a> · <a href="/fr/start" lang="fr" data-language="fr">Français</a></p>
   </div>
 </section>
 
@@ -1493,6 +1527,7 @@
 </form>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/modal.js" defer></script>

@@ -269,7 +269,7 @@ def write_canonical_redirects():
         for lang in LANGS:
             rules.append(f'[[redirects]]\n  from = "/{lang}/{rel}"\n  to = "{route(page,lang)}"\n  status = 301\n  force = true\n')
     rules.append(end)
-    p.write_text(src+'\n\n'+'\n'.join(rules)+'\n',encoding='utf-8')
+    p.write_text(src+'\n\n'+'\n'.join(rules)+'\n',encoding='utf-8',newline='\n')
 
 if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')

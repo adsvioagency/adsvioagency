@@ -51,6 +51,8 @@ for en in localize.pages():
                 check(a.get('action','').startswith('/'+lang+'/thank-you'),rel+': form confirmation language')
                 name=a.get('name')
                 check(any(tt=='input' and aa.get('name')=='form-name' and aa.get('value')==name for tt,aa in doc.tags),rel+': Netlify form name mismatch')
+        if en.name=='contact.html':
+            check(any(t=='input' and a.get('name')=='email' and a.get('type')=='email' and 'required' in a for t,a in doc.tags),rel+': reply email missing')
         check('data-lp-lang="kr"' not in src and 'lang="ht"' not in src,rel+': excluded Creole interface')
         if lang!='en':
             for text in doc.strings:

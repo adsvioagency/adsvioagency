@@ -2,47 +2,68 @@
   {
     "path": "/es/",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/",
+    "robots": "noindex"
   },
   {
     "path": "/fr/",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/fr/"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/fr/",
+    "robots": "noindex"
   },
   {
     "path": "/en/",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/en/"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/en/",
+    "robots": "noindex"
   },
   {
     "path": "/es/contact",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/contact"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/contact",
+    "robots": "noindex"
+  },
+  {
+    "path": "/fr/contact",
+    "status": 200,
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/fr/contact",
+    "robots": "noindex"
+  },
+  {
+    "path": "/en/contact",
+    "status": 200,
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/en/contact",
+    "robots": "noindex"
   },
   {
     "path": "/fr/privacy",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/fr/privacy"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/fr/privacy",
+    "robots": "noindex"
   },
   {
     "path": "/assets/downloads/adsvio-lista-verificacion.pdf",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/assets/downloads/adsvio-lista-verificacion.pdf"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/assets/downloads/adsvio-lista-verificacion.pdf",
+    "robots": "noindex"
   },
   {
     "path": "/assets/downloads/adsvio-liste-verification.pdf",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/assets/downloads/adsvio-liste-verification.pdf"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/assets/downloads/adsvio-liste-verification.pdf",
+    "robots": "noindex"
   },
   {
     "path": "/es/about.html",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/about.html"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/about",
+    "robots": "noindex"
   },
   {
     "path": "/es/about/",
     "status": 200,
-    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/about"
+    "final": "https://deploy-preview-1--adsvioagency.netlify.app/es/about",
+    "robots": "noindex"
   },
   {
     "path": "/docs/i18n/schema.json",

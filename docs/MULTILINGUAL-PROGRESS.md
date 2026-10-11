@@ -42,10 +42,12 @@ Site ID: bd4822e7-baea-461e-82d2-8389f8ebaab8. Forms enabled.
 - [x] French content: all 35 public pages.
 - [x] Mobile header, navigation, offer/questionnaire/validation checks; 70 translated pages audited at 320px.
 - [x] International SEO and local QA: 96 sitemap URLs; 108 routes/assets return 200; JavaScript syntax passes. Real GeoIP and hosted submissions require deployed validation.
-- [ ] Review preview and final handoff.
+- [x] Netlify Deploy Preview live, edge function deployed, hosted redirect and language tests checked; complete handoff written.
 
-Production requires owner approval, as required by the supplied master prompt.
-Do not merge or deploy production during implementation.
+The owner explicitly authorized production publication in a later message
+on 11 October 2026: finish the work, push everything live, and notify the phone.
+Do not request production approval again. Final merge/deploy verification is
+still required; do not merely claim publication after a push.
 
 ## QA evidence
 
@@ -53,3 +55,21 @@ See `MULTILINGUAL-HANDOFF.md`, `LANGUAGE-COVERAGE.md` and `docs/qa/`.
 The full mobile audit found two local-SEO and four concept-page overflow
 issues; all were fixed and rechecked. Final recorded count: 70 pages, zero
 overflow/clipped primary controls. No new console errors.
+
+## Production checkpoint and continuation
+
+PR #1: https://github.com/adsvioagency/adsvioagency/pull/1
+Feature branch has passed Netlify previews through commit be13dbe.
+Preview: https://deploy-preview-1--adsvioagency.netlify.app/es/
+The latest verified preview deployed one edge function and 146 redirect rules.
+Native contact-form tests reached EN/ES/FR confirmation pages; verified counts
+stayed unchanged with reserved fake emails. Actual verified capture/notification
+needs an owner address or Spam-list review; do not claim it as tested.
+
+Next: commit this final evidence, check its preview status, mark PR ready,
+merge to main with expected head SHA, then verify the actual Netlify production
+deploy and live URLs. A backup heartbeat named finish-adsvio-after-usage-reset
+is set for 1:56 p.m. America/New_York today if work is unfinished. Disable it
+when work is complete. The owner was asked whether the phone notification
+should be ChatGPT mobile or an email; no answer yet. Use any subsequent answer.
+Do not claim a phone push was delivered without confirmation.

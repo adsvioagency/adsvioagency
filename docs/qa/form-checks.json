@@ -1,0 +1,17 @@
+[
+  {
+    "lang": "es",
+    "url": "https://deploy-preview-1--adsvioagency.netlify.app/es/thank-you?from=contact",
+    "heading": "Recibido. Gracias."
+  },
+  {
+    "lang": "fr",
+    "url": "https://deploy-preview-1--adsvioagency.netlify.app/fr/thank-you?from=contact",
+    "heading": "Bien reçu. Merci."
+  },
+  {
+    "lang": "en",
+    "url": "https://deploy-preview-1--adsvioagency.netlify.app/en/thank-you?from=contact",
+    "heading": "Got it. Thank you."
+  }
+]

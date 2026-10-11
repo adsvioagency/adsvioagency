@@ -1,7 +1,10 @@
 # Adsvio Agency multilingual handoff
 
 Implementation date: 11 October 2026. Branch: `feature/adsvio-multilingual-geo`.
-Production remains unchanged pending owner approval.
+Owner authorized production publication on 11 October 2026 after final checks.
+PR: https://github.com/adsvioagency/adsvioagency/pull/1
+Verified preview: https://deploy-preview-1--adsvioagency.netlify.app/es/
+Production deployment verification is recorded in MULTILINGUAL-PROGRESS.md.
 
 ## What changed
 
@@ -132,7 +135,8 @@ headline, description and action fit the initial viewport.
 - Neutral existing brand artwork on translated sharing cards avoids advertising
   English text inside an OG image; original site artwork is retained.
 - The XML sitemap mirrors HTML alternates, with 96 indexable URLs.
-- Netlify Pretty URLs remains enabled for `.html` normalization. Existing
+- Netlify Pretty URLs remains enabled; deployed QA showed it did not redirect
+  every `.html` alias, so 105 explicit permanent canonical redirects were added. Existing
   unprefixed legacy redirects remain; French about/services legacy queries now
   point to their real French pages. The former permanent English root redirect
   is removed because visitor-specific routing requires temporary redirects.
@@ -142,7 +146,9 @@ headline, description and action fit the initial viewport.
 ## Forms and checklist defect fixed
 
 Contact forms retain Netlify detection, POST, form-name and honeypot settings.
-Names are `contact`, `contact-es` and the existing `contact-fr`. The booking
+Names are `contact`, `contact-es` and the existing `contact-fr`. The baseline
+contact form omitted a reply address; a labelled required email field now
+allows the promised response in each language. The booking
 qualifier and checklist retain their existing form names and include a language
 field on translated pages. Confirmation actions stay in the form's language.
 Booking still goes to the existing TidyCal meeting; WhatsApp and US calls use
@@ -200,10 +206,20 @@ Visual QA: 320/375/390/768/1280px homepage checks and full translated-page mobil
 audit are recorded under `docs/qa/`. All six checklist PDF pages were rendered
 and checked for readable accents, alignment, page numbers and clipping.
 
-Still require deployed validation: real Netlify GeoIP from multiple countries,
-custom-domain preference sharing, deployed Pretty URL redirects, a live form
-submission and delivery/notification checks. No real lead or external message
-was sent during local validation. A full browser session with JavaScript
+Hosted preview validation confirms the edge function deployed, saved EN/ES/FR
+routing, 302 no-store root responses, explicit preference cookies, query
+retention, .html → clean 301 redirects, translated pages/downloads, and forced
+404s for internal files. All three hosted contact forms reached their localized
+confirmation pages using labelled test data and qa@example.invalid. Verified
+submission counts did not increase. These deliberately undeliverable test
+addresses may be spam filtered; actual stored/verified capture and notifications
+are not claimed. The Netlify browser dashboard required login, and the connector
+does not expose the Spam list. Check Spam submissions or test with an owner
+email; no spam protections were weakened. No real recipient email was used.
+
+Real Netlify GeoIP from multiple countries, custom-domain preference sharing
+and owner notification delivery still require appropriate network/account
+verification. A full browser session with JavaScript
 disabled was not run; the HTML and CSS fallback contracts were inspected.
 
 ## Exact Netlify and GitHub workflow
@@ -237,7 +253,8 @@ to confirm this function is listed before approving production.
 5. Only after owner approval, merge the reviewed feature PR to `main`. The
    existing GitHub-to-Netlify production flow should deploy it. Confirm the
    successful production deploy and the edge function, then repeat the domain,
-   form and country checks. No production merge/deploy is performed by this task.
+   form and country checks. The owner subsequently authorized this task to merge and publish once checks
+   pass; that authorization supersedes the earlier review-only limit.
 
 ## Keeping the budget at $0
 
@@ -281,5 +298,17 @@ Review Dominican Spanish, Canadian French, the new checklists and the translated
 policies. Legal meaning, published prices and contact information were not
 intentionally changed; the privacy policy now discloses the actual language
 cookie and browser consent storage, and removes the retired region-price entry.
-Approve production only after the preview is reviewed. Real country routing,
-production domain behavior and hosted form delivery remain deployment checks.
+The owner authorized production publication on 11 October 2026. Language and
+legal-policy review remain recommended human checks, not a claim of legal
+certification. Real-country routing and verified form/notification delivery
+remain explicit verification limits.
+
+## Published-change commits
+
+- `84a914e`: complete three-language HTML, routing, SEO, UI and resources.
+- `3d6a711`: deployed HTML alias redirects and preserved localized form names.
+- `be13dbe`: required reply email in contact forms and source line endings.
+- Final checkpoint: handoff and deployed QA evidence before merge.
+
+Additional official form-testing reference:
+https://docs.netlify.com/manage/forms/troubleshooting-tips/

@@ -17,3 +17,7 @@ node_modules/
 Thumbs.db
 desktop.ini
 *.swp
+
+# Local Python maintenance cache.
+__pycache__/
+*.pyc

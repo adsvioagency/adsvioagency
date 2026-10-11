@@ -2,27 +2,29 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Adsvio Agency</title>
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-
-<!-- The real redirect is the 301 in netlify.toml, which is what search
-     engines follow. This file is the fallback for any context where that
-     rule does not run - a local preview, or a different host. -->
-<meta http-equiv="refresh" content="0; url=/en/">
-<link rel="canonical" href="https://adsvioagency.com/en/">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choose your language | Adsvio Agency</title>
+<meta name="description" content="Adsvio Agency: websites, search and social media for small businesses. Choose English, español or français.">
 <meta name="robots" content="noindex, follow">
-<style>
-  body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-         background: #FCFAF6; color: #16130F; margin: 0;
-         display: grid; place-items: center; min-height: 100vh; }
-  a { color: #C4470A; }
-</style>
+<link rel="canonical" href="https://adsvioagency.com/">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>main{max-width:700px;margin:auto;padding:10vh 24px}.wordmark{margin-bottom:40px}h1{font-size:clamp(2rem,6vw,3.4rem)}p{margin-block:24px}.language-choices{display:grid;gap:16px}.language-choices a{justify-content:space-between}</style>
 </head>
 <body>
-  <p>Continue to <a href="/en/">Adsvio Agency</a>.</p>
-  <script>window.location.replace("/en/");</script>
+<main>
+<a class="wordmark" href="/en/" aria-label="Adsvio Agency"><img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="Adsvio Agency"></a>
+<h1>Choose your language</h1>
+<p><span lang="es">Elige tu idioma.</span> <span lang="fr">Choisissez votre langue.</span></p>
+<nav class="language-choices" aria-label="Website language">
+<a class="btn btn--secondary" href="/en/" data-language="en" lang="en">English <span>EN</span></a>
+<a class="btn btn--secondary" href="/es/" data-language="es" lang="es">Español <span>ES</span></a>
+<a class="btn btn--secondary" href="/fr/" data-language="fr" lang="fr">Français <span>FR</span></a>
+</nav>
+<p>Websites, search and social media for small businesses.</p>
+</main>
+<script src="/assets/js/language.js" defer></script>
 </body>
 </html>

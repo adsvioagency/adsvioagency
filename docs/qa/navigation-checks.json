@@ -1,0 +1,45 @@
+[
+  {
+    "path": "services/website-design",
+    "url": "http://localhost:8787/fr/services/website-design?utm_source=qa#main",
+    "heading": "Un site qui explique votre entreprise et facilite le contact."
+  },
+  {
+    "path": "offer",
+    "url": "http://localhost:8787/fr/offer?utm_source=qa#main",
+    "heading": "Tous les éléments, en détail."
+  },
+  {
+    "path": "about",
+    "url": "http://localhost:8787/fr/about?utm_source=qa#main",
+    "heading": "Votre savoir-faire mérite d’être visible en ligne."
+  },
+  {
+    "path": "work",
+    "url": "http://localhost:8787/fr/work?utm_source=qa#main",
+    "heading": "Trois projets. Trois entreprises différentes."
+  },
+  {
+    "path": "blog/business-not-showing-on-google-maps",
+    "url": "http://localhost:8787/fr/blog/business-not-showing-on-google-maps?utm_source=qa#main",
+    "heading": "Pourquoi mon entreprise n’apparaît-elle pas sur Google Maps?"
+  },
+  {
+    "path": "guides/caribbean-business-online",
+    "url": "http://localhost:8787/fr/guides/caribbean-business-online?utm_source=qa#main",
+    "heading": "Le guide de visibilité pour les entreprises des Caraïbes et de la diaspora"
+  },
+  {
+    "path": "contact",
+    "url": "http://localhost:8787/fr/contact?utm_source=qa#main",
+    "heading": "Trois façons de nous joindre."
+  },
+  {
+    "test": "manual French survives Dominican root",
+    "url": "http://localhost:8787/fr/?country=DO"
+  },
+  {
+    "test": "direct Spanish URL honored despite saved French",
+    "url": "http://localhost:8787/es/about"
+  }
+]

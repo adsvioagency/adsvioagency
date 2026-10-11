@@ -1,0 +1,434 @@
+[
+  {
+    "path": "/en/about",
+    "status": 200
+  },
+  {
+    "path": "/es/about",
+    "status": 200
+  },
+  {
+    "path": "/fr/about",
+    "status": 200
+  },
+  {
+    "path": "/en/blog/business-not-showing-on-google-maps",
+    "status": 200
+  },
+  {
+    "path": "/es/blog/business-not-showing-on-google-maps",
+    "status": 200
+  },
+  {
+    "path": "/fr/blog/business-not-showing-on-google-maps",
+    "status": 200
+  },
+  {
+    "path": "/en/blog/how-to-get-more-google-reviews",
+    "status": 200
+  },
+  {
+    "path": "/es/blog/how-to-get-more-google-reviews",
+    "status": 200
+  },
+  {
+    "path": "/fr/blog/how-to-get-more-google-reviews",
+    "status": 200
+  },
+  {
+    "path": "/en/blog/",
+    "status": 200
+  },
+  {
+    "path": "/es/blog/",
+    "status": 200
+  },
+  {
+    "path": "/fr/blog/",
+    "status": 200
+  },
+  {
+    "path": "/en/blog/what-to-post-on-instagram-small-business",
+    "status": 200
+  },
+  {
+    "path": "/es/blog/what-to-post-on-instagram-small-business",
+    "status": 200
+  },
+  {
+    "path": "/fr/blog/what-to-post-on-instagram-small-business",
+    "status": 200
+  },
+  {
+    "path": "/en/checklist",
+    "status": 200
+  },
+  {
+    "path": "/es/checklist",
+    "status": 200
+  },
+  {
+    "path": "/fr/checklist",
+    "status": 200
+  },
+  {
+    "path": "/en/contact",
+    "status": 200
+  },
+  {
+    "path": "/es/contact",
+    "status": 200
+  },
+  {
+    "path": "/fr/contact",
+    "status": 200
+  },
+  {
+    "path": "/en/for/coaches-consultants",
+    "status": 200
+  },
+  {
+    "path": "/es/for/coaches-consultants",
+    "status": 200
+  },
+  {
+    "path": "/fr/for/coaches-consultants",
+    "status": 200
+  },
+  {
+    "path": "/en/for/home-services",
+    "status": 200
+  },
+  {
+    "path": "/es/for/home-services",
+    "status": 200
+  },
+  {
+    "path": "/fr/for/home-services",
+    "status": 200
+  },
+  {
+    "path": "/en/for/local-businesses",
+    "status": 200
+  },
+  {
+    "path": "/es/for/local-businesses",
+    "status": 200
+  },
+  {
+    "path": "/fr/for/local-businesses",
+    "status": 200
+  },
+  {
+    "path": "/en/for/professional-services",
+    "status": 200
+  },
+  {
+    "path": "/es/for/professional-services",
+    "status": 200
+  },
+  {
+    "path": "/fr/for/professional-services",
+    "status": 200
+  },
+  {
+    "path": "/en/guides/caribbean-business-online",
+    "status": 200
+  },
+  {
+    "path": "/es/guides/caribbean-business-online",
+    "status": 200
+  },
+  {
+    "path": "/fr/guides/caribbean-business-online",
+    "status": 200
+  },
+  {
+    "path": "/en/guides/google-business-profile-guide",
+    "status": 200
+  },
+  {
+    "path": "/es/guides/google-business-profile-guide",
+    "status": 200
+  },
+  {
+    "path": "/fr/guides/google-business-profile-guide",
+    "status": 200
+  },
+  {
+    "path": "/en/guides/small-business-website-cost",
+    "status": 200
+  },
+  {
+    "path": "/es/guides/small-business-website-cost",
+    "status": 200
+  },
+  {
+    "path": "/fr/guides/small-business-website-cost",
+    "status": 200
+  },
+  {
+    "path": "/en/guides/social-media-system",
+    "status": 200
+  },
+  {
+    "path": "/es/guides/social-media-system",
+    "status": 200
+  },
+  {
+    "path": "/fr/guides/social-media-system",
+    "status": 200
+  },
+  {
+    "path": "/en/guides/website-or-instagram",
+    "status": 200
+  },
+  {
+    "path": "/es/guides/website-or-instagram",
+    "status": 200
+  },
+  {
+    "path": "/fr/guides/website-or-instagram",
+    "status": 200
+  },
+  {
+    "path": "/en/haitian-business-marketing",
+    "status": 200
+  },
+  {
+    "path": "/es/haitian-business-marketing",
+    "status": 200
+  },
+  {
+    "path": "/fr/haitian-business-marketing",
+    "status": 200
+  },
+  {
+    "path": "/en/",
+    "status": 200
+  },
+  {
+    "path": "/es/",
+    "status": 200
+  },
+  {
+    "path": "/fr/",
+    "status": 200
+  },
+  {
+    "path": "/en/offer",
+    "status": 200
+  },
+  {
+    "path": "/es/offer",
+    "status": 200
+  },
+  {
+    "path": "/fr/offer",
+    "status": 200
+  },
+  {
+    "path": "/en/privacy",
+    "status": 200
+  },
+  {
+    "path": "/es/privacy",
+    "status": 200
+  },
+  {
+    "path": "/fr/privacy",
+    "status": 200
+  },
+  {
+    "path": "/en/services/branding-logo-design",
+    "status": 200
+  },
+  {
+    "path": "/es/services/branding-logo-design",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/branding-logo-design",
+    "status": 200
+  },
+  {
+    "path": "/en/services/google-business-profile",
+    "status": 200
+  },
+  {
+    "path": "/es/services/google-business-profile",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/google-business-profile",
+    "status": 200
+  },
+  {
+    "path": "/en/services/",
+    "status": 200
+  },
+  {
+    "path": "/es/services/",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/",
+    "status": 200
+  },
+  {
+    "path": "/en/services/local-seo",
+    "status": 200
+  },
+  {
+    "path": "/es/services/local-seo",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/local-seo",
+    "status": 200
+  },
+  {
+    "path": "/en/services/social-media-management",
+    "status": 200
+  },
+  {
+    "path": "/es/services/social-media-management",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/social-media-management",
+    "status": 200
+  },
+  {
+    "path": "/en/services/website-design",
+    "status": 200
+  },
+  {
+    "path": "/es/services/website-design",
+    "status": 200
+  },
+  {
+    "path": "/fr/services/website-design",
+    "status": 200
+  },
+  {
+    "path": "/en/south-florida",
+    "status": 200
+  },
+  {
+    "path": "/es/south-florida",
+    "status": 200
+  },
+  {
+    "path": "/fr/south-florida",
+    "status": 200
+  },
+  {
+    "path": "/en/start",
+    "status": 200
+  },
+  {
+    "path": "/es/start",
+    "status": 200
+  },
+  {
+    "path": "/fr/start",
+    "status": 200
+  },
+  {
+    "path": "/en/terms",
+    "status": 200
+  },
+  {
+    "path": "/es/terms",
+    "status": 200
+  },
+  {
+    "path": "/fr/terms",
+    "status": 200
+  },
+  {
+    "path": "/en/thank-you-booking",
+    "status": 200
+  },
+  {
+    "path": "/es/thank-you-booking",
+    "status": 200
+  },
+  {
+    "path": "/fr/thank-you-booking",
+    "status": 200
+  },
+  {
+    "path": "/en/thank-you",
+    "status": 200
+  },
+  {
+    "path": "/es/thank-you",
+    "status": 200
+  },
+  {
+    "path": "/fr/thank-you",
+    "status": 200
+  },
+  {
+    "path": "/en/work/atelier-nord",
+    "status": 200
+  },
+  {
+    "path": "/es/work/atelier-nord",
+    "status": 200
+  },
+  {
+    "path": "/fr/work/atelier-nord",
+    "status": 200
+  },
+  {
+    "path": "/en/work/clarite-consulting",
+    "status": 200
+  },
+  {
+    "path": "/es/work/clarite-consulting",
+    "status": 200
+  },
+  {
+    "path": "/fr/work/clarite-consulting",
+    "status": 200
+  },
+  {
+    "path": "/en/work/verdure-kitchen",
+    "status": 200
+  },
+  {
+    "path": "/es/work/verdure-kitchen",
+    "status": 200
+  },
+  {
+    "path": "/fr/work/verdure-kitchen",
+    "status": 200
+  },
+  {
+    "path": "/en/work",
+    "status": 200
+  },
+  {
+    "path": "/es/work",
+    "status": 200
+  },
+  {
+    "path": "/fr/work",
+    "status": 200
+  },
+  {
+    "path": "/assets/downloads/adsvio-client-ready-checklist.pdf",
+    "status": 200
+  },
+  {
+    "path": "/assets/downloads/adsvio-lista-verificacion.pdf",
+    "status": 200
+  },
+  {
+    "path": "/assets/downloads/adsvio-liste-verification.pdf",
+    "status": 200
+  }
+]

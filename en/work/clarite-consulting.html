@@ -9,10 +9,15 @@
 
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://adsvioagency.com/en/work/clarite-consulting">
-
+<link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/work/clarite-consulting">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/work/clarite-consulting">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/work/clarite-consulting">
+<link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/work/clarite-consulting">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:url" content="https://adsvioagency.com/en/work/clarite-consulting">
 <meta property="og:title" content="Clarité Consulting: consultant website sample build">
 <meta property="og:description" content="A complete concept build for a bilingual HR consultant in Montreal: credentials, services, a lead magnet and one-click booking.">
@@ -35,9 +40,24 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://adsvioagency.com/en/" },
-    { "@type": "ListItem", "position": 2, "name": "Work", "item": "https://adsvioagency.com/en/work" },
-    { "@type": "ListItem", "position": 3, "name": "Clarité Consulting", "item": "https://adsvioagency.com/en/work/clarite-consulting" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://adsvioagency.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Work",
+      "item": "https://adsvioagency.com/en/work"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Clarité Consulting",
+      "item": "https://adsvioagency.com/en/work/clarite-consulting"
+    }
   ]
 }
 </script>
@@ -201,10 +221,34 @@
 .cc__fine2 { margin-top: 36px; padding-top: 22px; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: 13px; color: var(--ink-2); }
 
 .cc :focus-visible { outline: 3px solid var(--ochre); outline-offset: 2px; }
+/* localized-mobile-fit */
+@media (max-width: 600px) {
+  .an .an__barin, .cc .cc__barin { gap: 8px; padding-inline: 16px; }
+  .an .an__bar .an__logo { font-size: 17px; letter-spacing: .1em; }
+  .cc .cc__bar .cc__logo { font-size: 20px; }
+  .cc .cc__lang { display: none; }
+  .an .an__bar .an__btn, .cc .cc__bar .cc__btn { padding-inline: 12px; flex-shrink: 0; }
+  .an h2 { font-size: 28px; overflow-wrap: anywhere; }
+  .an .an__section--tint[style] { padding: 20px !important; }
+  .an .an__svc { gap: 8px; }
+  .an .an__svcname { min-width: 0; overflow-wrap: anywhere; }
+  .an .an__svcfill { display: none; }
+  .an .an__svcprice { margin-left: auto; }
+  .cc .cc__offer { padding: 20px; }
+}
+/* end-localized-mobile-fit */
 </style>
+<meta name="twitter:title" content="Clarité Consulting: consultant website sample build">
+<meta name="twitter:description" content="A concept build for a bilingual HR consultant in Montreal: credentials, services, a lead magnet and one-click booking. Website design for consultants.">
 </head>
 
 <body>
+<div class="locale-bar"><div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/work/clarite-consulting" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/work/clarite-consulting" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/work/clarite-consulting" hreflang="fr" lang="fr" data-language="fr">FR</a>
+      </div></div>
+
 
 <a class="skip-link" href="#build">Skip to the build</a>
 
@@ -254,10 +298,7 @@
   <header class="cc__bar">
     <div class="cc__wrap cc__barin">
       <a class="cc__logo" href="#build">Clarit<i>é</i> Consulting</a>
-      <div class="cc__lang">
-        <a href="#build" aria-current="true">EN</a>
-        <a href="#build">FR</a>
-      </div>
+      <div class="cc__lang"><a href="/en/work/clarite-consulting" lang="en" data-language="en" aria-current="true">EN</a><a href="/es/work/clarite-consulting" lang="es" data-language="es">ES</a><a href="/fr/work/clarite-consulting" lang="fr" data-language="fr">FR</a></div>
       <a class="cc__btn" href="#book">Book a call</a>
     </div>
   </header>
@@ -418,6 +459,7 @@
 </main>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 

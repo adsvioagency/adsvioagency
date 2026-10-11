@@ -9,11 +9,14 @@
 
 <link rel="canonical" href="https://adsvioagency.com/en/privacy">
 <link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/privacy">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/privacy">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/privacy">
 <link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/privacy">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
+<meta property="og:locale:alternate" content="fr_CA">
 <meta property="og:url" content="https://adsvioagency.com/en/privacy">
 <meta property="og:title" content="Privacy policy | Adsvio Agency">
 <meta property="og:description" content="What Adsvio collects, why, how long it is kept, who else sees it, and how to get it deleted. Written to be read rather than to be complied with.">
@@ -53,6 +56,8 @@
   ]
 }
 </script>
+<meta name="twitter:title" content="Privacy policy | Adsvio Agency">
+<meta name="twitter:description" content="What Adsvio collects, why, how long it is kept, who else sees it, and how to get it deleted. Written to be read rather than to be complied with.">
 </head>
 
 <!-- No exit-intent popup on a legal page. -->
@@ -95,9 +100,10 @@
       <a class="nav__link" href="/en/guides/caribbean-business-online">Guides</a>
     </nav>
     <div class="header__actions">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/privacy" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/privacy" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/privacy" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/privacy" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
       <a class="btn btn--primary btn--sm" href="/en/start"
          data-event="book_call_click" data-event-where="header">Get my free Visibility Score</a>
@@ -138,9 +144,10 @@
       <svg class="icon icon--sm icon--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg> WhatsApp us
     </a>
     <div class="menu__langs">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/privacy" aria-current="true" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Website language">
+        <a class="langswitch__item" href="/en/privacy" aria-current="true" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/privacy" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/privacy" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
     </div>
   </div>
@@ -164,7 +171,7 @@
     <p style="margin-top:var(--s-4)">
       <span class="legal__updated">
         <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
-        Last updated <time datetime="2026-08-30">30 August 2026</time>
+        Last updated <time datetime="2026-08-30">11 October 2026</time>
       </span>
     </p>
   </div>
@@ -250,20 +257,20 @@
       </p>
 
       <h2 id="cookies-and-how-to-say-no">Cookies, and how to say no</h2>
+<p>Consent is stored in localStorage, not a tracking cookie. Initial country information comes from our host at the neutral homepage only; we do not save your country or use a geolocation API.</p>
       <p>
         A cookie banner appears the first time you visit. <strong>Nothing that tracks you loads
-        until you press Accept.</strong> Declining and ignoring the banner produce the same
-        result: no analytics, no advertising pixel, no cookies except the single one that
-        records your choice so we stop asking.
+        until you press Accept.</strong> Declining and ignoring the banner produce the same result: no analytics or advertising pixel. Essential storage remembers your consent choice and any language you explicitly select.
       </p>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Cookie</th><th>Set by</th><th>Purpose</th><th>Lifetime</th></tr></thead>
           <tbody>
+            <tr><td>adsvio_language</td><td>Us</td><td>Remembers the website language you explicitly select. Essential preference cookie, shared between our www and primary domain; no advertising use.</td><td>1 year</td></tr>
             <tr><td>adsvio_consent</td><td>Us</td><td>Remembers whether you accepted or declined. Strictly necessary: it is how we honour your answer</td><td>1 year</td></tr>
             <tr><td>_ga, _ga_*</td><td>Google Analytics</td><td>Counts visits and pages. Only set if you accept</td><td>Up to 2 years</td></tr>
             <tr><td>_fbp</td><td>Meta</td><td>Measures whether an ad led to an enquiry. Only set if you accept</td><td>3 months</td></tr>
-            <tr><td>adsvio_checklist_seen<br>adsvio_offer_region</td><td>Us</td><td>Stops the download offer repeating, and remembers which region's prices you asked for. Stored in your browser only and never sent to us</td><td>14 days / the session</td></tr>
+
           </tbody>
         </table>
       </div>
@@ -464,6 +471,7 @@
 </footer>
 
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 

@@ -139,15 +139,24 @@
                "sont utilisés. Aucun témoin publicitaire sans votre accord, et rien n’est " +
                "jamais vendu à qui que ce soit. Consultez la ",
       privacy: "politique de confidentialité",
-      href:    "/en/privacy",
+      href:    "/fr/privacy",
       decline: "Refuser",
       accept:  "Accepter"
+    },
+    es: {
+      label: "Preferencias de cookies",
+      title: "Queremos saber qué funciona.",
+      body: "Medimos qué páginas se leen y qué botones se usan solo con tu permiso. Sin cookies publicitarias si no aceptas; nunca vendemos tus datos. Consulta la ",
+      privacy: "política de privacidad",
+      href: "/es/privacy",
+      decline: "Rechazar",
+      accept: "Aceptar"
     }
   };
 
   function strings() {
     var lang = (document.documentElement.lang || "en").toLowerCase();
-    return lang.indexOf("fr") === 0 ? STRINGS.fr : STRINGS.en;
+    return STRINGS[lang.split("-")[0]] || STRINGS.en;
   }
 
   function build() {

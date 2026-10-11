@@ -49,7 +49,7 @@
     /* Endpoints. Every booking CTA routes through the qualifier; only the
        qualifier's escape hatch and the booking confirmation link out
        directly. */
-    startUrl: { en: "/en/start", fr: "/fr/start" },
+    startUrl: { en: "/en/start", es: "/es/start", fr: "/fr/start" },
     bookingUrl: "https://tidycal.com/adsvioagency/30-minute-meeting",
     whatsappUrl: "https://wa.me/18295927303",
     // US calls/texts and Dominican WhatsApp are separate owner-confirmed channels.

@@ -30,12 +30,12 @@
   /* Package names are NOT translated - they are product names, and a caller
      who saw "Authority Launch" on the page has to be able to say it out loud
      to Pierre and be understood. */
-  var LANG = (document.documentElement.lang || "en")
-    .toLowerCase().indexOf("fr") === 0 ? "fr" : "en";
+  var LANG = (document.documentElement.lang || "en").toLowerCase().split("-")[0];
 
   var T = {
-    en: { addonOne: " option", addonMany: " options", selected: " selected" },
-    fr: { addonOne: " option", addonMany: " options", selected: " sélectionnée" }
+    en: { addonOne: " option selected", addonMany: " options selected" },
+    es: { addonOne: " opción seleccionada", addonMany: " opciones seleccionadas" },
+    fr: { addonOne: " option sélectionnée", addonMany: " options sélectionnées" }
   }[LANG];
 
   var PACKAGE_NAME = {
@@ -111,7 +111,7 @@
     var n = state.addons.length;
     $("[data-summary-pkg]", bar).textContent = PACKAGE_NAME[state.type];
     $("[data-summary-lines]", bar).textContent =
-      n ? n + (n === 1 ? T.addonOne : T.addonMany) + T.selected : "";
+      n ? n + (n === 1 ? T.addonOne : T.addonMany) : "";
   }
 
   function paint() {

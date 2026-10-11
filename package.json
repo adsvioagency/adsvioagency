@@ -9,7 +9,9 @@
   },
   "scripts": {
     "dev": "netlify dev",
-    "qa": "py -3 ../qa-check.py",
+    "qa": "node --test tools/test-language.mjs && py -3 tools/check-seo.py && py -3 tools/check-partials.py && py -3 tools/check-languages.py",
+    "localize": "py -3 tools/localize.py",
+    "preview": "node tools/preview.mjs",
     "seo": "py -3 tools/check-seo.py",
     "partials": "py -3 tools/check-partials.py"
   },

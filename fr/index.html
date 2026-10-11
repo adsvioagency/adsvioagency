@@ -4,26 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Adsvio Agency: Votre entreprise en ligne en 45 jours</title>
-<meta name="description" content="Site web, profil Google, médias sociaux et contenu pour petites entreprises, bâtis en 45 jours, à prix fixe. Français, anglais, espagnol, kreyòl.">
+<title> Adsvio Agency|Sites web, recherche et médias sociaux | Adsvio Agency</title>
+<meta name="description" content="Conception web, recherche locale et médias sociaux pour petites entreprises. Commencez par un score gratuit et définissez votre projet de 45 jours.">
 
 <link rel="canonical" href="https://adsvioagency.com/fr/">
-<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/">
 <link rel="alternate" hreflang="en" href="https://adsvioagency.com/en/">
+<link rel="alternate" hreflang="es" href="https://adsvioagency.com/es/">
+<link rel="alternate" hreflang="fr" href="https://adsvioagency.com/fr/">
 <link rel="alternate" hreflang="x-default" href="https://adsvioagency.com/en/">
-
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Adsvio Agency">
 <meta property="og:locale" content="fr_CA">
 <meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_DO">
 <meta property="og:url" content="https://adsvioagency.com/fr/">
-<meta property="og:title" content="Adsvio Agency: Votre entreprise en ligne en 45 jours">
-<meta property="og:description" content="Site web, profil d&rsquo;entreprise Google, médias sociaux et contenu de départ pour les petites entreprises, livrés en 45 jours, à prix fixe.">
-<meta property="og:image" content="https://adsvioagency.com/assets/img/og-home-v2.jpg">
+<meta property="og:title" content=" Adsvio Agency|Sites web, recherche et médias sociaux | Adsvio Agency">
+<meta property="og:description" content="Conception web, recherche locale et médias sociaux pour petites entreprises. Commencez par un score gratuit et définissez votre projet de 45 jours.">
+<meta property="og:image" content="https://adsvioagency.com/assets/img/logo-adsvio.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Adsvio Agency: Votre entreprise en ligne en 45 jours">
-<meta name="twitter:description" content="Site web, profil d&rsquo;entreprise Google, médias sociaux et contenu de départ pour les petites entreprises, livrés en 45 jours, à prix fixe.">
-<meta name="twitter:image" content="https://adsvioagency.com/assets/img/og-home-v2.jpg">
+<meta name="twitter:title" content=" Adsvio Agency|Sites web, recherche et médias sociaux | Adsvio Agency">
+<meta name="twitter:description" content="Conception web, recherche locale et médias sociaux pour petites entreprises. Commencez par un score gratuit et définissez votre projet de 45 jours.">
+<meta name="twitter:image" content="https://adsvioagency.com/assets/img/logo-adsvio.png">
 
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/icon-192.png" type="image/png" sizes="192x192">
@@ -40,77 +41,179 @@
 <link rel="stylesheet" href="/assets/css/components.css">
 
 <!-- Analytics load from assets/js/consent.js, and only after the visitor
-     accepts. The banner renders in French on this page because the document
-     language is fr - see the STRINGS table in that file. -->
+     accepts. Put the GA4 and Meta Pixel IDs in the CONFIG block at the top
+     of that file - one place, not one per page. See PLACEHOLDERS.md. -->
 
-<!-- One organisation, one @id. The French page does not mint a second
-     ProfessionalService node; it points at the same one the English homepage
-     declares, which is what keeps Google treating them as one business. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebPage",
-  "@id": "https://adsvioagency.com/fr/#webpage",
+  "@type": "ProfessionalService",
+  "@id": "https://adsvioagency.com/#organization",
+  "name": "Adsvio Agency",
   "url": "https://adsvioagency.com/fr/",
-  "name": "Adsvio Agency: Votre entreprise en ligne en 45 jours",
-  "inLanguage": "fr-CA",
-  "description": "Site web, profil d'entreprise Google, médias sociaux et contenu de départ pour les petites entreprises, livrés en 45 jours, à prix fixe.",
-  "isPartOf": { "@id": "https://adsvioagency.com/#website" },
-  "about": { "@id": "https://adsvioagency.com/#organization" },
-  "publisher": { "@id": "https://adsvioagency.com/#organization" }
+  "description": "Adsvio Agency crée une présence en ligne complète pour petites entreprises : site, profil Google, profils sociaux, contenu et textes dans un projet de 45 jours à prix fixe.",
+  "slogan": "Votre présence en ligne reflète la valeur de votre entreprise.",
+  "priceRange": "$850-$5000",
+  "telephone": "+1-786-758-9680",
+  "logo": "https://adsvioagency.com/assets/img/logo-adsvio.png",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "Appels et textos",
+      "telephone": "+1-786-758-9680"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "WhatsApp",
+      "telephone": "+1-829-592-7303",
+      "url": "https://wa.me/18295927303"
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "@id": "https://adsvioagency.com/fr/about#pierre",
+    "name": "Pierre Runald Février",
+    "jobTitle": "Fondateur",
+    "image": "https://adsvioagency.com/assets/img/pierre-founder.jpg",
+    "worksFor": {
+      "@id": "https://adsvioagency.com/#organization"
+    },
+    "sameAs": "https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ave. La Cordillera #56, Manoguayabo",
+    "addressLocality": "Santo Domingo Oeste",
+    "postalCode": "10902",
+    "addressCountry": "DO"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "États-Unis"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    {
+      "@type": "Country",
+      "name": "République dominicaine"
+    },
+    {
+      "@type": "Country",
+      "name": "Haïti"
+    },
+    {
+      "@type": "Place",
+      "name": "Caraïbes"
+    }
+  ],
+  "knowsLanguage": [
+    "en",
+    "es",
+    "fr"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/adsvio.agency/",
+    "https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/"
+  ]
 }
 </script>
+<!-- TODO: add "geo" (latitude/longitude) to the block above once the exact
+     coordinates for the Manoguayabo address are confirmed. Left out rather
+     than approximated - a wrong pin in structured data is worse than none. -->
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "inLanguage": "fr-CA",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Et si j'ai déjà un site web ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Nous vérifions d'abord ce que vous avez. Parfois la bonne décision est de tout refaire. Parfois c'est de corriger les trois choses qui vous freinent. Si votre site actuel vaut la peine d'être gardé, nous vous le dirons : vous payez moins, et nous consacrons ce temps à vos profils et à votre contenu." }
+      "name": "Et si j’ai déjà un site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous examinons l’existant. Parfois une refonte convient; parfois trois corrections suffisent. Si votre site mérite d’être conservé, nous le dirons et proposerons les améliorations nécessaires."
+      }
     },
     {
       "@type": "Question",
-      "name": "Qu'est-ce qu'une Carte de visibilité, exactement ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Un document d'une page où votre entreprise est notée sur 100 dans cinq domaines : votre site web, votre visibilité de recherche, votre présence sociale, vos avis, et le chemin qu'un client parcourt pour vous joindre. Il nomme les trois choses qui vous coûtent le plus en ce moment, en langage clair. Vous le recevez dans les 48 heures suivant l'appel et il est à vous." }
+      "name": "Que contient la fiche de visibilité?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une page avec une note sur 100 pour site, recherche, médias sociaux, avis et parcours de contact. Elle indique trois priorités en termes clairs, sous 48 heures après l’appel. Vous la gardez."
+      }
     },
     {
       "@type": "Question",
-      "name": "Le score, est-ce juste une tactique de vente ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "C'est ainsi que nous décidons quoi vous facturer, alors il doit être juste. Si votre site web va bien et que seule votre fiche Google est brisée, le score le dit, et nous vous facturons la fiche Google, pas une refonte. Nous tromper sur votre score nous coûterait plus que ça ne nous rapporterait." }
+      "name": "Le score est-il seulement un outil de vente?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il sert à définir le devis et doit être exact. Si le site fonctionne et seul le profil Google a un problème, nous proposons ce profil plutôt qu’une refonte."
+      }
     },
     {
       "@type": "Question",
-      "name": "Qu'est-ce qui se passe après les 45 jours ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Tout vous appartient. Le site, les profils, le contenu, les accès. Sans condition. La plupart des clients nous demandent de continuer à gérer les médias sociaux et le contenu au mois. C'est facultatif, d'un mois à l'autre, et nous en parlons après le lancement, pas avant." }
+      "name": "Que se passe-t-il après les 45 jours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Site, profils, contenu et accès vous appartiennent. Vous pouvez demander une gestion sociale et de contenu mensuelle. Elle est facultative, au mois, et discutée après le lancement."
+      }
     },
     {
       "@type": "Question",
-      "name": "Travaillez-vous avec des entreprises au Québec et au Canada ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Oui. Nous travaillons en français, en anglais, en espagnol et en kreyòl, et nos clients sont aux États-Unis, au Canada et en République dominicaine. Tout se passe par visioconférence et par WhatsApp, alors ce qui compte, c'est que les fuseaux horaires concordent. Entre Montréal, Ottawa et Saint-Domingue, il n'y a au plus qu'une heure d'écart." }
+      "name": "Travaillez-vous hors des États-Unis et de la RD?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. Nous travaillons en anglais, français, espagnol et créole haïtien pour des clients aux États-Unis, au Canada et en République dominicaine, par vidéo et WhatsApp selon les horaires."
+      }
     },
     {
       "@type": "Question",
-      "name": "Qu'est-ce que j'ai à faire, concrètement ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Moins que vous pensez. Un appel de départ, une courte révision chaque semaine, et des réponses quand nous avons des questions. Nous rédigeons les textes, bâtissons le site, configurons les profils et produisons votre premier mois de contenu. Prévoyez environ deux heures par semaine." }
+      "name": "Quelle sera ma participation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Une rencontre initiale, une courte révision hebdomadaire et les réponses nécessaires. Nous rédigeons, développons, configurons et préparons le premier mois de contenu. Prévoyez deux heures par semaine."
+      }
     },
     {
       "@type": "Question",
-      "name": "Pourquoi 45 jours et pas plus vite ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "On pourrait aller plus vite. On préfère bien faire. Quarante-cinq jours nous laissent le temps d'écrire une vraie copie, de construire correctement, et de vous laisser réviser chaque étape sans pression. La plupart des projets se terminent en avance, mais nous préférons battre une date réaliste que rater une date optimiste." }
+      "name": "Pourquoi 45 jours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pour rédiger, construire et revoir chaque étape avec soin. Nous préférons un délai réaliste à une promesse trop rapide."
+      }
     },
     {
       "@type": "Question",
-      "name": "Et si j'ai besoin de changements après le lancement ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Les petits changements dans les 30 jours suivant le lancement sont inclus : une formulation, des heures, une photo, un prix. Tout ce qui est plus gros est chiffré à part, ou couvert si vous êtes sur un forfait mensuel. Nous ne vous facturons pas pour corriger nos propres erreurs." }
+      "name": "Et si j’ai besoin de changements après le lancement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les petits changements des 30 premiers jours sont inclus : texte, heures, photo ou prix. Les plus importants sont distincts ou couverts par un plan mensuel. Nous corrigeons nos erreurs sans frais."
+      }
     },
     {
       "@type": "Question",
-      "name": "Comment fonctionnent les paiements ?",
-      "acceptedAnswer": { "@type": "Answer", "text": "La moitié au départ, la moitié le jour du lancement. Si c'est serré, il existe un plan de paiement sur trois mois moyennant de légers frais. Aucun abonnement à annuler, aucun renouvellement automatique, aucun engagement." }
+      "name": "Comment fonctionnent les paiements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "50 % au départ et 50 % au lancement. Un plan sur trois mois comporte de petits frais administratifs. Sans renouvellement automatique ni engagement prolongé."
+      }
     }
   ]
 }
@@ -120,9 +223,9 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://adsvioagency.com/#visibility-audit",
-  "name": "L'audit de visibilité",
+  "name": "Audit de visibilité",
   "serviceType": "Audit de présence en ligne pour petites entreprises",
-  "description": "Un appel gratuit de 30 minutes qui passe en revue votre site web, votre présence sur Google, vos profils sociaux et le chemin qu'un client parcourt entre vous trouver et vous payer. Il produit la Carte de visibilité : votre note sur 100 dans cinq domaines et les trois choses qui vous coûtent le plus, livrée dans les 48 heures et à vous, que vous nous engagiez ou non.",
+  "description": "Conception web, recherche locale et médias sociaux pour petites entreprises. Commencez par un score gratuit et définissez votre projet de 45 jours.",
   "inLanguage": "fr-CA",
   "provider": {
     "@id": "https://adsvioagency.com/#organization"
@@ -130,7 +233,7 @@
   "areaServed": [
     {
       "@type": "Country",
-      "name": "United States"
+      "name": "États-Unis"
     },
     {
       "@type": "Country",
@@ -138,31 +241,29 @@
     },
     {
       "@type": "Country",
-      "name": "Dominican Republic"
+      "name": "République dominicaine"
     },
     {
       "@type": "Country",
-      "name": "Haiti"
+      "name": "Haïti"
     },
     {
       "@type": "Place",
-      "name": "Caribbean"
+      "name": "Caraïbes"
     }
   ],
   "availableLanguage": [
     "en",
-    "fr",
     "es",
-    "ht"
+    "fr"
   ],
   "offers": {
     "@type": "Offer",
-    "name": "L'audit de visibilité",
-    "price": "0",
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/InStock",
-    "url": "https://adsvioagency.com/fr/start"
-  }
+    "name": "Portée adaptée après le score de visibilité",
+    "url": "https://adsvioagency.com/fr/offer",
+    "description": "Portée et prix convenus après l’audit."
+  },
+  "url": "https://adsvioagency.com/fr/"
 }
 </script>
 <script type="application/ld+json">
@@ -174,6 +275,7 @@
   "name": "Adsvio Agency",
   "inLanguage": [
     "en",
+    "es",
     "fr"
   ],
   "publisher": {
@@ -215,32 +317,35 @@
 
 <!-- ==========================================================================
      HEADER
-     Links marked lang="en" go to pages that exist only in English. /fr/ is a
-     three-page conversion path, not a full mirror, and saying so in the markup
-     is more honest than pretending the whole site is translated.
      ========================================================================== -->
 <header class="header">
   <div class="container header__inner">
 
-    <!-- ====== LOGO PARTIAL - START ========================================= -->
+    <!-- ====== LOGO PARTIAL - START ==========================================
+         Temporary typographic wordmark. When the real logo file lands, replace
+         everything between these two markers with a single <img> (or inline
+         SVG) and delete nothing else. This is the only place it appears in the
+         header; the footer has its own copy of the same block.
+         ==================================================================== -->
     <a class="wordmark" href="/fr/" aria-label="Adsvio Agency, accueil"><img src="/assets/img/logo-adsvio.png" width="420" height="97" alt="" decoding="async"></a>
     <!-- ====== LOGO PARTIAL - END ========================================== -->
 
-    <nav class="nav" aria-label="Principale">
-      <a class="nav__link" href="/fr/offer">L&rsquo;offre 45 jours</a>
-      <a class="nav__link" href="/en/work" hreflang="en" lang="en">Réalisations</a>
-      <a class="nav__link" href="/en/services/" hreflang="en" lang="en">Services</a>
-      <a class="nav__link" href="/en/about" hreflang="en" lang="en">À propos</a>
-      <a class="nav__link" href="/fr/contact">Contact</a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a class="nav__link" href="/fr/work">Réalisations</a>
+      <a class="nav__link" href="/fr/services/">Services</a>
+      <a class="nav__link" href="/fr/for/local-businesses">Pour qui</a>
+      <a class="nav__link" href="/fr/about">À propos</a>
+      <a class="nav__link" href="/fr/guides/caribbean-business-online">Guides</a>
     </nav>
 
     <div class="header__actions">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" aria-current="true" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Langue du site">
+        <a class="langswitch__item" href="/en/" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/" aria-current="true" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
       <a class="btn btn--primary btn--sm" href="/fr/start"
-         data-event="book_call_click" data-event-where="header">Obtenez votre score de visibilité</a>
+         data-event="book_call_click" data-event-where="header">Obtenir mon score de visibilité gratuit</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
         <span class="visually-hidden">Ouvrir le menu</span>
         <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
@@ -259,22 +364,22 @@
       <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
     </button>
   </div>
-  <nav class="container menu__list" aria-label="Mobile">
+  <nav class="container menu__list" aria-label="Navigation mobile">
     <ul>
-      <li><a class="menu__link" href="/fr/offer">L&rsquo;offre 45 jours</a></li>
+      <li><a class="menu__link" href="/fr/work">Réalisations</a></li>
+      <li><a class="menu__link" href="/fr/offer">L’offre de 45 jours</a></li>
+      <li><a class="menu__link" href="/fr/services/">Services</a></li>
+      <li><a class="menu__link" href="/fr/for/local-businesses">Pour qui</a></li>
+      <li><a class="menu__link" href="/fr/about">À propos</a></li>
+      <li><a class="menu__link" href="/fr/guides/caribbean-business-online">Guides</a></li>
       <li><a class="menu__link" href="/fr/contact">Contact</a></li>
-      <li><a class="menu__link" href="/en/work" hreflang="en" lang="en">Réalisations</a></li>
-      <li><a class="menu__link" href="/en/services/" hreflang="en" lang="en">Services</a></li>
-      <li><a class="menu__link" href="/en/for/local-businesses" hreflang="en" lang="en">Pour qui</a></li>
-      <li><a class="menu__link" href="/en/about" hreflang="en" lang="en">À propos</a></li>
-      <li><a class="menu__link" href="/en/guides/caribbean-business-online" hreflang="en" lang="en">Guides</a></li>
     </ul>
   </nav>
   <div class="container menu__foot">
     <a class="btn btn--primary" href="/fr/start"
        data-event="book_call_click" data-event-where="mobile_menu">
       <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
-      Obtenez votre score de visibilité
+      Obtenir mon score de visibilité gratuit
     </a>
     <a class="btn btn--whatsapp" href="https://wa.me/18295927303"
        data-event="whatsapp_click" data-event-where="mobile_menu">
@@ -282,9 +387,10 @@
       Écrivez-nous sur WhatsApp
     </a>
     <div class="menu__langs">
-      <div class="langswitch">
-        <a class="langswitch__item" href="/en/" hreflang="en" lang="en">EN</a>
-        <a class="langswitch__item" href="/fr/" aria-current="true" hreflang="fr" lang="fr">FR</a>
+      <div class="langswitch" role="group" aria-label="Langue du site">
+        <a class="langswitch__item" href="/en/" hreflang="en" lang="en" data-language="en">EN</a>
+        <a class="langswitch__item" href="/es/" hreflang="es" lang="es" data-language="es">ES</a>
+        <a class="langswitch__item" href="/fr/" aria-current="true" hreflang="fr" lang="fr" data-language="fr">FR</a>
       </div>
     </div>
   </div>
@@ -295,8 +401,6 @@
 
 <!-- ==========================================================================
      5.1 HERO
-     data-langproof="fr" starts the cycle on the French sentence, so this page
-     never opens on an English line.
      ========================================================================== -->
 <section class="section hero section--paper">
   <div class="container hero__grid">
@@ -305,36 +409,27 @@
       <p class="hero__eyebrow">
         <span>Présence en ligne pour petites entreprises</span>
         <span class="dot" aria-hidden="true"></span>
-        <span class="langs">FR &middot; EN &middot; ES &middot; Kreyòl</span>
+        <span class="langs">EN · ES · FR</span>
       </p>
 
       <h1>
         <span class="hero__line">Vous avez bâti quelque chose de solide.</span>
-        <span class="langproof" data-langproof="fr">
+        <span class="langproof" data-localized-headline>
           <span class="langproof__viewport">
             <span class="langproof__text" data-lp-text lang="fr" aria-live="off">Que le monde le voie.</span>
           </span>
         </span>
       </h1>
 
-      <div class="langproof-pills" role="group" aria-label="Voir cette phrase dans une autre langue">
-        <button class="langproof-pill" type="button" data-lp-lang="en" aria-pressed="false">EN</button>
-        <button class="langproof-pill" type="button" data-lp-lang="fr" aria-pressed="true">FR</button>
-        <button class="langproof-pill" type="button" data-lp-lang="es" aria-pressed="false">ES</button>
-        <button class="langproof-pill" type="button" data-lp-lang="kr" aria-pressed="false">KR</button>
-      </div>
 
-      <p class="lead hero__lead">
-        Si votre site web et vos médias sociaux ne montrent pas ce dont vous êtes réellement
-        capable, vous perdez des clients au profit de gens qui savent simplement mieux paraître.
-        On corrige ça en 45 jours.
-      </p>
+
+      <p class="lead hero__lead">Nous relions conception de sites web, recherche locale et médias sociaux pour refléter la valeur de votre entreprise, inspirer confiance et faciliter le contact. Un projet de 45 jours selon vos priorités.</p>
 
       <div class="btn-row">
         <a class="btn btn--primary btn--lg" href="/fr/start"
            data-event="book_call_click" data-event-where="hero">
           <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
-          Obtenez votre score de visibilité
+          Obtenir mon score de visibilité gratuit
         </a>
         <a class="btn btn--whatsapp btn--lg" href="https://wa.me/18295927303"
            data-event="whatsapp_click" data-event-where="hero">
@@ -343,15 +438,19 @@
         </a>
       </div>
 
-      <p class="hero__support">30 minutes. Le rapport est à vous. Aucune vente.</p>
+      <p class="hero__support">30 minutes. Vous gardez le rapport. Sans pression commerciale.</p>
 
       <ul class="hero__ticks">
-        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> En ligne en 45 jours, garanti</li>
-        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> Un seul prix fixe</li>
-        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> Aucun contrat d&rsquo;engagement</li>
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> En ligne en 45 jours, avec garantie de livraison</li>
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> Un prix fixe</li>
+        <li><svg class="icon icon--sm" aria-hidden="true"><use href="#i-check"/></svg> Sans engagement prolongé</li>
       </ul>
     </div>
 
+    <!-- The first proof point, above the fold: our own sample build, rendered
+         in CSS rather than photographed. No image bytes, sharp at any density.
+         TODO: swap the gradient blocks for real WebP screenshots once the
+         Verdure Kitchen build is finished (Phase 3). -->
     <div>
       <div class="device-scene">
         <div class="laptop">
@@ -395,7 +494,7 @@
 
       <p class="device-caption">
         <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
-        <span>Projet-démo : <b>Verdure Kitchen</b>, un restaurant caribéen à Miami : le site et la grille Instagram assortie.</span>
+        <span>Projet de démonstration : <b>Verdure Kitchen</b>, un restaurant caribéen à Miami : site et grille Instagram assortie.</span>
       </p>
     </div>
 
@@ -404,11 +503,11 @@
 
 
 <!-- Ticker -->
-<div class="ticker" aria-label="Ce que nous bâtissons">
+<div class="ticker" aria-label="Nos réalisations">
   <div class="ticker__track">
     <ul class="ticker__group">
       <li>Sites web</li>
-      <li>Profil d&rsquo;entreprise Google</li>
+      <li>Profil d’entreprise Google</li>
       <li>Contenu social</li>
       <li>Identité de marque</li>
       <li>Référencement local</li>
@@ -420,7 +519,12 @@
 
 
 <!-- ==========================================================================
-     FOUNDER NOTE - see the English homepage for the design notes.
+     FOUNDER NOTE
+     Sits between the hero and the problem section so the visitor meets a
+     person before they meet a pitch. Deliberately quiet: no heading, no
+     eyebrow, no decorative quote glyph - the sentence is the whole content,
+     and it must not compete with the Language Proof directly above it.
+     Homepage only. Repeating it on interior pages would dilute it.
      ========================================================================== -->
 <section class="foundernote">
   <div class="container foundernote__inner reveal">
@@ -428,16 +532,14 @@
          src="/assets/img/pierre-founder.webp"
          width="72" height="72"
          loading="lazy" decoding="async"
-         alt="Pierre Runald Février, fondateur d&rsquo;Adsvio Agency"
+         alt="Pierre Runald Février, fondateur d’Adsvio Agency"
          onerror="this.onerror=null;this.src='/assets/img/pierre-founder.jpg'">
     <div>
-      <p class="foundernote__quote">&laquo;&nbsp;Trop de bonnes entreprises restent invisibles, non pas parce qu&rsquo;elles ne sont pas à la hauteur, mais parce que personne ne
-        leur a jamais montré comment se faire trouver. C&rsquo;est la seule raison d&rsquo;être
-        d&rsquo;Adsvio.&nbsp;&raquo;</p>
+      <p class="foundernote__quote">« Trop de bonnes entreprises restent invisibles, non par manque de qualité, mais parce que personne ne leur a montré comment se faire trouver. C’est la seule raison d’être d’Adsvio. »</p>
       <p class="foundernote__who">
         <span class="foundernote__name">Pierre Runald Février</span>
         <span aria-hidden="true"> &middot; </span>
-        <span class="foundernote__role">Fondateur, Adsvio Agency</span>
+        <span class="foundernote__role">Fondateur d’Adsvio Agency</span>
       </p>
     </div>
   </div>
@@ -446,70 +548,74 @@
 
 <!-- ==========================================================================
      5.2 PROBLEM
+     The three are an escalation - cannot be found, then no time, then burned.
+     That is a real sequence, so the numbers carry information.
      ========================================================================== -->
 <section class="section section--paper">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Ça vous dit quelque chose ?</p>
-      <h2 class="measure-tight">Trois choses tournent mal, dans cet ordre.</h2>
+      <p class="eyebrow">Cela vous ressemble?</p>
+      <h2 class="measure-tight">Trois difficultés qui vont souvent ensemble.</h2>
     </div>
 
     <ol class="problem__list" data-reveal-group>
       <li class="problem__item reveal">
         <span class="problem__num">01</span>
-        <span class="problem__text">Les gens ne vous trouvent pas, et ce qu&rsquo;ils trouvent ne convainc pas.</span>
+        <span class="problem__text">On vous trouve difficilement et votre présentation ne convainc pas.</span>
       </li>
       <li class="problem__item reveal">
         <span class="problem__num">02</span>
-        <span class="problem__text">Vous savez qu&rsquo;il faudrait publier. Vous n&rsquo;avez jamais le temps.</span>
+        <span class="problem__text">Vous souhaitez publier, mais manquez de temps.</span>
       </li>
       <li class="problem__item reveal">
         <span class="problem__num">03</span>
-        <span class="problem__text">Vous avez essayé seul. Ou vous avez engagé quelqu&rsquo;un qui a disparu.</span>
+        <span class="problem__text">Vous avez essayé seul ou confié le travail à quelqu’un qui n’a pas suivi.</span>
       </li>
     </ol>
 
     <p class="problem__verdict reveal">
-      Ce n&rsquo;est pas un problème de discipline. <span class="soft">C&rsquo;est un problème de système.</span>
+      Ce n’est pas toujours un manque d’effort. <span class="soft">Il faut relier les éléments.</span>
     </p>
   </div>
 </section>
 
 
 <!-- ==========================================================================
-     VISIBILITY SCORECARD - see the English homepage for the design notes.
+     VISIBILITY SCORECARD
+     Sits between the problem section and the offer: the visitor has just
+     recognised the problem, so the next question is "where do I stand?".
+     The sample card is deliberately a low score - a high one would defeat the
+     point - and it is labelled as a sample, because an unlabelled scorecard
+     reads as a real client's data.
      ========================================================================== -->
 <section class="section scorecard">
   <div class="container scorecard__grid">
 
     <div class="scorecard__copy reveal">
       <h2 class="measure-tight">Commencez par votre score.</h2>
-      <p class="lead">Avant de parler de construire quoi que ce soit, nous vous disons où vous en êtes vraiment.</p>
+      <p class="lead">Avant de proposer un nouveau site, nous montrons ce qui fonctionne et ce qui manque.</p>
       <p>
-        En 30 minutes, nous passons en revue votre site web, votre présence sur Google, vos profils
-        sociaux, et le chemin qu&rsquo;un client parcourt entre vous trouver et vous payer. Nous
-        évaluons chacun pendant que vous regardez.
+        En 30 minutes, nous examinons site, Google, profils sociaux et parcours de découverte au contact. Chaque dimension est évaluée avec vous.
       </p>
       <p>
-        Dans les 48 heures, vous recevez votre <b>Carte de visibilité</b> votre note sur 100 dans cinq domaines, et les trois choses qui vous coûtent le plus en ce moment. Elle est à
-        vous, que vous nous engagiez ou non.
+        Dans les 48 heures suivantes, vous recevez votre <b>fiche de visibilité</b> : une note sur 100 dans cinq dimensions et trois priorités. Vous le gardez et pouvez l’utiliser, même sans nous engager.
       </p>
-      <p>Aucune présentation commerciale. Aucune pression. Si nous ne sommes pas le bon choix, nous vous le dirons.</p>
+      <p>Sans présentation de vente ni pression. Si nous ne convenons pas, nous vous le dirons.</p>
       <a class="btn btn--primary btn--lg" href="/fr/start"
          data-event="book_call_click" data-event-where="scorecard">
         <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
-        Obtenez votre score de visibilité
+        Obtenir mon score de visibilité gratuit
       </a>
     </div>
 
     <div class="scorecard__demo reveal">
       <div class="scard" data-scorecard>
         <div class="scard__head">
-          <p class="scard__total" role="img" aria-label="Score de visibilité global : 35 sur 100, Invisible">
+          <p class="scard__total" role="img" aria-label="Visibilité globale : 35 sur 100, peu visible">
             <span class="scard__num" data-count-to="35">35</span>
             <span class="scard__outof" aria-hidden="true">/ 100</span>
           </p>
-          <span class="scard__band">Invisible</span>
+          <span class="scard__band">Peu visible</span>
         </div>
         <ul class="scard__bars">
           <li class="scard__row">
@@ -520,8 +626,8 @@
             <span class="scard__score is-low">9/25</span>
           </li>
           <li class="scard__row">
-            <span class="scard__area">Visibilité de recherche</span>
-            <span class="scard__track" role="img" aria-label="Visibilité de recherche : 5 sur 25">
+            <span class="scard__area">Visibilité dans la recherche</span>
+            <span class="scard__track" role="img" aria-label="Recherche : 5 sur 25">
               <span class="scard__fill is-low" style="width:20%"></span>
             </span>
             <span class="scard__score is-low">5/25</span>
@@ -549,7 +655,7 @@
           </li>
         </ul>
       </div>
-      <p class="scard__caption">Exemple de carte : la vôtre aura la même forme, avec vos chiffres.</p>
+      <p class="scard__caption">Fiche de démonstration : la vôtre contiendra vos données.</p>
     </div>
 
   </div>
@@ -557,17 +663,14 @@
 
 
 <!-- ==========================================================================
-     5.3 THE OFFER
-     "Authority Launch" and "Storefront Launch" stay in English - they are
-     product names, not descriptions, and translating them would break the
-     match with the English site and with anything Pierre says on a call.
+     5.3 THE OFFER - the centrepiece
      ========================================================================== -->
 <section class="section section--deep" id="offer">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow eyebrow--mango">La fondation 45 jours</p>
-      <h2 class="measure-tight">Tout ce qu&rsquo;il faut pour qu&rsquo;on vous trouve, qu&rsquo;on vous fasse confiance et qu&rsquo;on vous engage.</h2>
-      <p class="lead measure">Bâti en 45 jours. Un seul prix fixe pour tout le projet, convenu avant que le travail commence.</p>
+      <p class="eyebrow eyebrow--mango">La base de 45 jours</p>
+      <h2 class="measure-tight">Les éléments pour être trouvé, inspirer confiance et faciliter le contact.</h2>
+      <p class="lead measure">En 45 jours, avec un prix fixe convenu avant le travail.</p>
     </div>
 
     <div class="offer__cards" data-reveal-group>
@@ -576,21 +679,19 @@
         <span class="offer-card__icon">
           <svg class="icon" aria-hidden="true"><use href="#i-person"/></svg>
         </span>
-        <p class="offer-card__who">Pour les coachs, consultants, experts et marques personnelles</p>
-        <p class="offer-card__name" lang="en">The Authority Launch</p>
+        <p class="offer-card__who">Pour coachs, consultants, experts et marques personnelles</p>
+        <p class="offer-card__name">The Authority Launch</p>
         <p class="offer-card__desc">
-          Conçu pour les entreprises où votre expertise est le produit. Nous précisons votre
-          message, renforçons votre présence en ligne et créons un chemin clair entre
-          l&rsquo;attention et les conversations sérieuses.
+          Pour les entreprises fondées sur l’expertise. Nous clarifions le message, soignons la présentation et facilitons le passage de l’intérêt à une conversation utile.
         </p>
         <ul class="offer-card__scan">
           <li>Positionnement et message</li>
           <li>Présence de marque</li>
           <li>Site web</li>
-          <li>Captation de prospects</li>
-          <li>Fondation de contenu</li>
+          <li>Prise de contact</li>
+          <li>Base de contenu</li>
         </ul>
-        <span class="link-arrow">Voir l&rsquo;Authority Launch
+        <span class="link-arrow">Voir The Authority Launch
           <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
         </span>
       </a>
@@ -599,11 +700,10 @@
         <span class="offer-card__icon">
           <svg class="icon" aria-hidden="true"><use href="#i-store"/></svg>
         </span>
-        <p class="offer-card__who">Pour les salons, restaurants, cliniques, boutiques, bureaux et services locaux</p>
-        <p class="offer-card__name" lang="en">The Storefront Launch</p>
+        <p class="offer-card__who">Pour salons, restaurants, cliniques, commerces, bureaux et services locaux</p>
+        <p class="offer-card__name">The Storefront Launch</p>
         <p class="offer-card__desc">
-          Conçu pour les entreprises qui gagnent localement. Nous vous rendons plus faciles à
-          trouver, à croire et à joindre, que ce soit pour réserver, visiter ou acheter.
+          Pour les entreprises locales. Nous organisons information et contact pour faciliter découverte, confiance, réservation, visite ou commande.
         </p>
         <ul class="offer-card__scan">
           <li>Google et Maps</li>
@@ -612,29 +712,27 @@
           <li>Réservation ou commande</li>
           <li>Présence sociale</li>
         </ul>
-        <span class="link-arrow">Voir le Storefront Launch
+        <span class="link-arrow">Voir The Storefront Launch
           <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
         </span>
       </a>
 
     </div>
 
-      <!-- Aucune des deux voies n&rsquo;est un forfait figé. Voir en/index.html. -->
+      <!-- Neither track is a fixed package. The Visibility Score decides the
+           scope, which is the whole commercial model, so this line sits
+           directly under the pair rather than further down the page. -->
       <p class="offer__scope reveal">
-        Vous ne payez que ce dont votre entreprise a réellement besoin. Votre score de
-        visibilité nous montre ce qui compte en premier.
+        Vous payez le travail nécessaire. Le score aide à définir les priorités.
       </p>
 
       <p class="offer__anchor reveal">
-        Les projets commencent à 850&nbsp;$. La plupart des réalisations complètes se situent
-        entre 1&nbsp;500&nbsp;$ et 5&nbsp;000&nbsp;$, selon ce que vous avez déjà et selon votre
-        marché. Votre prix fixe est convenu après l&rsquo;audit : un seul montant pour tout
-        le projet, aucune facturation à l&rsquo;heure, aucune surprise.
+        Projets dès 850 $ US. La plupart des sites complets sont proposés entre 1 500 et 5 000 $ US selon l’existant et le marché. Après l’audit, un prix fixe couvre le projet, sans facturation horaire.
       </p>
 
     <div class="btn-row reveal">
-      <a class="btn btn--primary" href="/fr/offer">Voir le détail complet</a>
-      <span class="small soft">Les deux voies, chaque livrable nommé, et ce que chaque élément vous coûterait séparément.</span>
+      <a class="btn btn--primary" href="/fr/offer">Voir tous les détails</a>
+      <span class="small soft">Les deux options, leurs livrables et le travail de chaque élément.</span>
     </div>
   </div>
 </section>
@@ -642,56 +740,55 @@
 
 <!-- ==========================================================================
      5.4 THE ADSVIO METHOD
-     The letters spell the brand in English, and they still spell it in French
-     because every French word chosen here starts with the right letter:
-     Audit / Design / Systématiser / Voix / Itérer / Optimiser.
+     A genuine sequence, and the letters spell the brand - so the letters
+     are the numbering. No 01/02/03 on top of them.
      ========================================================================== -->
 <section class="section section--paper">
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">La méthode ADSVIO</p>
-      <h2 class="measure-tight">Six étapes. Les mêmes six, chaque fois.</h2>
-      <p class="lead measure">Le nom n&rsquo;est pas un ornement. C&rsquo;est le processus, dans l&rsquo;ordre.</p>
+      <h2 class="measure-tight">Six étapes, un processus clair.</h2>
+      <p class="lead measure">Chaque lettre représente une étape du travail, dans l’ordre.</p>
     </div>
 
     <ol class="method__rail" data-reveal-group>
       <li class="method__step reveal">
         <span class="method__letter">A</span>
         <span class="method__word">Audit</span>
-        <span class="method__note">Tout ce que vous avez en ligne, et tout ce que vos concurrents ont.</span>
+        <span class="method__note">Nous examinons votre présence en ligne et celle de vos concurrents.</span>
       </li>
       <li class="method__step reveal">
         <span class="method__letter">D</span>
         <span class="method__word">Design</span>
-        <span class="method__note">Conçu selon la façon dont vos clients décident vraiment, pas selon les tendances.</span>
+        <span class="method__note">Un design fondé sur les décisions de vos clients, plutôt que sur les tendances.</span>
       </li>
       <li class="method__step reveal">
         <span class="method__letter">S</span>
-        <span class="method__word">Systématiser</span>
-        <span class="method__note">Profils, réservations, avis, WhatsApp : reliés, pas éparpillés.</span>
+        <span class="method__word">Systèmes</span>
+        <span class="method__note">Profils, réservations, avis et WhatsApp : des outils reliés entre eux.</span>
       </li>
       <li class="method__step reveal">
         <span class="method__letter">V</span>
         <span class="method__word">Voix</span>
-        <span class="method__note">Vos mots, dans votre langue, qui sonnent comme vous et non comme un gabarit.</span>
+        <span class="method__note">Vos mots, dans votre langue, avec une voix qui vous ressemble.</span>
       </li>
       <li class="method__step reveal">
         <span class="method__letter">I</span>
-        <span class="method__word">Itérer</span>
-        <span class="method__note">Vous révisez chaque semaine. On ajuste avant que quoi que ce soit soit publié.</span>
+        <span class="method__word">Itération</span>
+        <span class="method__note">Vous examinez les progrès chaque semaine. Nous ajustons avant la mise en ligne.</span>
       </li>
       <li class="method__step reveal">
         <span class="method__letter">O</span>
-        <span class="method__word">Optimiser</span>
-        <span class="method__note">Recherche, vitesse et suivi configurés pour que le travail continue de rapporter.</span>
+        <span class="method__word">Optimisation</span>
+        <span class="method__note">Nous configurons la recherche, la vitesse et la mesure pour suivre le travail dans la durée.</span>
       </li>
     </ol>
 
     <ol class="weeks reveal" data-reveal-group>
       <li class="weeks__item"><span class="weeks__label">Semaine 1</span><span class="weeks__what">Audit et stratégie</span></li>
       <li class="weeks__item"><span class="weeks__label">Semaine 2</span><span class="weeks__what">Marque et rédaction</span></li>
-      <li class="weeks__item"><span class="weeks__label">Semaines 3&ndash;4</span><span class="weeks__what">Construction et intégration</span></li>
-      <li class="weeks__item"><span class="weeks__label">Semaine 5</span><span class="weeks__what">Référencement, contenu et systèmes</span></li>
+      <li class="weeks__item"><span class="weeks__label">Semaines 3 et 4</span><span class="weeks__what">Création et intégration</span></li>
+      <li class="weeks__item"><span class="weeks__label">Semaine 5</span><span class="weeks__what">Recherche, contenu et systèmes</span></li>
       <li class="weeks__item"><span class="weeks__label">Semaine 6</span><span class="weeks__what">Révision et lancement</span></li>
     </ol>
   </div>
@@ -699,34 +796,27 @@
 
 
 <!-- ==========================================================================
-     5.5 THE GUARANTEE
+     5.5 THE GUARANTEE - the dark band
      ========================================================================== -->
 <section class="section section--dark guarantee on-dark">
   <div class="container guarantee__grid">
     <div class="reveal">
       <span class="guarantee__seal">
         <svg class="icon icon--sm" aria-hidden="true"><use href="#i-shield"/></svg>
-        La garantie 45 jours
+        La garantie de livraison de 45 jours
       </span>
-      <h2>En ligne en <span class="mark-dark">45 jours</span>, sinon nous continuons gratuitement jusqu&rsquo;à ce que ce soit fait.</h2>
+      <h2>En ligne en <span class="mark-dark">45 jours</span>, sinon nous continuons sans frais jusqu’à la mise en ligne.</h2>
     </div>
 
     <div class="guarantee__body reveal">
       <p>
-        Nous nous engageons à livrer votre fondation complète dans les 45 jours civils suivant
-        le lancement. Site web, profils, contenu, tout. Si nous manquons cette date pour une
-        raison qui nous incombe, nous continuons à travailler sans frais supplémentaires
-        jusqu&rsquo;à la mise en ligne.
+        Nous livrons la base complète dans les 45 jours civils du lancement : site, profils et contenu convenus. Si le retard nous est imputable, nous continuons sans frais jusqu’à la mise en ligne.
       </p>
       <p>
-        Nous pouvons le promettre parce que la Méthode ADSVIO est un processus fixe, pas un
-        projet à durée indéterminée. Vous voyez des progrès chaque semaine.
+        La méthode ADSVIO suit des étapes définies. Vous examinez les progrès chaque semaine.
       </p>
       <p class="guarantee__ask">
-        <b>Une seule chose de votre côté :</b> nous avons besoin de votre contenu, de vos
-        photos et de vos approbations dans les 5 jours ouvrables suivant chaque demande. Si
-        quelque chose est retardé de votre côté, le compteur se met en pause, et nous vous le dirons par écrit dès que cela arrive. Aucune surprise, dans un sens comme dans
-        l&rsquo;autre.
+        <b>Ce que nous vous demandons :</b> contenu, photos et approbations dans les cinq jours ouvrables de chaque demande. En cas de retard de votre côté, le délai est suspendu et nous vous avisons immédiatement par écrit.
       </p>
     </div>
   </div>
@@ -734,58 +824,97 @@
 
 
 <!-- ==========================================================================
-     5.6 PROOF
-     Real feedback, quoted verbatim in the language it was written in. Nothing
-     here is translated, because translating a testimonial means putting words
-     in someone's mouth that they never said. The note below the cards says so.
+     5.6 CLIENT FEEDBACK
+     Every quote below is real, verbatim and attributed. Nothing here is
+     invented and nothing may be.
+
+     The section used to be headed "The agency is new. The work isn't", which
+     led with an apology and made the company's age the first thing a visitor
+     read. The feedback is the same; the framing now leads with what clients
+     actually said about the work. The provenance note still appears, because
+     it is true and because a reader who checks Upwork should find exactly what
+     the page implies. It is just no longer the headline.
      ========================================================================== -->
 <section class="section section--paper">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Commentaires clients</p>
-      <h2 class="measure-tight">Reconnus pour la façon dont le travail se fait.</h2>
+      <p class="eyebrow">Commentaires de clients</p>
+      <h2 class="measure-tight">La confiance dans notre façon de travailler.</h2>
       <p class="lead measure">
-        Les clients font confiance à Pierre pour la clarté des communications, la fiabilité de
-        la livraison et le professionnalisme de l&rsquo;exécution, sur des mandats de longue
-        durée aux États-Unis, au Canada et dans les Caraïbes.
+        Des clients aux États-Unis, au Canada et dans les Caraïbes ont fait confiance à Pierre pour sa communication, sa fiabilité et sa réalisation professionnelle de projets durables.
       </p>
     </div>
 
+    <!-- ======================================================================
+         REAL FEEDBACK - verbatim, nothing rewritten, nothing invented.
+         The LinkedIn quote is an excerpt from Sylvain Exavier's public
+         recommendation of 26 January 2026; the ellipsis marks the omission and
+         the sentence quoted is complete and unaltered. The two Upwork quotes
+         are copied from the contract reviews as the client wrote them,
+         punctuation and capitals included.
+         NOTE: these are reviews of Pierre's pre-agency contract work, not of
+         Adsvio client projects. The note under the cards says so. Replace them
+         with Adsvio client testimonials as those arrive. Do not stack these
+         underneath as if they were the same thing.
+         ====================================================================== -->
+
+    <!--
+    Future Adsvio testimonial. Copy this block, fill every field, and only then
+    move it into the grid below. If any line cannot be completed truthfully,
+    the testimonial does not go on the site.
+
+    Name:
+    Role / company:
+    Exact quote (verbatim, no tidying):
+    Verified source (URL or screenshot on file):
+    Permission confirmed (who, when):
+    Date received:
+    -->
+    <!--
+    Future Adsvio testimonial
+
+    Name:
+    Role / company:
+    Exact quote (verbatim, no tidying):
+    Verified source (URL or screenshot on file):
+    Permission confirmed (who, when):
+    Date received:
+    -->
     <div class="grid grid-3" data-reveal-group>
 
       <article class="quote-card reveal">
         <svg class="icon icon--solid quote-card__mark" aria-hidden="true"><use href="#i-quote"/></svg>
-        <blockquote lang="en">I would highly recommend Pierre Runald Fevrier to any individual or organization, anytime, without hesitation.</blockquote>
+        <blockquote>Pierre Runald est exceptionnellement organisé et communique avec clarté et intention… Je recommanderais vivement Pierre Runald Fevrier à toute personne ou organisation, en tout temps et sans hésitation.</blockquote>
         <div class="quote-card__who">
           <span>
-            <span class="quote-card__name">Sylvain Exavier, PMP&reg;</span><br>
-            <span class="quote-card__role">Project Management Professional</span>
+            <span class="quote-card__name">Sylvain Exavier, PMP®</span><br>
+            <span class="quote-card__role">Professionnel en gestion de projets</span>
           </span>
-          <span class="source-tag">via LinkedIn</span>
+          <span class="source-tag">sur LinkedIn</span>
         </div>
       </article>
 
       <article class="quote-card reveal">
         <svg class="icon icon--solid quote-card__mark" aria-hidden="true"><use href="#i-quote"/></svg>
-        <blockquote lang="en">Pierre is one of the best workers on here, he understood all task, always gave amazing suggestions&hellip; if you&rsquo;re looking for an amazing person on your team, Pierre is the GO TO PERSON FOR SURE!</blockquote>
+        <blockquote>Pierre est l’un des meilleurs collaborateurs ici; il a compris toutes les tâches et proposé d’excellentes idées… si vous cherchez une personne formidable dans votre équipe, Pierre EST SANS AUCUN DOUTE LA BONNE PERSONNE!</blockquote>
         <div class="quote-card__who">
           <span>
             <span class="quote-card__name">Chris</span><br>
-            <span class="quote-card__role">Entrepreneur, Ha&iuml;ti</span>
+            <span class="quote-card__role">Entrepreneur, Haïti</span>
           </span>
-          <span class="source-tag">via Upwork &middot; 5,0</span>
+          <span class="source-tag">sur Upwork · 5,0</span>
         </div>
       </article>
 
       <article class="quote-card reveal">
         <svg class="icon icon--solid quote-card__mark" aria-hidden="true"><use href="#i-quote"/></svg>
-        <blockquote lang="en">Pierre Runald has been amazing in helping us organize our work and keep communications fluid.</blockquote>
+        <blockquote>Pierre Runald a été formidable pour nous aider à organiser notre travail et à maintenir une communication fluide.</blockquote>
         <div class="quote-card__who">
           <span>
             <span class="quote-card__name">Jason D.</span><br>
             <span class="quote-card__role">Entrepreneur, Canada</span>
           </span>
-          <span class="source-tag">via Upwork &middot; 5,0</span>
+          <span class="source-tag">sur Upwork · 5,0</span>
         </div>
       </article>
 
@@ -793,8 +922,7 @@
 
     <p class="concept-note reveal">
       <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
-      Commentaires choisis parmi des mandats réalisés par Pierre avant le lancement
-      d&rsquo;Adsvio. Reçus en anglais et reproduits mot pour mot, sans traduction.
+      Commentaires sélectionnés sur les mandats de Pierre avant le lancement d’Adsvio. Citations traduites de l’anglais.
     </p>
 
     <p style="margin-top:var(--s-4)" class="reveal">
@@ -804,85 +932,85 @@
       </a>
     </p>
 
-    <!-- Capacité, pas un compte à rebours. Voir le commentaire dans en/index.html. -->
+    <!-- Capacity, not a countdown. The old block named a discount and a number
+         of remaining spots before anything had been scored, which pre-committed
+         the price and inverted the whole model. Two to three a month is a fact
+         Pierre can state honestly and defend on a call; "3 spots left" would
+         need tracking that does not exist. Do not reintroduce a number here
+         unless it is genuinely maintained somewhere. -->
     <div class="founding reveal">
       <div>
-        <span class="founding__count">Capacité</span>
-        <h3>Une attention senior sur chaque projet actif.</h3>
+        <span class="founding__count">Disponibilité</span>
+        <h3>Une attention directe à chaque projet.</h3>
         <p>
-          Nous gardons un nombre de projets actifs limité pour que chaque client obtienne des
-          communications rapides, un responsable clair et des progrès visibles. Si votre score
-          de visibilité montre que nous sommes le bon choix, nous vous donnons la prochaine
-          date de départ disponible.
+          Nous limitons les projets actifs pour assurer communication, responsabilité et progrès visibles. Si le projet convient, nous indiquons la prochaine date disponible.
         </p>
       </div>
       <a class="btn btn--primary" href="/fr/start"
-         data-event="book_call_click" data-event-where="founding">Obtenez votre score de visibilité</a>
+         data-event="book_call_click" data-event-where="founding">Obtenir mon score de visibilité gratuit</a>
     </div>
   </div>
 </section>
 
 
 <!-- ==========================================================================
-     5.7 SAMPLE BUILDS - concept work. Never "nos clients", never "études de cas".
+     5.7 SAMPLE BUILDS - concept work. Never "our clients", never "case studies".
      ========================================================================== -->
 <section class="section section--deep">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Projets-démos</p>
-      <h2 class="measure-tight">À quoi ressemblent 45 jours.</h2>
+      <p class="eyebrow">Projets de démonstration</p>
+      <h2 class="measure-tight">À quoi peut ressembler le travail de 45 jours.</h2>
       <p class="lead measure">
-        Trois réalisations complètes qui montrent notre processus du début à la fin. Des projets conceptuels, bâtis selon la même norme que le travail client.
+        Trois concepts complets qui montrent notre processus. Des démonstrations réalisées avec le même soin qu’un mandat client.
       </p>
     </div>
 
     <div class="grid grid-3" data-reveal-group>
 
-      <a class="card card--link build-card reveal" href="/en/work/verdure-kitchen" hreflang="en">
+      <a class="card card--link build-card reveal" href="/fr/work/verdure-kitchen">
         <span class="build-card__art build-card__art--verdure">
           <span class="build-card__vertical">Restaurant</span>
         </span>
         <div class="build-card__body">
           <h3>Verdure Kitchen</h3>
-          <span class="build-card__where">Restaurant caribéen &middot; Miami</span>
+          <span class="build-card__where">Restaurant caribéen · Miami</span>
           <span class="build-card__note">
-            Chaleureux, qui donne faim. Menu, heures, réservations, carte et bandeau d&rsquo;avis : tout ce qu&rsquo;un inconnu affamé doit voir en dix secondes.
+            Chaleureux et gourmand : menu, heures, réservations, carte et avis pour une décision rapide.
           </span>
-          <span class="link-arrow">Voir la réalisation
+          <span class="link-arrow">Voir le projet
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
           </span>
         </div>
       </a>
 
-      <a class="card card--link build-card reveal" href="/en/work/clarite-consulting" hreflang="en">
+      <a class="card card--link build-card reveal" href="/fr/work/clarite-consulting">
         <span class="build-card__art build-card__art--clarite">
-          <span class="build-card__vertical">Consultation</span>
+          <span class="build-card__vertical">Consultant</span>
         </span>
         <div class="build-card__body">
           <h3>Clarité Consulting</h3>
-          <span class="build-card__where">Consultante RH bilingue &middot; Montréal</span>
+          <span class="build-card__where">Consultante RH bilingue · Montréal</span>
           <span class="build-card__note">
-            Éditorial et sobre. Les références en premier, les services en français et en anglais
-            clairs, la réservation à un clic de partout sur la page.
+            Sobre et clair : qualifications, services en français et anglais et réservation accessible sur la page.
           </span>
-          <span class="link-arrow">Voir la réalisation
+          <span class="link-arrow">Voir le projet
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
           </span>
         </div>
       </a>
 
-      <a class="card card--link build-card reveal" href="/en/work/atelier-nord" hreflang="en">
+      <a class="card card--link build-card reveal" href="/fr/work/atelier-nord">
         <span class="build-card__art build-card__art--atelier">
           <span class="build-card__vertical">Salon et spa</span>
         </span>
         <div class="build-card__body">
           <h3>Atelier Nord</h3>
-          <span class="build-card__where">Studio de coiffure et spa &middot; Saint-Domingue</span>
+          <span class="build-card__where">Studio de coiffure et spa · Saint-Domingue</span>
           <span class="build-card__note">
-            Assuré et tactile. Menu de services avec les vrais prix, profils des stylistes,
-            galerie, et réservation directe par WhatsApp. En espagnol d&rsquo;abord.
+            Services avec prix, profils de l’équipe, galerie et réservation WhatsApp. Conçu d’abord en espagnol.
           </span>
-          <span class="link-arrow">Voir la réalisation
+          <span class="link-arrow">Voir le projet
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
           </span>
         </div>
@@ -892,8 +1020,7 @@
 
     <p class="concept-note reveal">
       <svg class="icon icon--sm" aria-hidden="true"><use href="#i-info"/></svg>
-      Ce sont des projets conceptuels, pas des mandats clients. Les pages détaillées sont en
-      anglais. Le vrai travail client les remplacera à mesure qu&rsquo;il sera lancé.
+      Ce sont des concepts, pas des projets clients. Ils seront remplacés par des mandats réels au lancement.
     </p>
   </div>
 </section>
@@ -901,53 +1028,58 @@
 
 <!-- ==========================================================================
      5.8 THE MARKET - sourced statistics. Market context, never our results.
-     The Canadian figure leads on this page because this page is written for
-     Montreal and Ottawa. The Statistics Canada link carries Lang=F so a French
-     reader lands on the French version of the source table.
+     Every figure below was checked against the linked primary source.
      ========================================================================== -->
 <section class="section section--paper">
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">Contexte du marché</p>
-      <h2 class="measure-tight">Les entreprises sont là. Les sites web, non.</h2>
+      <h2 class="measure-tight">Les entreprises existent. Leur présence web peut encore progresser.</h2>
     </div>
 
     <div class="stats" data-reveal-group>
 
       <div class="stat reveal">
-        <p class="stat__figure" data-count-to="178995">178 995</p>
-        <p class="stat__what">Personnes au Canada ont déclaré une origine haïtienne au Recensement de 2021, la majorité au Québec.</p>
-        <span class="stat__source">
-          <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/sip/details/page.cfm?Dguid=2021A000011124&amp;Lang=F&amp;PoiId=2&amp;TId=12" rel="noopener">Statistique Canada, Recensement de la population de 2021</a>
-        </span>
-      </div>
-
-      <div class="stat reveal">
-        <p class="stat__figure" data-count-to="194585">194 585</p>
+        <p class="stat__figure" data-count-to="194585">194,585</p>
         <p class="stat__what">Entreprises employeuses détenues par des personnes noires aux États-Unis en 2022.</p>
         <span class="stat__source">
-          US Census Bureau, Annual Business Survey,
-          <a href="https://www.pewresearch.org/short-reads/2025/02/12/a-look-at-black-owned-businesses-in-the-us/" rel="noopener">via Pew Research Center, février 2025</a>
+          Bureau du recensement des États-Unis, enquête annuelle sur les entreprises,
+          <a href="https://www.pewresearch.org/short-reads/2025/02/12/a-look-at-black-owned-businesses-in-the-us/" rel="noopener">cité par Pew Research Center, février 2025</a>
         </span>
       </div>
 
       <div class="stat reveal">
-        <p class="stat__figure" data-count-to="57" data-count-suffix="&nbsp;%">57 %</p>
+        <p class="stat__figure" data-count-to="57" data-count-suffix="%">57%</p>
         <p class="stat__what">
-          Croissance de ce nombre entre 2017 et 2022. Leur chiffre d&rsquo;affaires combiné a grimpé
-          de 66&nbsp;% sur les mêmes cinq ans, pour atteindre 211,8&nbsp;milliards de dollars américains.
+          Croissance de ce nombre de 2017 à 2022. Le chiffre d’affaires combiné a augmenté de 66 % sur la période, à 211,8 milliards $ US.
         </p>
         <span class="stat__source">
-          US Census Bureau, Annual Business Survey,
-          <a href="https://www.pewresearch.org/short-reads/2025/02/12/a-look-at-black-owned-businesses-in-the-us/" rel="noopener">via Pew Research Center, février 2025</a>
+          Bureau du recensement des États-Unis, enquête annuelle sur les entreprises,
+          <a href="https://www.pewresearch.org/short-reads/2025/02/12/a-look-at-black-owned-businesses-in-the-us/" rel="noopener">cité par Pew Research Center, février 2025</a>
         </span>
       </div>
 
+      <div class="stat reveal">
+        <p class="stat__figure" data-count-to="178995">178,995</p>
+        <p class="stat__what">Personnes ayant déclaré une origine haïtienne au recensement canadien de 2021, surtout au Québec.</p>
+        <span class="stat__source">
+          <a href="https://www12.statcan.gc.ca/census-recensement/2021/dp-pd/sip/details/page.cfm?Dguid=2021A000011124&amp;Lang=E&amp;PoiId=2&amp;TId=12" rel="noopener">Statistique Canada, Recensement de la population de 2021</a>
+        </span>
+      </div>
+
+      <!-- ==================================================================
+           SLOT LEFT EMPTY ON PURPOSE - a fourth figure for the Haitian
+           population in the United States, and one for Dominican small
+           business. The only Census-grade US figure that could be verified
+           is from the 2009 ACS (830,000 with Haitian ancestry), which is too
+           old to present as current, and later counts come from secondary
+           sources. Nothing estimated, nothing invented. Tracked in
+           PLACEHOLDERS.md.
+           ================================================================== -->
     </div>
 
     <p class="market-frame reveal">
-      Ce sont des chiffres sur le marché, pas sur Adsvio. Nous ne publions nos propres résultats
-      que lorsqu&rsquo;un client accepte d&rsquo;y associer son nom.
+      Ces chiffres concernent le marché, pas Adsvio. Nous publions nos résultats uniquement avec un client identifié qui autorise son nom.
     </p>
   </div>
 </section>
@@ -960,36 +1092,33 @@
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">Pour qui</p>
-      <h2 class="measure-tight">Deux types d&rsquo;entreprise. Deux versions des mêmes 45 jours.</h2>
+      <h2 class="measure-tight">Deux types d’entreprise, le même processus de 45 jours.</h2>
     </div>
 
     <div class="grid grid-2" data-reveal-group>
 
-      <a class="card card--link audience-card reveal" href="/en/for/coaches-consultants" hreflang="en">
+      <a class="card card--link audience-card reveal" href="/fr/for/coaches-consultants">
         <span class="offer-card__icon">
           <svg class="icon" aria-hidden="true"><use href="#i-person"/></svg>
         </span>
         <h3>Coachs, consultants et marques personnelles</h3>
         <p class="audience-card__persona">
-          C&rsquo;est vous, le produit. Les gens doivent croire que vous savez de quoi vous parlez avant
-          même de vous adresser la parole, et en ce moment, votre site ne fait pas ce travail.
+          Votre expertise est le service. Le site doit la clarifier pour que le visiteur décide de vous parler.
         </p>
-        <span class="link-arrow">Voir <span lang="en">the Authority Launch</span>
+        <span class="link-arrow">Voir The Authority Launch
           <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
         </span>
       </a>
 
-      <a class="card card--link audience-card reveal" href="/en/for/local-businesses" hreflang="en">
+      <a class="card card--link audience-card reveal" href="/fr/for/local-businesses">
         <span class="offer-card__icon">
           <svg class="icon" aria-hidden="true"><use href="#i-store"/></svg>
         </span>
-        <h3>Commerces et services locaux</h3>
+        <h3>Entreprises de services locales</h3>
         <p class="audience-card__persona">
-          Salons, restaurants, cliniques, boutiques, bureaux. Quelqu&rsquo;un à trois rues d&rsquo;ici prend
-          votre client parce qu&rsquo;il sort en premier sur la carte et qu&rsquo;il a meilleure allure en y
-          arrivant.
+          Salons, restaurants, cliniques, commerces et bureaux. Le client doit vous trouver, comprendre le service et savoir comment venir ou réserver.
         </p>
-        <span class="link-arrow">Voir <span lang="en">the Storefront Launch</span>
+        <span class="link-arrow">Voir The Storefront Launch
           <svg class="icon icon--sm" aria-hidden="true"><use href="#i-arrow"/></svg>
         </span>
       </a>
@@ -997,155 +1126,131 @@
     </div>
 
     <p class="reach-line reveal">
-      Nous travaillons avec des entreprises de tous les horizons. Il se trouve simplement que nous
-      le faisons en quatre langues : français, anglais, espagnol et kreyòl.
+      Nous accompagnons des entreprises de toutes origines en français, anglais, espagnol et créole haïtien.
     </p>
   </div>
 </section>
 
 
 <!-- ==========================================================================
-     5.10 FAQ - details/summary, works with JavaScript switched off
+     5.10 FAQ - details/summary, so it works with JavaScript switched off
      ========================================================================== -->
 <section class="section section--paper">
   <div class="container">
     <div class="section-head reveal">
-      <p class="eyebrow">Questions</p>
-      <h2 class="measure-tight">Ce que les gens demandent avant de réserver.</h2>
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2 class="measure-tight">Ce qu’il faut savoir avant de réserver.</h2>
     </div>
 
     <div class="faq" data-reveal-group>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Et si j&rsquo;ai déjà un site web ?
+          Et si j’ai déjà un site?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            Nous vérifions d&rsquo;abord ce que vous avez. Parfois la bonne décision est de tout refaire.
-            Parfois c&rsquo;est de corriger les trois choses qui vous freinent. Si votre site actuel vaut
-            la peine d&rsquo;être gardé, nous vous le dirons : vous payez moins, et nous consacrons ce
-            temps à vos profils et à votre contenu.
+            Nous examinons l’existant. Parfois une refonte convient; parfois trois corrections suffisent. Si votre site mérite d’être conservé, nous le dirons et proposerons les améliorations nécessaires.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Qu&rsquo;est-ce qu&rsquo;une Carte de visibilité, exactement ?
+          Que contient la fiche de visibilité?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            Un document d&rsquo;une page où votre entreprise est notée sur 100 dans cinq domaines :
-            votre site web, votre visibilité de recherche, votre présence sociale, vos avis, et le
-            chemin qu&rsquo;un client parcourt pour vous joindre. Il nomme les trois choses qui vous
-            coûtent le plus en ce moment, en langage clair. Vous le recevez dans les 48 heures
-            suivant l&rsquo;appel et il est à vous.
+            Une page avec une note sur 100 pour site, recherche, médias sociaux, avis et parcours de contact. Elle indique trois priorités en termes clairs, sous 48 heures après l’appel. Vous la gardez.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Le score, est-ce juste une tactique de vente ?
+          Le score est-il seulement un outil de vente?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            C&rsquo;est ainsi que nous décidons quoi vous facturer, alors il doit être juste. Si votre
-            site web va bien et que seule votre fiche Google est brisée, le score le dit, et nous vous facturons la fiche Google, pas une refonte. Nous tromper sur votre score nous
-            coûterait plus que ça ne nous rapporterait.
+            Il sert à définir le devis et doit être exact. Si le site fonctionne et seul le profil Google a un problème, nous proposons ce profil plutôt qu’une refonte.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Qu&rsquo;est-ce qui se passe après les 45 jours ?
+          Que se passe-t-il après les 45 jours?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            Tout vous appartient. Le site, les profils, le contenu, les accès. Sans condition.
+            Site, profils, contenu et accès vous appartiennent.
           </p>
           <p>
-            La plupart des clients nous demandent de continuer à gérer les médias sociaux et le
-            contenu au mois. C&rsquo;est facultatif, d&rsquo;un mois à l&rsquo;autre, et nous en parlons après le lancement, pas avant.
-          </p>
-        </div>
-      </details>
-
-      <details class="faq__item reveal">
-        <summary class="faq__q">
-          Travaillez-vous avec des entreprises au Québec et au Canada ?
-          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
-        </summary>
-        <div class="faq__a">
-          <p>
-            Oui. Nous travaillons en français, en anglais, en espagnol et en kreyòl, et nos clients
-            sont aux États-Unis, au Canada et en République dominicaine. Tout se passe par
-            visioconférence et par WhatsApp, alors ce qui compte, c&rsquo;est que les fuseaux horaires
-            concordent. Entre Montréal, Ottawa et Saint-Domingue, il n&rsquo;y a au plus qu&rsquo;une heure
-            d&rsquo;écart.
+            Vous pouvez demander une gestion sociale et de contenu mensuelle. Elle est facultative, au mois, et discutée après le lancement.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Qu&rsquo;est-ce que j&rsquo;ai à faire, concrètement ?
+          Travaillez-vous hors des États-Unis et de la RD?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            Moins que vous pensez. Un appel de départ, une courte révision chaque semaine, et des
-            réponses quand nous avons des questions. Nous rédigeons les textes, bâtissons le site,
-            configurons les profils et produisons votre premier mois de contenu. Prévoyez environ
-            deux heures par semaine.
+            Oui. Nous travaillons en anglais, français, espagnol et créole haïtien pour des clients aux États-Unis, au Canada et en République dominicaine, par vidéo et WhatsApp selon les horaires.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Pourquoi 45 jours et pas plus vite ?
+          Quelle sera ma participation?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            On pourrait aller plus vite. On préfère bien faire. Quarante-cinq jours nous laissent
-            le temps d&rsquo;écrire une vraie copie, de construire correctement, et de vous laisser
-            réviser chaque étape sans pression. La plupart des projets se terminent en avance, mais nous préférons battre une date réaliste que rater une date optimiste.
+            Une rencontre initiale, une courte révision hebdomadaire et les réponses nécessaires. Nous rédigeons, développons, configurons et préparons le premier mois de contenu. Prévoyez deux heures par semaine.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Et si j&rsquo;ai besoin de changements après le lancement ?
+          Pourquoi 45 jours?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            Les petits changements dans les 30 jours suivant le lancement sont inclus : une formulation, des heures, une photo, un prix. Tout ce qui est plus gros est chiffré à
-            part, ou couvert si vous êtes sur un forfait mensuel. Nous ne vous facturons pas pour
-            corriger nos propres erreurs.
+            Pour rédiger, construire et revoir chaque étape avec soin. Nous préférons un délai réaliste à une promesse trop rapide.
           </p>
         </div>
       </details>
 
       <details class="faq__item reveal">
         <summary class="faq__q">
-          Comment fonctionnent les paiements ?
+          Et si j’ai besoin de changements après le lancement?
           <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
         </summary>
         <div class="faq__a">
           <p>
-            La moitié au départ, la moitié le jour du lancement. Si c&rsquo;est serré, il existe un plan
-            de paiement sur trois mois moyennant de légers frais. Aucun abonnement à annuler, aucun
-            renouvellement automatique, aucun engagement.
+            Les petits changements des 30 premiers jours sont inclus : texte, heures, photo ou prix. Les plus importants sont distincts ou couverts par un plan mensuel. Nous corrigeons nos erreurs sans frais.
+          </p>
+        </div>
+      </details>
+
+      <details class="faq__item reveal">
+        <summary class="faq__q">
+          Comment fonctionnent les paiements?
+          <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+        </summary>
+        <div class="faq__a">
+          <p>
+            50 % au départ et 50 % au lancement. Un plan sur trois mois comporte de petits frais administratifs. Sans renouvellement automatique ni engagement prolongé.
           </p>
         </div>
       </details>
@@ -1157,24 +1262,75 @@
 
 <!-- ==========================================================================
      5.11 FINAL CTA
+     Brief §3.1 lists teal-deep for the final CTA and §5.11 specifies
+     paper-deep. Going with paper-deep: the footer directly below is
+     teal-deep, and two dark bands back to back breaks the section rhythm.
      ========================================================================== -->
+<!-- ==========================================================================
+     5.10b START FREE
+     Two ways in, deliberately unequal. The Visibility Score is the offer that
+     produces a conversation, so it keeps the mango panel, the larger heading
+     and the primary button. The checklist exists for the visitor who is
+     interested but not ready to put thirty minutes in a calendar; without it
+     that person leaves with nothing and we never hear from them again.
+
+     Do not let these two become visually equal. A secondary offer that looks
+     as important as the primary one just splits the decision.
+     ========================================================================== -->
+<section class="section section--paper">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Commencez gratuitement</p>
+      <h2 class="measure-tight">Deux façons d’examiner votre présence en ligne.</h2>
+    </div>
+
+    <div class="startfree" data-reveal-group>
+
+      <div class="startfree__card startfree__card--primary reveal">
+        <p class="startfree__label">Score de visibilité gratuit</p>
+        <h3>Une note sur 100 et trois priorités principales.</h3>
+        <p class="startfree__body">
+          En 30 minutes, nous examinons site, recherche et médias sociaux avec vous.
+        </p>
+        <a class="btn btn--primary btn--lg" href="/fr/start"
+           data-event="book_call_click" data-event-where="start_free">
+          <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
+          Obtenir mon score de visibilité gratuit
+        </a>
+        <p class="startfree__note">Vous gardez le rapport, sans pression commerciale.</p>
+      </div>
+
+      <div class="startfree__card reveal">
+        <p class="startfree__label">Liste de vérification en 27 points</p>
+        <h3>Ce qui aide un inconnu à vous faire confiance.</h3>
+        <p class="startfree__body">
+          Une liste pratique de ce qu’un visiteur juge rapidement et des améliorations possibles. Environ une demi-heure.
+        </p>
+        <a class="btn btn--secondary" href="/fr/checklist"
+           data-event="checklist_click" data-event-where="start_free">Obtenir la liste gratuite</a>
+        <p class="startfree__note">Sans appel nécessaire.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section class="section section--deep finalcta" id="final-cta">
   <div class="container container--narrow">
-    <h2 class="reveal">Découvrez ce qui vous coûte des clients.</h2>
+    <h2 class="reveal">Découvrez ce qui freine le contact.</h2>
     <p class="lead reveal">
-      Trente minutes. Nous passons en revue votre site web, votre visibilité de recherche et votre
-      présence sociale, et nous évaluons chacun pendant que vous regardez.
+      En 30 minutes, nous examinons site, recherche et médias sociaux avec vous.
     </p>
     <p class="lead reveal">
-      Vous recevez votre Carte de visibilité dans les 48 heures : votre note sur 100 et les
-      trois correctifs les plus importants. Elle est à vous, que nous travaillions ensemble ou non.
+      Sous 48 heures, vous recevez la fiche : note sur 100 et trois priorités. Vous la gardez, avec ou sans projet.
     </p>
 
     <div class="btn-row reveal">
       <a class="btn btn--primary btn--lg" href="/fr/start"
          data-event="book_call_click" data-event-where="final_cta">
         <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
-        Obtenez votre score de visibilité
+        Obtenir mon score de visibilité gratuit
       </a>
       <a class="btn btn--whatsapp btn--lg" href="https://wa.me/18295927303"
          data-event="whatsapp_click" data-event-where="final_cta">
@@ -1184,21 +1340,14 @@
     </div>
 
     <p class="finalcta__reassure reveal">
-      30 minutes. Le rapport est à vous. Aucune vente.
+      30 minutes. Vous gardez le rapport. Sans pression commerciale.
     </p>
     <p class="finalcta__prefer reveal">
-      Vous préférez écrire ? <a href="https://wa.me/18295927303"
-        data-event="whatsapp_click" data-event-where="final_cta_prefer">Écrivez-nous sur WhatsApp
-        au +1&nbsp;829-592-7303</a>
+      Vous préférez écrire? <a href="https://wa.me/18295927303"
+        data-event="whatsapp_click" data-event-where="final_cta_prefer">Écrivez sur WhatsApp au +1 829-592-7303</a>
     </p>
 
-    <p class="finalcta__langs reveal">
-      <a href="/en/" hreflang="en" lang="en">Get my free Visibility Score</a>
-      <span aria-hidden="true">&middot;</span>
-      <span lang="es">Reserve su auditoría gratuita</span>
-      <span aria-hidden="true">&middot;</span>
-      <span lang="ht">Rezève odit gratis ou</span>
-    </p>
+    <p class="finalcta__langs reveal"><a href="/en/start" lang="en" data-language="en">English</a> · <a href="/es/start" lang="es" data-language="es">Español</a> · <a href="/fr/start" lang="fr" data-language="fr">Français</a></p>
   </div>
 </section>
 
@@ -1208,7 +1357,8 @@
 <!-- ==========================================================================
      FOOTER
      No email address appears anywhere on this site. Contact is TidyCal,
-     WhatsApp, phone and the form.
+     WhatsApp, phone and the form. The full street address appears only in the
+     JSON-LD above and on /fr/privacy.
      ========================================================================== -->
 <footer class="footer">
   <div class="container">
@@ -1219,13 +1369,14 @@
         <span class="wordmark"><img src="/assets/img/logo-adsvio-light.png" width="420" height="97" alt="Adsvio Agency" loading="lazy" decoding="async"></span>
         <!-- ====== LOGO PARTIAL (footer copy) - END ======================== -->
         <p class="footer__tagline">
-          La fondation en ligne complète pour les petites entreprises. Bâtie en 45 jours,
-          en quatre langues.
+          Une présence en ligne complète pour les petites entreprises. Réalisée en 45 jours, en français, en anglais et en espagnol.
         </p>
         <div class="footer__social">
           <a href="https://www.instagram.com/adsvio.agency/" rel="noopener" aria-label="Adsvio Agency sur Instagram">
             <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
           </a>
+          <!-- Points at Pierre's personal profile, which is accurate, until an
+               Adsvio company page exists - see PLACEHOLDERS.md. -->
           <a href="https://www.linkedin.com/in/pierre-runald-f%C3%A9vrier-72669918a/" rel="noopener"
              aria-label="Pierre Runald Février sur LinkedIn">
             <svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>
@@ -1234,22 +1385,25 @@
       </div>
 
       <div>
-        <p class="footer__h">En français</p>
+        <p class="footer__h">Services</p>
         <ul class="footer__list">
-          <li><a href="/fr/">Accueil</a></li>
-          <li><a href="/fr/offer">L&rsquo;offre 45 jours</a></li>
-          <li><a href="/fr/contact">Contact</a></li>
+          <li><a href="/fr/services/website-design">Conception de sites web</a></li>
+          <li><a href="/fr/services/social-media-management">Gestion des médias sociaux</a></li>
+          <li><a href="/fr/services/google-business-profile">Profil d’entreprise Google</a></li>
+          <li><a href="/fr/services/branding-logo-design">Identité de marque et logo</a></li>
+          <li><a href="/fr/services/local-seo">Référencement local</a></li>
         </ul>
       </div>
 
       <div>
-        <p class="footer__h">Services <span class="soft">(en anglais)</span></p>
+        <p class="footer__h">L’agence</p>
         <ul class="footer__list">
-          <li><a href="/en/services/website-design" hreflang="en" lang="en">Website design</a></li>
-          <li><a href="/en/services/social-media-management" hreflang="en" lang="en">Social media management</a></li>
-          <li><a href="/en/services/google-business-profile" hreflang="en" lang="en">Google Business Profile</a></li>
-          <li><a href="/en/services/branding-logo-design" hreflang="en" lang="en">Branding &amp; logo design</a></li>
-          <li><a href="/en/services/local-seo" hreflang="en" lang="en">Local SEO</a></li>
+          <li><a href="/fr/about">À propos</a></li>
+          <li><a href="/fr/work">Réalisations</a></li>
+          <li><a href="/fr/offer">L’offre de 45 jours</a></li>
+          <li><a href="/fr/for/coaches-consultants">Pour les coachs</a></li>
+          <li><a href="/fr/for/local-businesses">Pour les entreprises locales</a></li>
+          <li><a href="/fr/guides/caribbean-business-online">Guides</a></li>
         </ul>
       </div>
 
@@ -1259,7 +1413,7 @@
           <li>
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-calendar"/></svg>
             <a href="/fr/start"
-               data-event="book_call_click" data-event-where="footer">Obtenez votre score de visibilité</a>
+               data-event="book_call_click" data-event-where="footer">Obtenir mon score de visibilité gratuit</a>
           </li>
           <li>
             <svg class="icon icon--sm icon--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg>
@@ -1267,7 +1421,7 @@
           </li>
           <li>
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-phone"/></svg>
-            <a href="tel:+17867589680">+1 786 758-9680</a>
+            <a href="tel:+17867589680">+1 (786) 758-9680</a>
           </li>
           <li>
             <svg class="icon icon--sm" aria-hidden="true"><use href="#i-pin"/></svg>
@@ -1282,9 +1436,9 @@
     <div class="footer__bottom">
       <span>&copy; <span data-year>2026</span> Adsvio Agency.</span>
       <span class="footer__legal">
-        <a href="/en/privacy" hreflang="en" lang="en">Confidentialité</a>
-        <a href="/en/terms" hreflang="en" lang="en">Conditions</a>
-        <button type="button" class="linkbtn" data-cookie-settings>Choix de témoins</button>
+        <a href="/fr/privacy">Confidentialité</a>
+        <a href="/fr/terms">Conditions</a>
+        <button type="button" class="linkbtn" data-cookie-settings>Préférences des témoins</button>
         <a href="/fr/contact">Contact</a>
       </span>
     </div>
@@ -1292,17 +1446,40 @@
 </footer>
 
 
-<!-- Sticky mobile bar -->
+<!-- Sticky mobile bar - below 768px, after 25% scroll, hides over the footer CTA -->
 <div class="stickybar">
   <a class="btn btn--primary" href="/fr/start"
-     data-event="book_call_click" data-event-where="sticky_bar">Score de visibilité</a>
+     data-event="book_call_click" data-event-where="sticky_bar">Obtenir mon score gratuit</a>
   <a class="btn btn--whatsapp" href="https://wa.me/18295927303"
      data-event="whatsapp_click" data-event-where="sticky_bar" aria-label="Écrivez-nous sur WhatsApp">
     <svg class="icon icon--sm icon--solid" aria-hidden="true"><use href="#i-whatsapp"/></svg>
     WhatsApp
   </a>
 </div>
+<!-- ==========================================================================
+     NETLIFY FORM DETECTION - "checklist"
+
+     The exit modal is off (EXIT_MODAL_ENABLED = false in modal.js) and its
+     dialog is injected from script when it goes back on. Netlify registers
+     forms by scanning deployed HTML, so a form that only exists inside a
+     script string is never registered and its first real submission 404s.
+
+     This stub is the field list and nothing else - no headline, no fine
+     print, no decline button - so it registers the form without putting a
+     single user-facing string back into the page. Deleting it means
+     remembering to re-add it the day the checklist ships. Leave it.
+     ========================================================================== -->
+<form name="checklist-fr" method="POST" data-netlify="true"
+      netlify-honeypot="company-website" action="/fr/thank-you?from=checklist"
+      hidden aria-hidden="true">
+<input type="hidden" name="language" value="fr">
+  <input type="hidden" name="form-name" value="checklist-fr">
+  <input type="email" name="email">
+  <input name="company-website" tabindex="-1">
+</form>
+
 <script src="/assets/js/site-config.js" defer></script>
+<script src="/assets/js/language.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 <script src="/assets/js/consent.js" defer></script>
 <script src="/assets/js/modal.js" defer></script>

@@ -73,3 +73,23 @@ is set for 1:56 p.m. America/New_York today if work is unfinished. Disable it
 when work is complete. The owner was asked whether the phone notification
 should be ChatGPT mobile or an email; no answer yet. Use any subsequent answer.
 Do not claim a phone push was delivered without confirmation.
+
+## Published and verified
+
+PR #1 merged to main as 080203951ef048c0528d68d923f3f32dd10c42df.
+Netlify production deploy 6acba9f142301d00088136e9 is ready and published at
+2026-10-11 11:23:46 America/New_York, with the language edge function deployed.
+Live: https://adsvioagency.com, /en/, /es/, /fr/.
+All 105 localized pages and three PDFs returned HTTP 200 on production.
+Both www and primary-domain roots honored each saved EN/ES/FR choice and kept
+campaign parameters. Explicit language selection sets a secure parent-domain
+cookie and returns 302 no-store. HTML aliases return 301 to their canonicals.
+Sitemap has 96 URLs. Internal docs, tools, edge source and post template return
+404. Evidence: docs/qa/production-checks.json and production-spanish-mobile.png.
+
+Website publication is complete. Do not redeploy or merge PR #1 again.
+Remaining verification limits: actual DO/US/HT/CA network-origin tests and
+verified form/notification delivery (fake preview emails may be spam filtered).
+Phone notification method was requested; the user has not answered the
+optional channel question. Default completion follows ChatGPT mobile settings;
+actual phone receipt cannot be verified from this desktop task.

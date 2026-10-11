@@ -1,0 +1,633 @@
+[
+  {
+    "path": "/en/about",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/about"
+  },
+  {
+    "path": "/es/about",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/about"
+  },
+  {
+    "path": "/fr/about",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/about"
+  },
+  {
+    "path": "/en/blog/business-not-showing-on-google-maps",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/blog/business-not-showing-on-google-maps"
+  },
+  {
+    "path": "/es/blog/business-not-showing-on-google-maps",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/blog/business-not-showing-on-google-maps"
+  },
+  {
+    "path": "/fr/blog/business-not-showing-on-google-maps",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/blog/business-not-showing-on-google-maps"
+  },
+  {
+    "path": "/en/blog/how-to-get-more-google-reviews",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/blog/how-to-get-more-google-reviews"
+  },
+  {
+    "path": "/es/blog/how-to-get-more-google-reviews",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/blog/how-to-get-more-google-reviews"
+  },
+  {
+    "path": "/fr/blog/how-to-get-more-google-reviews",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/blog/how-to-get-more-google-reviews"
+  },
+  {
+    "path": "/en/blog/",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/blog/"
+  },
+  {
+    "path": "/es/blog/",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/blog/"
+  },
+  {
+    "path": "/fr/blog/",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/blog/"
+  },
+  {
+    "path": "/en/blog/what-to-post-on-instagram-small-business",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/blog/what-to-post-on-instagram-small-business"
+  },
+  {
+    "path": "/es/blog/what-to-post-on-instagram-small-business",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/blog/what-to-post-on-instagram-small-business"
+  },
+  {
+    "path": "/fr/blog/what-to-post-on-instagram-small-business",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/blog/what-to-post-on-instagram-small-business"
+  },
+  {
+    "path": "/en/checklist",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/checklist"
+  },
+  {
+    "path": "/es/checklist",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/checklist"
+  },
+  {
+    "path": "/fr/checklist",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/checklist"
+  },
+  {
+    "path": "/en/contact",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/contact"
+  },
+  {
+    "path": "/es/contact",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/contact"
+  },
+  {
+    "path": "/fr/contact",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/contact"
+  },
+  {
+    "path": "/en/for/coaches-consultants",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/for/coaches-consultants"
+  },
+  {
+    "path": "/es/for/coaches-consultants",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/for/coaches-consultants"
+  },
+  {
+    "path": "/fr/for/coaches-consultants",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/for/coaches-consultants"
+  },
+  {
+    "path": "/en/for/home-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/for/home-services"
+  },
+  {
+    "path": "/es/for/home-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/for/home-services"
+  },
+  {
+    "path": "/fr/for/home-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/for/home-services"
+  },
+  {
+    "path": "/en/for/local-businesses",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/for/local-businesses"
+  },
+  {
+    "path": "/es/for/local-businesses",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/for/local-businesses"
+  },
+  {
+    "path": "/fr/for/local-businesses",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/for/local-businesses"
+  },
+  {
+    "path": "/en/for/professional-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/for/professional-services"
+  },
+  {
+    "path": "/es/for/professional-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/for/professional-services"
+  },
+  {
+    "path": "/fr/for/professional-services",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/for/professional-services"
+  },
+  {
+    "path": "/en/guides/caribbean-business-online",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/guides/caribbean-business-online"
+  },
+  {
+    "path": "/es/guides/caribbean-business-online",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/guides/caribbean-business-online"
+  },
+  {
+    "path": "/fr/guides/caribbean-business-online",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/guides/caribbean-business-online"
+  },
+  {
+    "path": "/en/guides/google-business-profile-guide",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/guides/google-business-profile-guide"
+  },
+  {
+    "path": "/es/guides/google-business-profile-guide",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/guides/google-business-profile-guide"
+  },
+  {
+    "path": "/fr/guides/google-business-profile-guide",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/guides/google-business-profile-guide"
+  },
+  {
+    "path": "/en/guides/small-business-website-cost",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/guides/small-business-website-cost"
+  },
+  {
+    "path": "/es/guides/small-business-website-cost",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/guides/small-business-website-cost"
+  },
+  {
+    "path": "/fr/guides/small-business-website-cost",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/guides/small-business-website-cost"
+  },
+  {
+    "path": "/en/guides/social-media-system",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/guides/social-media-system"
+  },
+  {
+    "path": "/es/guides/social-media-system",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/guides/social-media-system"
+  },
+  {
+    "path": "/fr/guides/social-media-system",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/guides/social-media-system"
+  },
+  {
+    "path": "/en/guides/website-or-instagram",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/guides/website-or-instagram"
+  },
+  {
+    "path": "/es/guides/website-or-instagram",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/guides/website-or-instagram"
+  },
+  {
+    "path": "/fr/guides/website-or-instagram",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/guides/website-or-instagram"
+  },
+  {
+    "path": "/en/haitian-business-marketing",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/haitian-business-marketing"
+  },
+  {
+    "path": "/es/haitian-business-marketing",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/haitian-business-marketing"
+  },
+  {
+    "path": "/fr/haitian-business-marketing",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/haitian-business-marketing"
+  },
+  {
+    "path": "/en/",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/"
+  },
+  {
+    "path": "/es/",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/"
+  },
+  {
+    "path": "/fr/",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/"
+  },
+  {
+    "path": "/en/offer",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/offer"
+  },
+  {
+    "path": "/es/offer",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/offer"
+  },
+  {
+    "path": "/fr/offer",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/offer"
+  },
+  {
+    "path": "/en/privacy",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/privacy"
+  },
+  {
+    "path": "/es/privacy",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/privacy"
+  },
+  {
+    "path": "/fr/privacy",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/privacy"
+  },
+  {
+    "path": "/en/services/branding-logo-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/branding-logo-design"
+  },
+  {
+    "path": "/es/services/branding-logo-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/branding-logo-design"
+  },
+  {
+    "path": "/fr/services/branding-logo-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/branding-logo-design"
+  },
+  {
+    "path": "/en/services/google-business-profile",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/google-business-profile"
+  },
+  {
+    "path": "/es/services/google-business-profile",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/google-business-profile"
+  },
+  {
+    "path": "/fr/services/google-business-profile",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/google-business-profile"
+  },
+  {
+    "path": "/en/services/",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/"
+  },
+  {
+    "path": "/es/services/",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/"
+  },
+  {
+    "path": "/fr/services/",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/"
+  },
+  {
+    "path": "/en/services/local-seo",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/local-seo"
+  },
+  {
+    "path": "/es/services/local-seo",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/local-seo"
+  },
+  {
+    "path": "/fr/services/local-seo",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/local-seo"
+  },
+  {
+    "path": "/en/services/social-media-management",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/social-media-management"
+  },
+  {
+    "path": "/es/services/social-media-management",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/social-media-management"
+  },
+  {
+    "path": "/fr/services/social-media-management",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/social-media-management"
+  },
+  {
+    "path": "/en/services/website-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/services/website-design"
+  },
+  {
+    "path": "/es/services/website-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/services/website-design"
+  },
+  {
+    "path": "/fr/services/website-design",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/services/website-design"
+  },
+  {
+    "path": "/en/south-florida",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/south-florida"
+  },
+  {
+    "path": "/es/south-florida",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/south-florida"
+  },
+  {
+    "path": "/fr/south-florida",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/south-florida"
+  },
+  {
+    "path": "/en/start",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/start"
+  },
+  {
+    "path": "/es/start",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/start"
+  },
+  {
+    "path": "/fr/start",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/start"
+  },
+  {
+    "path": "/en/terms",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/terms"
+  },
+  {
+    "path": "/es/terms",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/terms"
+  },
+  {
+    "path": "/fr/terms",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/terms"
+  },
+  {
+    "path": "/en/thank-you-booking",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/thank-you-booking"
+  },
+  {
+    "path": "/es/thank-you-booking",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/thank-you-booking"
+  },
+  {
+    "path": "/fr/thank-you-booking",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/thank-you-booking"
+  },
+  {
+    "path": "/en/thank-you",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/thank-you"
+  },
+  {
+    "path": "/es/thank-you",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/thank-you"
+  },
+  {
+    "path": "/fr/thank-you",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/thank-you"
+  },
+  {
+    "path": "/en/work/atelier-nord",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/work/atelier-nord"
+  },
+  {
+    "path": "/es/work/atelier-nord",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/work/atelier-nord"
+  },
+  {
+    "path": "/fr/work/atelier-nord",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/work/atelier-nord"
+  },
+  {
+    "path": "/en/work/clarite-consulting",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/work/clarite-consulting"
+  },
+  {
+    "path": "/es/work/clarite-consulting",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/work/clarite-consulting"
+  },
+  {
+    "path": "/fr/work/clarite-consulting",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/work/clarite-consulting"
+  },
+  {
+    "path": "/en/work/verdure-kitchen",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/work/verdure-kitchen"
+  },
+  {
+    "path": "/es/work/verdure-kitchen",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/work/verdure-kitchen"
+  },
+  {
+    "path": "/fr/work/verdure-kitchen",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/work/verdure-kitchen"
+  },
+  {
+    "path": "/en/work",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/work"
+  },
+  {
+    "path": "/es/work",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/work"
+  },
+  {
+    "path": "/fr/work",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/work"
+  },
+  {
+    "path": "/assets/downloads/adsvio-client-ready-checklist.pdf",
+    "status": 200,
+    "final": "https://adsvioagency.com/assets/downloads/adsvio-client-ready-checklist.pdf"
+  },
+  {
+    "path": "/assets/downloads/adsvio-lista-verificacion.pdf",
+    "status": 200,
+    "final": "https://adsvioagency.com/assets/downloads/adsvio-lista-verificacion.pdf"
+  },
+  {
+    "path": "/assets/downloads/adsvio-liste-verification.pdf",
+    "status": 200,
+    "final": "https://adsvioagency.com/assets/downloads/adsvio-liste-verification.pdf"
+  },
+  {
+    "host": "adsvioagency.com",
+    "saved": "en",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "host": "adsvioagency.com",
+    "saved": "es",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "host": "adsvioagency.com",
+    "saved": "fr",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "host": "www.adsvioagency.com",
+    "saved": "en",
+    "status": 200,
+    "final": "https://adsvioagency.com/en/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "host": "www.adsvioagency.com",
+    "saved": "es",
+    "status": 200,
+    "final": "https://adsvioagency.com/es/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "host": "www.adsvioagency.com",
+    "saved": "fr",
+    "status": 200,
+    "final": "https://adsvioagency.com/fr/?utm_source=qa",
+    "pass": true
+  },
+  {
+    "path": "/?lang=es&utm_source=qr",
+    "status": 302,
+    "location": "https://adsvioagency.com/es/?utm_source=qr",
+    "cache": "private, no-store",
+    "cookie": "adsvio_language=es; Path=/; Max-Age=31536000; SameSite=Lax; Secure; Domain=adsvioagency.com"
+  },
+  {
+    "path": "/es/about.html?utm_source=qa",
+    "status": 301,
+    "location": "/es/about?utm_source=qa",
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  },
+  {
+    "path": "/fr/services/website-design.html",
+    "status": 301,
+    "location": "/fr/services/website-design",
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  },
+  {
+    "path": "/docs/i18n/schema.json",
+    "status": 404,
+    "location": null,
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  },
+  {
+    "path": "/tools/localize.py",
+    "status": 404,
+    "location": null,
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  },
+  {
+    "path": "/netlify/edge-functions/language.js",
+    "status": 404,
+    "location": null,
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  },
+  {
+    "path": "/en/blog/_post-template",
+    "status": 404,
+    "location": null,
+    "cache": "public,max-age=0,must-revalidate",
+    "cookie": null
+  }
+]

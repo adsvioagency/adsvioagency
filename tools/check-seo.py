@@ -132,6 +132,13 @@ for url in indexable:
 
 config = tomllib.loads((ROOT / "netlify.toml").read_text(encoding="utf-8"))
 rules = config["redirects"]
+for page in pages:
+    rel=page.path.relative_to(ROOT).as_posix()
+    if rel=='en/image-lab.html': continue
+    expected=ORIGIN + '/' + (rel[:-10] if rel.endswith('index.html') else rel[:-5])
+    alias=next((r for r in rules if r['from']=='/'+rel),{})
+    check(alias.get('to')==expected[len(ORIGIN):] and alias.get('status')==301 and alias.get('force') is True,
+        f'{rel}: explicit .html canonical redirect missing')
 for path in ("/PLACEHOLDERS.md", "/SHOT-LIST.md", "/SEO-AI-DISCOVERABILITY.md",
              "/tools/check-seo.py", "/docs/SEARCH-ARCHITECTURE.md", "/docs/KEYWORD-TRACKING.md",
              "/en/blog/_post-template", "/en/blog/_post-template.html"):

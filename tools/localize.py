@@ -208,6 +208,8 @@ def refinements(src, p, lang):
         if p.name == 'contact.html':
             src = src.replace('name="contact"','name="contact-' + lang + '"')
             src = src.replace('value="contact"','value="contact-' + lang + '"')
+        src = src.replace('name="checklist"','name="checklist-' + lang + '"')
+        src = src.replace('value="checklist"','value="checklist-' + lang + '"')
         src = re.sub(r'(<form\b[^>]*data-netlify[^>]*>)',
             lambda m: m[0] + '\n<input type="hidden" name="language" value="' + lang + '">', src)
     return src
@@ -232,6 +234,7 @@ def main():
         p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text('\n'.join(line.rstrip() for line in src.splitlines())+'\n', encoding='utf-8', newline='\n')
     write_sitemap()
+    write_canonical_redirects()
     print(f'Wrote {len(outputs)} fully localized static pages.')
     return 0
 
@@ -252,6 +255,21 @@ def write_sitemap():
                     'href':ORIGIN + route(p,'en' if alt=='x-default' else alt)})
     ET.indent(tree)
     (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n'+ET.tostring(tree,encoding='unicode')+'\n',encoding='utf-8')
+
+def write_canonical_redirects():
+    # Deployed QA showed Pretty URLs rewrites links but still serves .html
+    # aliases. Explicit forced redirects prevent those duplicate URL versions.
+    p=ROOT/'netlify.toml'; src=p.read_text(encoding='utf-8')
+    start='# BEGIN LOCALIZED CANONICAL REDIRECTS'
+    end='# END LOCALIZED CANONICAL REDIRECTS'
+    src=re.sub(re.escape(start)+r'.*?'+re.escape(end)+r'\s*','',src,flags=re.S).rstrip()
+    rules=[start]
+    for page in pages():
+        rel=page.relative_to(ROOT/'en').as_posix()
+        for lang in LANGS:
+            rules.append(f'[[redirects]]\n  from = "/{lang}/{rel}"\n  to = "{route(page,lang)}"\n  status = 301\n  force = true\n')
+    rules.append(end)
+    p.write_text(src+'\n\n'+'\n'.join(rules)+'\n',encoding='utf-8')
 
 if __name__ == '__main__':
     sys.stdout.reconfigure(encoding='utf-8')

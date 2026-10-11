@@ -36,6 +36,7 @@
      ---------------------------------------------------------------------- */
 
   var LANG = (document.documentElement.lang || 'en').split('-')[0];
+  var FORM_NAME = LANG === 'en' ? 'checklist' : 'checklist-' + LANG;
   var COPY = {
     en: ['Close','Free download','The Client-Ready Checklist','27 practical checks for a clearer online presence.','A guide to review your website, search, social profiles and contact path.','Leave this empty if you are human','Your email address','you@yourbusiness.com','Get the checklist','No spam. Unsubscribe anytime.','No thanks'],
     es: ['Cerrar','Descarga gratuita','Lista para preparar tu negocio en internet','27 puntos para una presencia más clara en internet.','Revisa tu web, Google, redes y camino de contacto.','Deja este campo vacío si eres una persona','Tu correo electrónico','tu@tunegocio.com','Obtener la lista','Sin spam. Puedes darte de baja.','No, gracias'],
@@ -53,9 +54,9 @@
     '    <h2 id="checklist-title">' + COPY[2] + '</h2>' +
     '    <p class="modal__sub">' + COPY[3] + '</p>' +
     '    <p class="modal__provenance">' + COPY[4] + '</p>' +
-    '    <form name="checklist" method="POST" data-netlify="true"' +
+    '    <form name="' + FORM_NAME + '" method="POST" data-netlify="true"' +
     '          netlify-honeypot="company-website" action="/' + LANG + '/thank-you?from=checklist">' +
-    '      <input type="hidden" name="form-name" value="checklist">' +
+    '      <input type="hidden" name="form-name" value="' + FORM_NAME + '">' +
     '      <input type="hidden" name="language" value="' + LANG + '">' +
     '      <p class="hp"><label>' + COPY[5] +
     '        <input name="company-website" tabindex="-1" autocomplete="off"></label></p>' +

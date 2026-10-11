@@ -411,3 +411,636 @@
   for = "/*.md"
   [headers.values]
     X-Robots-Tag = "noindex, nofollow"
+
+# BEGIN LOCALIZED CANONICAL REDIRECTS
+[[redirects]]
+  from = "/en/about.html"
+  to = "/en/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/about.html"
+  to = "/es/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/about.html"
+  to = "/fr/about"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog/business-not-showing-on-google-maps.html"
+  to = "/en/blog/business-not-showing-on-google-maps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/business-not-showing-on-google-maps.html"
+  to = "/es/blog/business-not-showing-on-google-maps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/business-not-showing-on-google-maps.html"
+  to = "/fr/blog/business-not-showing-on-google-maps"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog/how-to-get-more-google-reviews.html"
+  to = "/en/blog/how-to-get-more-google-reviews"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/how-to-get-more-google-reviews.html"
+  to = "/es/blog/how-to-get-more-google-reviews"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/how-to-get-more-google-reviews.html"
+  to = "/fr/blog/how-to-get-more-google-reviews"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog/index.html"
+  to = "/en/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/index.html"
+  to = "/es/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/index.html"
+  to = "/fr/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/blog/what-to-post-on-instagram-small-business.html"
+  to = "/en/blog/what-to-post-on-instagram-small-business"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/blog/what-to-post-on-instagram-small-business.html"
+  to = "/es/blog/what-to-post-on-instagram-small-business"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/blog/what-to-post-on-instagram-small-business.html"
+  to = "/fr/blog/what-to-post-on-instagram-small-business"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/checklist.html"
+  to = "/en/checklist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/checklist.html"
+  to = "/es/checklist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/checklist.html"
+  to = "/fr/checklist"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/contact.html"
+  to = "/en/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/contact.html"
+  to = "/es/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/contact.html"
+  to = "/fr/contact"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/for/coaches-consultants.html"
+  to = "/en/for/coaches-consultants"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/for/coaches-consultants.html"
+  to = "/es/for/coaches-consultants"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/for/coaches-consultants.html"
+  to = "/fr/for/coaches-consultants"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/for/home-services.html"
+  to = "/en/for/home-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/for/home-services.html"
+  to = "/es/for/home-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/for/home-services.html"
+  to = "/fr/for/home-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/for/local-businesses.html"
+  to = "/en/for/local-businesses"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/for/local-businesses.html"
+  to = "/es/for/local-businesses"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/for/local-businesses.html"
+  to = "/fr/for/local-businesses"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/for/professional-services.html"
+  to = "/en/for/professional-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/for/professional-services.html"
+  to = "/es/for/professional-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/for/professional-services.html"
+  to = "/fr/for/professional-services"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/guides/caribbean-business-online.html"
+  to = "/en/guides/caribbean-business-online"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guides/caribbean-business-online.html"
+  to = "/es/guides/caribbean-business-online"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/guides/caribbean-business-online.html"
+  to = "/fr/guides/caribbean-business-online"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/guides/google-business-profile-guide.html"
+  to = "/en/guides/google-business-profile-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guides/google-business-profile-guide.html"
+  to = "/es/guides/google-business-profile-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/guides/google-business-profile-guide.html"
+  to = "/fr/guides/google-business-profile-guide"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/guides/small-business-website-cost.html"
+  to = "/en/guides/small-business-website-cost"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guides/small-business-website-cost.html"
+  to = "/es/guides/small-business-website-cost"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/guides/small-business-website-cost.html"
+  to = "/fr/guides/small-business-website-cost"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/guides/social-media-system.html"
+  to = "/en/guides/social-media-system"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guides/social-media-system.html"
+  to = "/es/guides/social-media-system"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/guides/social-media-system.html"
+  to = "/fr/guides/social-media-system"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/guides/website-or-instagram.html"
+  to = "/en/guides/website-or-instagram"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/guides/website-or-instagram.html"
+  to = "/es/guides/website-or-instagram"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/guides/website-or-instagram.html"
+  to = "/fr/guides/website-or-instagram"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/haitian-business-marketing.html"
+  to = "/en/haitian-business-marketing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/haitian-business-marketing.html"
+  to = "/es/haitian-business-marketing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/haitian-business-marketing.html"
+  to = "/fr/haitian-business-marketing"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/index.html"
+  to = "/en/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/index.html"
+  to = "/es/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/index.html"
+  to = "/fr/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/offer.html"
+  to = "/en/offer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/offer.html"
+  to = "/es/offer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/offer.html"
+  to = "/fr/offer"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/privacy.html"
+  to = "/en/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/privacy.html"
+  to = "/es/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/privacy.html"
+  to = "/fr/privacy"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/branding-logo-design.html"
+  to = "/en/services/branding-logo-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/branding-logo-design.html"
+  to = "/es/services/branding-logo-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/branding-logo-design.html"
+  to = "/fr/services/branding-logo-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/google-business-profile.html"
+  to = "/en/services/google-business-profile"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/google-business-profile.html"
+  to = "/es/services/google-business-profile"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/google-business-profile.html"
+  to = "/fr/services/google-business-profile"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/index.html"
+  to = "/en/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/index.html"
+  to = "/es/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/index.html"
+  to = "/fr/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/local-seo.html"
+  to = "/en/services/local-seo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/local-seo.html"
+  to = "/es/services/local-seo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/local-seo.html"
+  to = "/fr/services/local-seo"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/social-media-management.html"
+  to = "/en/services/social-media-management"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/social-media-management.html"
+  to = "/es/services/social-media-management"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/social-media-management.html"
+  to = "/fr/services/social-media-management"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/services/website-design.html"
+  to = "/en/services/website-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/services/website-design.html"
+  to = "/es/services/website-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/services/website-design.html"
+  to = "/fr/services/website-design"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/south-florida.html"
+  to = "/en/south-florida"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/south-florida.html"
+  to = "/es/south-florida"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/south-florida.html"
+  to = "/fr/south-florida"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/start.html"
+  to = "/en/start"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/start.html"
+  to = "/es/start"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/start.html"
+  to = "/fr/start"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/terms.html"
+  to = "/en/terms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/terms.html"
+  to = "/es/terms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/terms.html"
+  to = "/fr/terms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/thank-you-booking.html"
+  to = "/en/thank-you-booking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/thank-you-booking.html"
+  to = "/es/thank-you-booking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/thank-you-booking.html"
+  to = "/fr/thank-you-booking"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/thank-you.html"
+  to = "/en/thank-you"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/thank-you.html"
+  to = "/es/thank-you"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/thank-you.html"
+  to = "/fr/thank-you"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/work/atelier-nord.html"
+  to = "/en/work/atelier-nord"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/work/atelier-nord.html"
+  to = "/es/work/atelier-nord"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/atelier-nord.html"
+  to = "/fr/work/atelier-nord"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/work/clarite-consulting.html"
+  to = "/en/work/clarite-consulting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/work/clarite-consulting.html"
+  to = "/es/work/clarite-consulting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/clarite-consulting.html"
+  to = "/fr/work/clarite-consulting"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/work/verdure-kitchen.html"
+  to = "/en/work/verdure-kitchen"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/work/verdure-kitchen.html"
+  to = "/es/work/verdure-kitchen"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work/verdure-kitchen.html"
+  to = "/fr/work/verdure-kitchen"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/en/work.html"
+  to = "/en/work"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/work.html"
+  to = "/es/work"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fr/work.html"
+  to = "/fr/work"
+  status = 301
+  force = true
+
+# END LOCALIZED CANONICAL REDIRECTS

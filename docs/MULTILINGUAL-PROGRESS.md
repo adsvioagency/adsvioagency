@@ -93,3 +93,6 @@ verified form/notification delivery (fake preview emails may be spam filtered).
 Phone notification method was requested; the user has not answered the
 optional channel question. Default completion follows ChatGPT mobile settings;
 actual phone receipt cannot be verified from this desktop task.
+
+The backup continuation was paused after production verification, because
+work completed before the usage limit. No repeat deployment is scheduled.
